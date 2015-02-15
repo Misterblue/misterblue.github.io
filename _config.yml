@@ -1,0 +1,16 @@
+# Site settings
+title: Misterblue
+email: misterblue@misterblue.com
+description: > # this means to ignore newlines until "baseurl:"
+  Not 'blue' like the mood, but blue like the sky, blue like the bird, blue like the ocean.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://misterblue.github.io" # the base hostname & protocol for your site
+
+twitter_username: misterblue
+github_username:  misterblue
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+encoding: utf-8
