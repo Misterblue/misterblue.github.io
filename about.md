@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 navigation: about
 ---
+<img src="/images/MisterblueAndGoofy.jpg" style="float: left; padding: 10px"
+    alt="Misterblue with Goofy in the Magic Kingdom at Disneyworld"/>
 Not "blue" like the mood, but blue like the sky or blue like the bird or blue like the ocean.
 
 You have found the home page of Robert Adams. I have been "on the Internet" for nearly 20 years from the days of 110 baud modems and accessing "TIP"s to connect to MIT to play Zork. I ran USENET news servers when a 300 baud modem was all the connection you needed and you could read everything that was posted on one day in less than an hour. I was never a bigwig and I can't claim to have invented the net or anything, but I was there.
