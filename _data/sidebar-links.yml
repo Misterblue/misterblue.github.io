@@ -1,0 +1,14 @@
+# Sidebar list of interesting links
+# 'label' is displayed text in the 'a' anchor.
+# 'hoverText" is the 'alt' and, of course, 'url' is the target
+
+- name: OpenSimulator
+  label: OpenSimulator
+  hoverText: Virtual world simulator similar to SecondLife(r)
+  url: http://opensimulator.org/
+
+- name: Wyvern
+  label: Wyvern Running
+  hoverText: A store for your running needs
+  url: http://wyvernrunning.com/
+

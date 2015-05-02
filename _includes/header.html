@@ -27,14 +27,15 @@
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html">Links</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/about.html">About</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
-                    {% if site.github != '' %}
-                      <li class="active"><a href="https://github.com/{{ site.github }}">Github</a></li>
-                    {% endif %}
+                    {% for navTab in site.data.mainNav %}
+                        {% if navTab.name == rss %}
+                            <li class="active visible-xs-block">
+                        {% else %}
+                            <li class="active">
+                        {% endif %}
+                        <a href="{{ navTab.url | prepend: site.baseurl }}">{{ navTab.label }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
               </div>
         </div>

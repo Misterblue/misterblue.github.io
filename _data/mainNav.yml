@@ -9,11 +9,19 @@
   label: Programming
   url: "/programming/"
 
+- name: github
+  label: Github
+  url: "http://github.com/misterblue"
+
 - name: archive
   label: Archive
-  url: "/archive/"
+  url: "/archive.html"
 
 - name: about
   label: About
-  url: "/about/"
+  url: "/About.html"
+
+- name: rss
+  label: RSS
+  url: "/feed.xml"
 

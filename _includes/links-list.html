@@ -1,7 +1,11 @@
 <h1>Links</h1>
 <ul>
-  <li><a href="#">One</a></li>
-  <li><a href="#">Two</a></li>
-  <li><a href="#">Three</a></li>
-  <li><a href="#">Four</a></li>
+  {% for linkRef in site.data.sidebar-links %}
+    <li><a href="{{ linkRef.url }}"
+      {% if linkRef.hoverText != "" %}
+        alt="{{ linkRef.hoverText }}"
+      {% endif %}
+      >{{ linkRef.label }}</a>
+    </li>
+  {% endfor %}
 </ul>
