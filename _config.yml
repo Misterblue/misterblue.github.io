@@ -1,16 +1,38 @@
-# Site settings
+# Jekyll configuration
 title: Misterblue
-email: misterblue@misterblue.com
+name: Misterblue
+email: misterblue-mb@misterblue.com
 description: > # this means to ignore newlines until "baseurl:"
   Not 'blue' like the mood, but blue like the sky, blue like the bird, blue like the ocean.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://misterblue.github.io" # the base hostname & protocol for your site
+# url is currently only used only for the RSS feed in feed.xml
+url: "http://misterblue.github.io"
 
-twitter_username: misterblue
-github_username:  misterblue
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: ''
 
-# Build settings
-markdown: kramdown
+# This can be '' to hide the Github nav button
+github: ''
+
+# Set this to your UA-# value, or '' to disable the block completely
+gaaccount: ''
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: ''
+comments: true
+
+permalink: /:year/:month/:title
+paginate: 3
+
 highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 encoding: utf-8
+
+exclude: ['README.md', 'LICENSE']
