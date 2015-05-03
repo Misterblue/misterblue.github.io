@@ -1,0 +1,94 @@
+There are several programming projects I'm playing with.
+This makes for a hodge-podge of links and I don't always take
+the time to make cleanly installable packages.
+Not good of me, I know.
+
+If you have questions, feel free to email me.
+
+## OpenSimulator (August 2014 to current)
+
+I've been a core developer for
+<a href="http://opensimulator.org">OpenSimulator</a>
+and have added
+<a href="http://opensimulator.org/wiki/BulletSim">BulletSim</a>
+which is a port of the
+<a href="http://bulletphysics.org">Bullet physics engine</a>
+to the OpenSimulator virtual world simulator.
+
+I've also added variable sized regions
+<a href="http://opensimulator.org/wiki/Varregion">VarRegions</a>
+which are non-legacy sized regions (not 256x256).
+
+## LookingGlass (July 2009)
+
+<img style="float:left;margin:0px 10px 10px 0px" 
+            src="http://misterblue.com/images/LookingGlassLogo256.png" 
+            alt="LookingGlass Viewer Logo" />
+
+Getting involved in C# and the
+<a href="http://opensimulator.org">OpenSimulator</a>
+project, I set about writing a viewer. This got me
+into <a href="http://ogre3d.org">Ogre</a>,
+C# and many other pieces of code.
+
+The LookingGlass viewer now has it's own web site at
+<a href="http://lookingglassviewer.org">http://lookingglassviewer.org</a>
+and the sources are available in the
+<a href="http://forge.opensimulator.org/gf/project/lookingglass">
+OpenSimulator Project Forge</a>.
+That place also collects bugs, features and other project management.
+
+Dynamic loading of resources in Ogre is an artform.
+After wrestling with it for several weeks, 
+I wrote up my solution in
+<a href="http://misterblue.com/programming/dynamic-ogre-resources">
+Dynamic Loading of Ogre Resources</a>.
+
+## PlanetLab (March 2008)
+
+<a href="http://www.planet-lab.org/">PlanetLab</a>
+is a global research platform for distributed service research.
+Once part of the network (universities and companies join
+by donating computers to the network), once can create
+virtual machines all over the world to develop and test
+new concepts in wildly distributed applications.
+
+I wrote two and run one service on PlanetLab:
+<ul>
+    <li>
+        <strong>
+            <a href="http://dsmt.org/">
+                Distributed Services Management Toolkit
+            </a>
+        </strong>
+        : which manages the creation of virtual machines and
+        the installation of services on PlanetLab nodes.
+        There is a
+        <a href="http://sourceforge.net/projects/dsmt">
+            SourceForge project
+        </a>
+        to support the sources and bug reports and a
+        <a href="http://dsmt.org/">web site</a>
+        with documentation and status.
+        <strong>THIS SERVICE IS NOT OPERATIONAL</strong>
+    </li>
+    <li>
+        <strong>
+            <a href="http://psepr.org/">
+                Planetary Scale Event Propagation and Routing
+            </a>
+        </strong>
+        : which is a publish/subscribe, XML eventing system.
+        Built for pluggable routing implementations
+        (it's a research platform after all) is currently
+        provides a simple 'channel' subscription mechanism.
+        There is a
+        <a href="http://sourceforge.net/projects/psepr">
+            SourceForge project
+        </a>
+        to support the sources and bug reports and a
+        <a href="http://psepr.org/">web site</a>
+        with documentation and status.
+    </li>
+</ul>
+
