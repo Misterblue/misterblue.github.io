@@ -19,7 +19,7 @@
 
 - name: about
   label: About
-  url: "/About.html"
+  url: "/about/"
 
 - name: rss
   label: RSS
