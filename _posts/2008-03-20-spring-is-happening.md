@@ -22,4 +22,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><wpg2>1888</wpg2></div><div class="g2image_float_right"><wpg2>1892</wpg2></div>Spring is starting to happen here in the Willamette Valley. Some parts of the country are under snow and floods but here, in a milder place, the cherry trees are blooming.
+<div class="g2image_float_left"><a href="/images/oldimages/1888"><img src="/images/oldimages/thumb/1888" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/1892"><img src="/images/oldimages/thumb/1892" class="oldImageThumb"/></a></div>Spring is starting to happen here in the Willamette Valley. Some parts of the country are under snow and floods but here, in a milder place, the cherry trees are blooming.
