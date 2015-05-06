@@ -17,7 +17,7 @@ cd "$OLDIMAGESDIR"
 ls *.jpg | while read file ; do
     if [[ -e "$file" ]] ; then
         cat "$file" | jpegtopnm --exif=$EXIFFILE --quiet > $TEMPFILE2
-        cat $TEMPFILE2 | pamscale --xyfit $SIZE $SIZE | ppmtojpeg --exif=$EXIFFILE --comment "Copyright 2014, Christina Adams" --quality=75 > $TEMPFILE
+        cat $TEMPFILE2 | pamscale --xyfit $SIZE $SIZE | ppmtojpeg --exif=$EXIFFILE --comment "Copyright 2015, Robert Adams" --quality=75 > $TEMPFILE
         mv $TEMPFILE "$THUMBSDIR/$file"
     fi
 done
