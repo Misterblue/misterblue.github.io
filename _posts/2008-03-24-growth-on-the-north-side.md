@@ -21,4 +21,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/1902"><img src="/images/oldimages/thumb/1902" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/1905"><img src="/images/oldimages/thumb/1905" class="oldImageThumb"/></a></div><div class="g2image_float_righ"><a href="/images/oldimages/1908"><img src="/images/oldimages/thumb/1908" class="oldImageThumb"/></a></div>One the north side of my house is an old limb from a cherry tree. No sun, only damp and ,yes, you can tell which side faces north.
+<div class="g2image_float_left"><a href="/images/oldimages/1902.jpg"><img src="/images/oldimages/thumb/1902.jpg" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/1905"><img src="/images/oldimages/thumb/1905" class="oldImageThumb"/></a></div><div class="g2image_float_righ"><a href="/images/oldimages/1908"><img src="/images/oldimages/thumb/1908" class="oldImageThumb"/></a></div>One the north side of my house is an old limb from a cherry tree. No sun, only damp and ,yes, you can tell which side faces north.

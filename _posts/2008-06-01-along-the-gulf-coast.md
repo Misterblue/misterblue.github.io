@@ -22,7 +22,7 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/4173"><img src="/images/oldimages/thumb/4173" class="oldImageThumb"/></a></div>After a night in a funky little bed-and-breakfast in
+<div class="g2image_float_left"><a href="/images/oldimages/4173.jpg"><img src="/images/oldimages/thumb/4173.jpg" class="oldImageThumb"/></a></div>After a night in a funky little bed-and-breakfast in
 the town of Taos, New Mexico
 we visited the 
 <a href="http://www.taospueblo.com/">Taos Pueblo</a>.
@@ -34,7 +34,7 @@ They, of course open their houses to sell jewelery
 and trinkets to the tourists.
 <p>
 </p>
-<div class="g2image_float_right"><a href="/images/oldimages/4123"><img src="/images/oldimages/thumb/4123" class="oldImageThumb"/></a></div>From New Mexico, we drove across the south end of the rockies
+<div class="g2image_float_right"><a href="/images/oldimages/4123.jpg"><img src="/images/oldimages/thumb/4123.jpg" class="oldImageThumb"/></a></div>From New Mexico, we drove across the south end of the rockies
 traveled through Colorado before making it to Texas.
 What better indication of Texas-ness than
 <a href="http://www.roadsideamerica.com/story/2220">Cadallic Ranch</a>
@@ -43,7 +43,7 @@ From Amarillo, we drove through the traffic jams of Dallas
 and southward into the heat and humidity of Houston.
 
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/4244"><img src="/images/oldimages/thumb/4244" class="oldImageThumb"/></a></div>We just happened to be at the 
+<div class="g2image_float_left"><a href="/images/oldimages/4244.jpg"><img src="/images/oldimages/thumb/4244.jpg" class="oldImageThumb"/></a></div>We just happened to be at the 
 <a href="http://www.spacecenter.org/">Johnson Space Center </a>
 when the 
 space shuttle Discovery launched. 
@@ -62,7 +62,7 @@ astronaut training. Back in the back are some displays of space
 suits and a full sized mock up of the nose of the space shuttle.
 </p>
 <p>
-<div class="g2image_float_right"><a href="/images/oldimages/4354"><img src="/images/oldimages/thumb/4354" class="oldImageThumb"/></a></div>We spent the night in Sulfur, Louisiana (it smelled of sulfer
+<div class="g2image_float_right"><a href="/images/oldimages/4354.jpg"><img src="/images/oldimages/thumb/4354.jpg" class="oldImageThumb"/></a></div>We spent the night in Sulfur, Louisiana (it smelled of sulfer
 that night too -- I blame the oil refinery close by)
 and the next day drove across the state to the city of New Orleans.
 We took a walk through the French Quarter of that city and

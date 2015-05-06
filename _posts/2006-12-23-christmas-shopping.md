@@ -20,5 +20,5 @@ categories:
 
 
 ---
-<div class="picLeft"><a href="/images/oldimages/1413"><img src="/images/oldimages/thumb/1413" class="oldImageThumb"/></a></div>Today I went to the mall to meet my brothers. The plan was to take a picture of us three for mom -- I mean, what do you get an 80+ year old woman? The main problem was finding a Christmas tree. You'd think the mall would be covered with trees, but noooooo. The only tree we found was the one with Santa. Luckily we were there before Santa arrived, so pictures were taken and mom will be pleasently surprised.
+<div class="picLeft"><a href="/images/oldimages/1413.jpg"><img src="/images/oldimages/thumb/1413.jpg" class="oldImageThumb"/></a></div>Today I went to the mall to meet my brothers. The plan was to take a picture of us three for mom -- I mean, what do you get an 80+ year old woman? The main problem was finding a Christmas tree. You'd think the mall would be covered with trees, but noooooo. The only tree we found was the one with Santa. Luckily we were there before Santa arrived, so pictures were taken and mom will be pleasently surprised.
 Then we all made a break because the place was filling up. It's crazy the day before Christmas Eve day.

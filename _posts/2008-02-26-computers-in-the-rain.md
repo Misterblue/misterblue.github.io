@@ -21,4 +21,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/1760"><img src="/images/oldimages/thumb/1760" class="oldImageThumb"/></a></div>This last weekend I went to the recycling center to remove a large accumulated collection of cardboard from my house. Across from the dumpster for cardboard, sitting out in the rain were computer monitors. Big monitors. Once people dreamed of having a monitor like this. Now they are sitting out in the rain. Technology marches on.
+<div class="g2image_float_left"><a href="/images/oldimages/1760.jpg"><img src="/images/oldimages/thumb/1760.jpg" class="oldImageThumb"/></a></div>This last weekend I went to the recycling center to remove a large accumulated collection of cardboard from my house. Across from the dumpster for cardboard, sitting out in the rain were computer monitors. Big monitors. Once people dreamed of having a monitor like this. Now they are sitting out in the rain. Technology marches on.

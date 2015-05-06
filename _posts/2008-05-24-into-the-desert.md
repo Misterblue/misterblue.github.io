@@ -26,7 +26,7 @@ Time for an update -- I don't get to a computer and I seem to think
 of Twittering a message when I am driving and that's not a good
 idea.
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/3042"><img src="/images/oldimages/thumb/3042" class="oldImageThumb"/></a></div>From Anaheim, we drove east amid 18 wheelers and large pickups
+<div class="g2image_float_left"><a href="/images/oldimages/3042.jpg"><img src="/images/oldimages/thumb/3042.jpg" class="oldImageThumb"/></a></div>From Anaheim, we drove east amid 18 wheelers and large pickups
 pulling boats. It rained on us while leaving LA and a few times
 on the road. We didn't see any of the tornadoes that happened that
 day and we missed to flooding, but there is a lot of rain falling
@@ -44,7 +44,7 @@ living down here with subdivisions spreading across the desert and
 up the hillsides.
 </p>
 <p>
-<div class="g2image_float_right"><a href="/images/oldimages/3057"><img src="/images/oldimages/thumb/3057" class="oldImageThumb"/></a></div>The main attraction in Lake Havasu City, besides the lake and water
+<div class="g2image_float_right"><a href="/images/oldimages/3057.jpg"><img src="/images/oldimages/thumb/3057.jpg" class="oldImageThumb"/></a></div>The main attraction in Lake Havasu City, besides the lake and water
 activities, is the London Bridge. This is the London Bridge of
 "falling down" fame that was carted from England to the deserts of
 the US and now spans one end of a small bay. You can drive across it
@@ -71,7 +71,7 @@ Utah, which has gas taxes 1.5 times the CA gas tax still has
 $3.80 gas.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/3179"><img src="/images/oldimages/thumb/3179" class="oldImageThumb"/></a></div>After Lake Havasu City, we drove north and stopped at Hoover Dam.
+<div class="g2image_float_left"><a href="/images/oldimages/3179.jpg"><img src="/images/oldimages/thumb/3179.jpg" class="oldImageThumb"/></a></div>After Lake Havasu City, we drove north and stopped at Hoover Dam.
 Impressive feat engineering. We took the tour and visited the
 tunnels and generator room. The visitor's center is very grand
 and they keep reminding you that is wasn't paid for by tax

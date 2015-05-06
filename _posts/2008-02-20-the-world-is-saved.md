@@ -21,4 +21,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/1392"><img src="/images/oldimages/thumb/1392" class="oldImageThumb"/></a></div>The moon is back. The end of the world has been averted. 
+<div class="g2image_float_left"><a href="/images/oldimages/1392.jpg"><img src="/images/oldimages/thumb/1392.jpg" class="oldImageThumb"/></a></div>The moon is back. The end of the world has been averted. 

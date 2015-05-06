@@ -1,0 +1,59 @@
+1413    bad
+1633    bad
+3935    bad
+4868    bad
+1374    IMG_0063    frost
+1392    bad
+1386    IMG_0199    cat on keyboard
+1765    IMG_0471    sunset
+1760    IMG_0453    monitors
+1788    IMG_0490    timbers
+1892    IMG_0590    blooming tree
+1908    IMG_0611    fungus
+2094    IMG_0896    Lake Tahoe
+2255    IMG_1016    Mier woods
+2382    IMG_1141    SF Bay bridge
+2477    IMG_1215    Jelly fish
+2657    IMG_1333    Hurst
+2541    IMG_1270    Big Sur
+2869    IMG_1439    partners
+3401    IMG_1934    bryce canyon
+3042    IMG_1586    highway
+3057    IMG_1608    Lake Havasu City
+3179    IMG_1695    Dam
+3487    IMG_2010    arch
+4173    IMG_2653    pueblo
+4123    IMG_2685    cadallac ranch
+4244    IMG_2722    shuttle
+4354    IMG_2794    orleans
+4504    IMG_2877    dworld crowds
+4593    IMG_2944    control center
+4691    IMG_3003    fountain of youth
+4801    IMG_3088    falls
+4869    IMG_3161    cave
+4913    IMG_3214    washington house
+5017    IMG_3265    lincoln house
+5118    IMG_3325    flooding
+5365    IMG_3586    yellowstone clouds
+5559    IMG_3696    radiation
+5769    IMG_4219    garlic
+5802    IMG_4236    beach
+5832    IMG_4278    beach
+5850    IMG_4293    covered bridge
+5871    IMG_4309    plane
+5936    IMG_4387    max
+5973    IMG_4426    gariffe
+6003    IMG_4472    elephant monitor
+6648    LookingGlass-20090506_001
+6652    LookingGlass-20090506_002
+6655    LookingGlass-20090506_003
+6658    LookingGlass-20090509_001
+6673    SecondLife-20090509_001
+6664    LookingGlass-20090509_003
+6679    SecondLife-20090509_003
+6661    LookingGlass-20090509_002
+6676    SecondLife-20090509_002
+6667    LookingGlass-20090509_004
+6682    SecondLife-20090509_004
+6670    LookingGlass-20090509_005
+6685    SecondLife-20090509_005

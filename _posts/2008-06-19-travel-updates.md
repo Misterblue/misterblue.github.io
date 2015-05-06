@@ -32,7 +32,7 @@ I've sorted through the pictures and the main groups are up.
 This is a long, catch-up entry with descriptions and pointers.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/4762"><img src="/images/oldimages/thumb/4762" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/4801"><img src="/images/oldimages/thumb/4801" class="oldImageThumb"/></a></div>First is the
+<div class="g2image_float_left"><a href="/images/oldimages/4762.jpg"><img src="/images/oldimages/thumb/4762.jpg" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/4801"><img src="/images/oldimages/thumb/4801" class="oldImageThumb"/></a></div>First is the
 <a href="http://www.nps.gov/grsm/">Great Smoky Mountains National Park</a>
 (<a href="http://pics.misterblue.com/v/20080500-Trip/20080609-GreatSmokyMtns/">pictures</a>)
 which were, well, smoky.
@@ -48,14 +48,14 @@ Some had obviously packed everything for a day of picnicking
 and splashing with the kids. A nice hike in the woods, though.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/4869"><img src="/images/oldimages/thumb/4869" class="oldImageThumb"/></a></div>Just outside the park is Tuckaleechee Caverns
+<div class="g2image_float_left"><a href="/images/oldimages/4869.jpg"><img src="/images/oldimages/thumb/4869.jpg" class="oldImageThumb"/></a></div>Just outside the park is Tuckaleechee Caverns
 (<a href="http://pics.misterblue.com/v/20080500-Trip/20080609-TuckaleecheeCaverns/">pictures</a>).
 This is an old fashioned, family owned cavern roadside attraction.
 An easy walk through the well paved cavern with interesting rock
 formations.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/4913"><img src="/images/oldimages/thumb/4913" class="oldImageThumb"/></a></div>For a little historical South, we stopped at
+<div class="g2image_float_left"><a href="/images/oldimages/4913.jpg"><img src="/images/oldimages/thumb/4913.jpg" class="oldImageThumb"/></a></div>For a little historical South, we stopped at
 <a href="http://www.thehermitage.com/">The Hermitage</a>
 (<a href="http://pics.misterblue.com/v/20080500-Trip/20080610-Hermitage/">pictures</a>).
 This is the farm Andrew Jackson retired to after
@@ -65,7 +65,7 @@ details. It's just a farm although, these days, they make a big
 deal about the slaves who lived there and made the farm work.
 </p>
 <p>
-<div class="g2image_float_right"><a href="/images/oldimages/5017"><img src="/images/oldimages/thumb/5017" class="oldImageThumb"/></a></div>Keeping with the presidential theme, the next stop was the
+<div class="g2image_float_right"><a href="/images/oldimages/5017.jpg"><img src="/images/oldimages/thumb/5017.jpg" class="oldImageThumb"/></a></div>Keeping with the presidential theme, the next stop was the
 <a href="http://www.nps.gov/abli/">Abraham Lincoln Birthplace National Historic Site</a>
 (<a href="http://pics.misterblue.com/v/20080500-Trip/20080610-LincolnCabin/">pictures</a>).
 Wikipedia has a
@@ -75,7 +75,7 @@ In our cynical age, it is hard to comprehend the adoration a
 log cabin received. Eventually, it was enshrined in a granet monument.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/5094"><img src="/images/oldimages/thumb/5094" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/5118"><img src="/images/oldimages/thumb/5118" class="oldImageThumb"/></a></div>The next stop was to downtown St. Louis with a visit to the Arch.
+<div class="g2image_float_left"><a href="/images/oldimages/5094.jpg"><img src="/images/oldimages/thumb/5094.jpg" class="oldImageThumb"/></a></div><div class="g2image_float_right"><a href="/images/oldimages/5118"><img src="/images/oldimages/thumb/5118" class="oldImageThumb"/></a></div>The next stop was to downtown St. Louis with a visit to the Arch.
 If you were following the news at that time, you would know that the
 central U.S. was surviving record floods and tornadoes.
 We weren't sure the arch park would be open but it was completely
@@ -108,7 +108,7 @@ goes more than a few feet.
 did turn out.
 </p>
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/5365"><img src="/images/oldimages/thumb/5365" class="oldImageThumb"/></a></div>Out of the ground and over to Yellowstone National Park
+<div class="g2image_float_left"><a href="/images/oldimages/5365.jpg"><img src="/images/oldimages/thumb/5365.jpg" class="oldImageThumb"/></a></div>Out of the ground and over to Yellowstone National Park
 (<a href="http://pics.misterblue.com/v/20080500-Trip/20080614-Yellowstone/">pictures</a>).
 It was an amazingly beautiful day -- cool temperatures, bright sun,
 blue sky filled with white clouds.
@@ -118,7 +118,7 @@ the streams.
 Beautiful.
 </p>
 <p>
-<div class="g2image_float_right"><a href="/images/oldimages/5559"><img src="/images/oldimages/thumb/5559" class="oldImageThumb"/></a></div>Well, how do you top Yellowstone?
+<div class="g2image_float_right"><a href="/images/oldimages/5559.jpg"><img src="/images/oldimages/thumb/5559.jpg" class="oldImageThumb"/></a></div>Well, how do you top Yellowstone?
 With a nuclear reactor, of course.
 <a href="http://pics.misterblue.com/v/20080500-Trip/20080615-EBR1/">Pictures</a>.
 In the 1950's, a small reactor 
