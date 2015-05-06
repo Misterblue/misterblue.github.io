@@ -20,6 +20,6 @@ categories:
 
 
 ---
-<div class="picLeft"><a href="/images/oldimages/4868.jpg"><img src="/images/oldimages/thumb/4868.jpg" class="oldImageThumb"/></a></div>This last Sunday, we went down to Beulahland pub and listened to the live music. The cool part was that it was simulcast to <a href="http://secondlife.com/">SecondLife</a> to the dance floor at <a href="http://slurl.com/secondlife/Podul/245/20/104"> Pannies &amp; Rosedrop Media's Circus</a>.
+<div class="picLeft"><a href="/images/oldimages/IMG_4868.jpg"><img src="/images/oldimages/thumb/IMG_4868.jpg" class="oldImageThumb"/></a></div>This last Sunday, we went down to Beulahland pub and listened to the live music. The cool part was that it was simulcast to <a href="http://secondlife.com/">SecondLife</a> to the dance floor at <a href="http://slurl.com/secondlife/Podul/245/20/104"> Pannies &amp; Rosedrop Media's Circus</a>.
 A screen in the pub allowed us to watch the avatars dance while we all listened to the same music.
 What a connected world.

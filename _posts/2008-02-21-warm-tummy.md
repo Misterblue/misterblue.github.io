@@ -21,4 +21,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/1386.jpg"><img src="/images/oldimages/thumb/1386.jpg" class="oldImageThumb"/></a></div>One animal in the house figured out how to combine computers and warm tummies.
+<div class="g2image_float_left"><a href="/images/oldimages/IMG_1386.jpg"><img src="/images/oldimages/thumb/IMG_1386.jpg" class="oldImageThumb"/></a></div>One animal in the house figured out how to combine computers and warm tummies.

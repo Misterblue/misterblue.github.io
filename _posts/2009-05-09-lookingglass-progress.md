@@ -29,26 +29,26 @@ categories:
 Here are some progress pictures. These are of the <a href="http://slurl.com/secondlife/Portland%20Connection/164/202/31">Portland Connection</a> sim in SecondLife(r).
 <table>
 <tr>
-<td><div class="g2image"><a href="/images/oldimages/6648.jpg"><img src="/images/oldimages/thumb/6648.jpg" class="oldImageThumb"/></a></div></td>
-<td><div class="g2image"><a href="/images/oldimages/6652.jpg"><img src="/images/oldimages/thumb/6652.jpg" class="oldImageThumb"/></a></div></td>
-<td><div class="g2image"><a href="/images/oldimages/6655.jpg"><img src="/images/oldimages/thumb/6655.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/IMG_6648.jpg"><img src="/images/oldimages/thumb/IMG_6648.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/IMG_6652.jpg"><img src="/images/oldimages/thumb/IMG_6652.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/IMG_6655.jpg"><img src="/images/oldimages/thumb/IMG_6655.jpg" class="oldImageThumb"/></a></div></td>
 </tr>
 </table>
 <table>
 <tr><th>LookingGlass</th><th>SecondLife(r) Viewer</th></tr>
 <tr>
-  <td><div class="g2image"><a href="/images/oldimages/6658.jpg"><img src="/images/oldimages/thumb/6658.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/6673.jpg"><img src="/images/oldimages/thumb/6673.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6658.jpg"><img src="/images/oldimages/thumb/IMG_6658.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6673.jpg"><img src="/images/oldimages/thumb/IMG_6673.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/6664.jpg"><img src="/images/oldimages/thumb/6664.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/6679.jpg"><img src="/images/oldimages/thumb/6679.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6664.jpg"><img src="/images/oldimages/thumb/IMG_6664.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6679.jpg"><img src="/images/oldimages/thumb/IMG_6679.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/6661.jpg"><img src="/images/oldimages/thumb/6661.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/6676.jpg"><img src="/images/oldimages/thumb/6676.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6661.jpg"><img src="/images/oldimages/thumb/IMG_6661.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6676.jpg"><img src="/images/oldimages/thumb/IMG_6676.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/6667.jpg"><img src="/images/oldimages/thumb/6667.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/6682.jpg"><img src="/images/oldimages/thumb/6682.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6667.jpg"><img src="/images/oldimages/thumb/IMG_6667.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6682.jpg"><img src="/images/oldimages/thumb/IMG_6682.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/6670.jpg"><img src="/images/oldimages/thumb/6670.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/6685.jpg"><img src="/images/oldimages/thumb/6685.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6670.jpg"><img src="/images/oldimages/thumb/IMG_6670.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/IMG_6685.jpg"><img src="/images/oldimages/thumb/IMG_6685.jpg" class="oldImageThumb"/></a></div></td>
 </tr></table></p>

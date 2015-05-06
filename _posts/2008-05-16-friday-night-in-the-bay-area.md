@@ -34,14 +34,14 @@ comments:
 
     You're brave to do it. ;)
 ---
-<div class="g2image_float_right"><a href="/images/oldimages/2094.jpg"><img src="/images/oldimages/thumb/2094.jpg" class="oldImageThumb"/></a></div>We just finished stomping around San Francisco. We left Reno Thursday morning thinking we'd drive down to Yosemite. It wasn't long before we ran across and informational sign saying Highway 120 was still closed for the winter. Sigh. Rather than drive all the way around and spend many hours getting there, we decided to drive directly to the San Francisco bay area.
+<div class="g2image_float_right"><a href="/images/oldimages/IMG_2094.jpg"><img src="/images/oldimages/thumb/IMG_2094.jpg" class="oldImageThumb"/></a></div>We just finished stomping around San Francisco. We left Reno Thursday morning thinking we'd drive down to Yosemite. It wasn't long before we ran across and informational sign saying Highway 120 was still closed for the winter. Sigh. Rather than drive all the way around and spend many hours getting there, we decided to drive directly to the San Francisco bay area.
 <p>
 Driving from Tahoe to SF means driving on I-80. Besides the temp being 102, this entails driving at 75 MPH on an 8 lane highway with cars shoulder-to-shoulder and bumper-to-bumper. It's insane! This went on all the way across the central valley. There must be millions of people in central California and they must all be in their cars.
 </p>
-<div class="g2image_float_left"><a href="/images/oldimages/2255.jpg"><img src="/images/oldimages/thumb/2255.jpg" class="oldImageThumb"/></a></div><p>
+<div class="g2image_float_left"><a href="/images/oldimages/IMG_2255.jpg"><img src="/images/oldimages/thumb/IMG_2255.jpg" class="oldImageThumb"/></a></div><p>
 We counteracted the highway experience by ending Thursday in <a href="http://www.nps.gov/muwo/">Muir Woods National Monument</a>. This is a small patch of redwoods that was saved in 1904 and it is one of the last samples of the gigantic trees that covered northern California when it was first settled. Beautiful, gigantic trees.
 </p>
-<div class="g2image_float_right"><a href="/images/oldimages/2382.jpg"><img src="/images/oldimages/thumb/2382.jpg" class="oldImageThumb"/></a></div><p>
+<div class="g2image_float_right"><a href="/images/oldimages/IMG_2382.jpg"><img src="/images/oldimages/thumb/IMG_2382.jpg" class="oldImageThumb"/></a></div><p>
 Friday we hiked around the Marin park which is across the bay from San Francisco. This afforded us wonderful views of the bay and SF. We also explored many of the bunkers and old military constructions that are scattered about. We finished off the day by diving into SF and having dinner at Fisherman's Wharf before driving <a href="http://en.wikipedia.org/wiki/Lombard_Street_(San_Francisco)">Lombard Street</a>.
 </p>
 <p>

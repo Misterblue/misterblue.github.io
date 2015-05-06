@@ -20,4 +20,4 @@ categories:
 
 
 ---
-<div class="picLeft"><a href="/images/oldimages/3935.jpg"><img src="/images/oldimages/thumb/3935.jpg" class="oldImageThumb"/></a></div>Valentine's Day found us in DisneyWorld celebrating our wedding anniversary and enjoying the themed ambiance of Walt's lands. One of the neat things, since it was our wedding anniversary, they gave us buttons and all the cast members said "Happy Anniversary" and the restaurants gave us special attention and desserts. Special and yummy.
+<div class="picLeft"><a href="/images/oldimages/IMG_3935.jpg"><img src="/images/oldimages/thumb/IMG_3935.jpg" class="oldImageThumb"/></a></div>Valentine's Day found us in DisneyWorld celebrating our wedding anniversary and enjoying the themed ambiance of Walt's lands. One of the neat things, since it was our wedding anniversary, they gave us buttons and all the cast members said "Happy Anniversary" and the restaurants gave us special attention and desserts. Special and yummy.
