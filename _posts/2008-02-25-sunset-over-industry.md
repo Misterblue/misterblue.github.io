@@ -22,4 +22,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/IMG_1765.jpg"><img src="/images/oldimages/thumb/IMG_1765.jpg" class="oldImageThumb"/></a></div>From inside my sealed building, I can see a little bit of Mother Nature.
+<div class="g2image_float_left"><a href="/images/oldimages/IMG_0471.jpg"><img src="/images/oldimages/thumb/IMG_0471.jpg" class="oldImageThumb"/></a></div>From inside my sealed building, I can see a little bit of Mother Nature.

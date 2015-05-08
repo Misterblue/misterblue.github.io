@@ -21,4 +21,4 @@ categories:
 
 
 ---
-<div class="g2image_float_left"><a href="/images/oldimages/IMG_1374.jpg"><img src="/images/oldimages/thumb/IMG_1374.jpg" class="oldImageThumb"/></a></div>The ice forms slowly around here and when it does, the cars can get covered with the most beautiful patterns.
+<div class="g2image_float_left"><a href="/images/oldimages/IMG_0063.jpg"><img src="/images/oldimages/thumb/IMG_0063.jpg" class="oldImageThumb"/></a></div>The ice forms slowly around here and when it does, the cars can get covered with the most beautiful patterns.

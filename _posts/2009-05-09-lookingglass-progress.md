@@ -29,26 +29,26 @@ categories:
 Here are some progress pictures. These are of the <a href="http://slurl.com/secondlife/Portland%20Connection/164/202/31">Portland Connection</a> sim in SecondLife(r).
 <table>
 <tr>
-<td><div class="g2image"><a href="/images/oldimages/IMG_6648.jpg"><img src="/images/oldimages/thumb/IMG_6648.jpg" class="oldImageThumb"/></a></div></td>
-<td><div class="g2image"><a href="/images/oldimages/IMG_6652.jpg"><img src="/images/oldimages/thumb/IMG_6652.jpg" class="oldImageThumb"/></a></div></td>
-<td><div class="g2image"><a href="/images/oldimages/IMG_6655.jpg"><img src="/images/oldimages/thumb/IMG_6655.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090506_001.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090506_001.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090506_002.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090506_002.jpg" class="oldImageThumb"/></a></div></td>
+<td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090506_003.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090506_003.jpg" class="oldImageThumb"/></a></div></td>
 </tr>
 </table>
 <table>
 <tr><th>LookingGlass</th><th>SecondLife(r) Viewer</th></tr>
 <tr>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6658.jpg"><img src="/images/oldimages/thumb/IMG_6658.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6673.jpg"><img src="/images/oldimages/thumb/IMG_6673.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090509_001.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090509_001.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/SecondLife-20090509_001.jpg"><img src="/images/oldimages/thumb/SecondLife-20090509_001.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6664.jpg"><img src="/images/oldimages/thumb/IMG_6664.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6679.jpg"><img src="/images/oldimages/thumb/IMG_6679.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090509_003.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090509_003.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/SecondLife-20090509_003.jpg"><img src="/images/oldimages/thumb/SecondLife-20090509_003.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6661.jpg"><img src="/images/oldimages/thumb/IMG_6661.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6676.jpg"><img src="/images/oldimages/thumb/IMG_6676.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090509_002.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090509_002.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/SecondLife-20090509_002.jpg"><img src="/images/oldimages/thumb/SecondLife-20090509_002.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6667.jpg"><img src="/images/oldimages/thumb/IMG_6667.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6682.jpg"><img src="/images/oldimages/thumb/IMG_6682.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090509_004.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090509_004.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/SecondLife-20090509_004.jpg"><img src="/images/oldimages/thumb/SecondLife-20090509_004.jpg" class="oldImageThumb"/></a></div></td>
 </tr><tr>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6670.jpg"><img src="/images/oldimages/thumb/IMG_6670.jpg" class="oldImageThumb"/></a></div></td>
-  <td><div class="g2image"><a href="/images/oldimages/IMG_6685.jpg"><img src="/images/oldimages/thumb/IMG_6685.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/LookingGlass-20090509_005.jpg"><img src="/images/oldimages/thumb/LookingGlass-20090509_005.jpg" class="oldImageThumb"/></a></div></td>
+  <td><div class="g2image"><a href="/images/oldimages/SecondLife-20090509_005.jpg"><img src="/images/oldimages/thumb/SecondLife-20090509_005.jpg" class="oldImageThumb"/></a></div></td>
 </tr></table></p>

@@ -24,6 +24,6 @@ categories:
 ---
 We are finishing up with some last time in Disneyland and will head inland tomorrow. I'll be glad to get out of this crowded park. The weather hasn't been too bad and, by normal DLand standards, the crowds are actually light. It's still a lot of people and a lot of lines. Tomorrow Arizona and some more outdoors.
 <p>
-<div class="g2image_float_left"><a href="/images/oldimages/IMG_2869.jpg"><img src="/images/oldimages/thumb/IMG_2869.jpg" class="oldImageThumb"/></a></div>There are some pictures for our drive through <a href="http://pics.misterblue.com/v/20080500-Trip/20080517-BigSir/">Big Sir</a> and the visit to<a href="http://pics.misterblue.com/v/20080500-Trip/20080518-HearstCastle/"> Hearst Castle</a> and some more <a href="http://pics.misterblue.com/v/20080500-Trip/20080520-Disneyland/">snaps of Disneyland</a>.
+<div class="g2image_float_left"><a href="/images/oldimages/IMG_1439.jpg"><img src="/images/oldimages/thumb/IMG_1439.jpg" class="oldImageThumb"/></a></div>There are some pictures for our drive through <a href="http://pics.misterblue.com/v/20080500-Trip/20080517-BigSir/">Big Sir</a> and the visit to<a href="http://pics.misterblue.com/v/20080500-Trip/20080518-HearstCastle/"> Hearst Castle</a> and some more <a href="http://pics.misterblue.com/v/20080500-Trip/20080520-Disneyland/">snaps of Disneyland</a>.
 I reversed the order of the <a href="http://pics.misterblue.com/v/20080500-Trip/">trip pictures</a> so the newer ones show up on the first page.
 </p>
