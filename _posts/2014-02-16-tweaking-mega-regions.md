@@ -16,6 +16,7 @@ wordpress_id: 891
 wordpress_url: http://misterblue.com/?p=891
 date: 2014-02-16 10:47:08
 categories:
+- Blogroll
 - Misterblue
 - OpenSimulator
 
@@ -30,5 +31,3 @@ One side effect of the changes is to allow combining varregions into mega-region
 I have been working on several Mantis entries for varregion and mega-regions and getting those problems resolved. If you find something that doesn't work, Mantis away.
 
 -- mb
-
-&nbsp;
