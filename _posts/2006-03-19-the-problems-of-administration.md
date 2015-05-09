@@ -16,7 +16,7 @@ wordpress_id: 634
 wordpress_url: http://misterblue.com/wwpp/archives/20060319-the-problems-of-administration
 date: 2006-03-19 08:03:18
 categories:
-- Blogroll
+- Blog
 
 
 ---

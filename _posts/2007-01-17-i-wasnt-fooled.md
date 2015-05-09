@@ -16,7 +16,8 @@ wordpress_id: 672
 wordpress_url: http://misterblue.com/wwpp/archives/20070117-i-wasnt-fooled
 date: 2007-01-17 11:10:13
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 284
 wordpress_url: /?p=284
 date: 2003-06-14 10:33:52
 categories:
-- Blogroll
+- Blog
 
 
 ---

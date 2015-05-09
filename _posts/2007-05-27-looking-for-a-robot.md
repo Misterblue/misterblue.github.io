@@ -16,7 +16,7 @@ wordpress_id: 690
 wordpress_url: http://misterblue.com/wwpp/archives/20070527-looking-for-a-robot
 date: 2007-05-27 11:55:31
 categories:
-- Blogroll
+- Blog
 
 
 ---

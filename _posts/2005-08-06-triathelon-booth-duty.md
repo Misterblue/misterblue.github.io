@@ -16,7 +16,7 @@ wordpress_id: 601
 wordpress_url: http://misterblue.com/wwpp/archives/20050806-triathelon-booth-duty
 date: 2005-08-06 07:31:30
 categories:
-- Blogroll
+- Blog
 
 
 ---

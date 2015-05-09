@@ -16,7 +16,7 @@ wordpress_id: 617
 wordpress_url: http://misterblue.com/wwpp/?p=617
 date: 2005-11-19 03:53:48
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 2324

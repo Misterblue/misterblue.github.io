@@ -16,7 +16,7 @@ wordpress_id: 589
 wordpress_url: http://misterblue.com/wwpp/archives/20050529-volcanos-in-the-yard
 date: 2005-05-29 04:21:04
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 2141

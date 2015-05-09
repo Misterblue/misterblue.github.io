@@ -16,7 +16,7 @@ wordpress_id: 591
 wordpress_url: http://misterblue.com/wwpp/archives/20050625-christmas-is-beginning-late
 date: 2005-06-25 07:56:22
 categories:
-- Blogroll
+- Blog
 
 
 ---

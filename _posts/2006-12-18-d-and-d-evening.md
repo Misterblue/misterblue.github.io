@@ -16,7 +16,7 @@ wordpress_id: 665
 wordpress_url: http://misterblue.com/wwpp/archives/20061218-d-and-d-evening
 date: 2006-12-18 10:59:17
 categories:
-- Blogroll
+- Blog
 
 
 ---

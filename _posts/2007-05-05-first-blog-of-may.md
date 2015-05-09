@@ -16,7 +16,8 @@ wordpress_id: 684
 wordpress_url: http://misterblue.com/wwpp/archives/20070505-first-blog-of-may
 date: 2007-05-05 06:47:23
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

@@ -19,6 +19,7 @@ categories:
 - General
 - Misterblue
 - Life
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 603
 wordpress_url: http://misterblue.com/wwpp/archives/20050809-corporate-owl
 date: 2005-08-09 07:11:35
 categories:
-- Blogroll
+- Blog
 
 
 ---

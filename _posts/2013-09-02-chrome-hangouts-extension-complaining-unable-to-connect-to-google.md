@@ -17,6 +17,7 @@ wordpress_url: http://misterblue.com/?p=862
 date: 2013-09-02 09:59:45
 categories:
 - Web Tech
+- Blog
 
 
 ---

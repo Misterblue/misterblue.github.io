@@ -16,7 +16,7 @@ wordpress_id: 692
 wordpress_url: http://misterblue.com/wwpp/archives/20070602-quiet-day-on-21st
 date: 2007-06-02 01:42:20
 categories:
-- Blogroll
+- Blog
 
 
 ---

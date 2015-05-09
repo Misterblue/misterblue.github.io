@@ -16,7 +16,8 @@ wordpress_id: 677
 wordpress_url: http://misterblue.com/wwpp/archives/20070227-garden-show
 date: 2007-02-27 10:07:49
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

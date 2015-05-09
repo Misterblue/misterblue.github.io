@@ -16,7 +16,7 @@ wordpress_id: 590
 wordpress_url: http://misterblue.com/wwpp/archives/20050614-graduation
 date: 2005-06-14 07:31:57
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 2160

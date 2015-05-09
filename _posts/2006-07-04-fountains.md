@@ -16,7 +16,7 @@ wordpress_id: 641
 wordpress_url: http://misterblue.com/wwpp/archives/20060704-fountains
 date: 2006-07-04 06:39:32
 categories:
-- Blogroll
+- Blog
 
 
 ---

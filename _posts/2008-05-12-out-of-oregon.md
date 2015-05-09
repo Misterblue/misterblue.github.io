@@ -20,6 +20,7 @@ categories:
 - Travel
 - Mobile
 - AroundAmerica2008
+- Blog
 
 
 ---

@@ -17,6 +17,7 @@ wordpress_url: http://misterblue.com/wwpp/archives/20090226-parking-lot-tide
 date: 2009-02-26 12:04:51
 categories:
 - Travel
+- Blog
 
 
 ---

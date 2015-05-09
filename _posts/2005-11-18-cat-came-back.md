@@ -16,7 +16,7 @@ wordpress_id: 616
 wordpress_url: http://misterblue.com/wwpp/archives/20051118-cat-came-back
 date: 2005-11-18 08:50:39
 categories:
-- Blogroll
+- Blog
 
 
 ---

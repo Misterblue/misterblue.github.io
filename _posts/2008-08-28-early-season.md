@@ -17,6 +17,7 @@ wordpress_url: http://misterblue.com/wwpp/archives/20080828-early-season
 date: 2008-08-28 07:16:43
 categories:
 - Travel
+- Blog
 
 
 ---

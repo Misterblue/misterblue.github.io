@@ -19,6 +19,7 @@ categories:
 - Misterblue
 - Travel
 - Mobile
+- Blog
 
 
 ---

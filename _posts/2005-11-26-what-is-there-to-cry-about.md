@@ -16,7 +16,7 @@ wordpress_id: 622
 wordpress_url: http://misterblue.com/wwpp/archives/20051126-what-is-there-to-cry-about
 date: 2005-11-26 06:23:34
 categories:
-- Blogroll
+- Blog
 
 
 ---

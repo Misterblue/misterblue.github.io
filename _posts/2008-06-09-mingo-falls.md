@@ -20,6 +20,7 @@ categories:
 - Travel
 - Mobile
 - AroundAmerica2008
+- Blog
 
 comments:
 - id: 2690

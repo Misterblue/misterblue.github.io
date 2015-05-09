@@ -16,7 +16,8 @@ wordpress_id: 680
 wordpress_url: http://misterblue.com/wwpp/archives/20070401-customer-service-that-worked
 date: 2007-04-01 10:12:46
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 271
 wordpress_url: /?p=271
 date: 2003-05-26 07:24:44
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 109

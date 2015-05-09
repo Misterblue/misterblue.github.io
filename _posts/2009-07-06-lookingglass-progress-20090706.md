@@ -18,6 +18,7 @@ date: 2009-07-06 10:34:03
 categories:
 - Misterblue
 - LookingGlass
+- Blog
 
 comments:
 - id: 2762

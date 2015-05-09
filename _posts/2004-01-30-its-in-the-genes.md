@@ -16,7 +16,7 @@ wordpress_id: 386
 wordpress_url: /?p=386
 date: 2004-01-30 07:36:21
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 156

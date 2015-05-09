@@ -16,7 +16,7 @@ wordpress_id: 419
 wordpress_url: /?p=419
 date: 2004-04-16 11:40:14
 categories:
-- Blogroll
+- Blog
 
 
 ---

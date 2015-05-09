@@ -16,7 +16,7 @@ wordpress_id: 635
 wordpress_url: http://misterblue.com/wwpp/archives/20060326-living-on-a-biosphere
 date: 2006-03-26 11:14:29
 categories:
-- Blogroll
+- Blog
 
 
 ---

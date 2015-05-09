@@ -19,6 +19,7 @@ categories:
 - Misterblue
 - Programming
 - OpenSimulator
+- Blog
 
 
 ---

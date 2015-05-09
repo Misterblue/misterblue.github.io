@@ -16,7 +16,7 @@ wordpress_id: 602
 wordpress_url: http://misterblue.com/wwpp/archives/20050809-another-day-of-booth-duty
 date: 2005-08-09 06:55:50
 categories:
-- Blogroll
+- Blog
 
 
 ---

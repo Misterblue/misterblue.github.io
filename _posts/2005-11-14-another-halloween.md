@@ -16,7 +16,7 @@ wordpress_id: 614
 wordpress_url: http://misterblue.com/wwpp/archives/20051114-another-halloween
 date: 2005-11-14 10:48:07
 categories:
-- Blogroll
+- Blog
 
 
 ---

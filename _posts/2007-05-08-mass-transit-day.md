@@ -16,7 +16,7 @@ wordpress_id: 685
 wordpress_url: http://misterblue.com/wwpp/archives/20070508-mass-transit-day
 date: 2007-05-08 08:12:37
 categories:
-- Blogroll
+- Blog
 
 
 ---

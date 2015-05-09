@@ -16,7 +16,7 @@ wordpress_id: 647
 wordpress_url: http://misterblue.com/wwpp/archives/20060730-walking-with-the-blackberries
 date: 2006-07-30 09:16:09
 categories:
-- Blogroll
+- Blog
 
 
 ---

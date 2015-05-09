@@ -20,6 +20,7 @@ categories:
 - Thoughts
 - Programming
 - LookingGlass
+- Blog
 
 
 ---

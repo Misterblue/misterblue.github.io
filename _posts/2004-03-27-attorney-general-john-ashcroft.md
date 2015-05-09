@@ -16,7 +16,7 @@ wordpress_id: 408
 wordpress_url: /?p=408
 date: 2004-03-27 08:29:28
 categories:
-- Blogroll
+- Blog
 
 
 ---

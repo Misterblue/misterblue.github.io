@@ -16,7 +16,7 @@ wordpress_id: 387
 wordpress_url: /?p=387
 date: 2004-02-01 09:22:59
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 158

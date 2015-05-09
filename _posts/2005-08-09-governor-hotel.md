@@ -16,7 +16,7 @@ wordpress_id: 605
 wordpress_url: http://misterblue.com/wwpp/archives/20050809-governor-hotel
 date: 2005-08-09 07:30:05
 categories:
-- Blogroll
+- Blog
 
 
 ---

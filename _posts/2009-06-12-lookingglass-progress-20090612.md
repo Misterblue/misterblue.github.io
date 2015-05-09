@@ -17,6 +17,7 @@ wordpress_url: http://misterblue.com/?p=809
 date: 2009-06-12 05:29:16
 categories:
 - Travel
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 400
 wordpress_url: /?p=400
 date: 2004-02-29 09:30:07
 categories:
-- Blogroll
+- Blog
 
 
 ---

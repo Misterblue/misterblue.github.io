@@ -18,6 +18,7 @@ date: 2008-04-27 06:54:43
 categories:
 - Misterblue
 - Mobile
+- Blog
 
 
 ---

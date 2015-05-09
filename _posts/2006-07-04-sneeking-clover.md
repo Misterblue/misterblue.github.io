@@ -16,7 +16,7 @@ wordpress_id: 642
 wordpress_url: http://misterblue.com/wwpp/archives/20060704-sneeking-clover
 date: 2006-07-04 06:48:42
 categories:
-- Blogroll
+- Blog
 
 
 ---

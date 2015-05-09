@@ -13,7 +13,7 @@ author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
 date: 2014-11-30 10:47:08
 categories:
-- Blogroll
+- Blog
 - Misterblue
 - OpenSimulator
 

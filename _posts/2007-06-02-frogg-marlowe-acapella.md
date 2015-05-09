@@ -16,7 +16,7 @@ wordpress_id: 693
 wordpress_url: http://misterblue.com/wwpp/archives/20070602-frogg-marlowe-acapella
 date: 2007-06-02 07:33:16
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 666
 wordpress_url: http://misterblue.com/wwpp/archives/20061218-cold-commute
 date: 2006-12-18 11:03:04
 categories:
-- Blogroll
+- Blog
 
 
 ---

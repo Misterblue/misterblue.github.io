@@ -3,17 +3,19 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-<div class="article">
-    <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        {% if site.comments == true and post.comments == true and site.disqus != '' %}
-          <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
-        {% endif %}
-        <div class="content">
-            {{ post.content }}
+  {% if post.categories contains 'Blog' or post.categories contains 'Misterblue' %}
+    <div class="article">
+        <div class="well">
+            <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
+            {% if site.comments == true and post.comments == true and site.disqus != '' %}
+              <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
+            {% endif %}
+            <div class="content">
+                {{ post.content }}
+            </div>
         </div>
     </div>
-</div>
+  {% endif %}
 {% endfor %}
 
 <div class="pagination">

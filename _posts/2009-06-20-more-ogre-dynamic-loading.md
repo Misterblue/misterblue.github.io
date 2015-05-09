@@ -18,6 +18,7 @@ date: 2009-06-20 01:45:49
 categories:
 - Misterblue
 - Programming
+- Blog
 
 
 ---

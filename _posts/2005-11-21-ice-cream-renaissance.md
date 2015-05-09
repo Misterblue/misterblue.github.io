@@ -16,7 +16,7 @@ wordpress_id: 618
 wordpress_url: http://misterblue.com/wwpp/archives/20051121-ice-cream-renaissance
 date: 2005-11-21 11:02:15
 categories:
-- Blogroll
+- Blog
 
 
 ---

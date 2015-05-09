@@ -18,6 +18,7 @@ date: 2008-02-17 03:23:10
 categories:
 - Misterblue
 - Fun and Weird
+- Blog
 
 comments:
 - id: 2512

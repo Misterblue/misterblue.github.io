@@ -16,7 +16,7 @@ wordpress_id: 638
 wordpress_url: http://misterblue.com/wwpp/?p=638
 date: 2006-05-27 02:12:36
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 688
 wordpress_url: http://misterblue.com/wwpp/archives/20070527-my-little-place-in-the-sun
 date: 2007-05-27 10:22:32
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 620
 wordpress_url: http://misterblue.com/wwpp/archives/20051123-mashed-potato-man
 date: 2005-11-23 11:07:44
 categories:
-- Blogroll
+- Blog
 
 
 ---

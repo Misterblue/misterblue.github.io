@@ -16,7 +16,7 @@ wordpress_id: 401
 wordpress_url: /?p=401
 date: 2004-03-02 07:07:04
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 360
 wordpress_url: /?p=360
 date: 2003-11-15 08:00:58
 categories:
-- Blogroll
+- Blog
 
 
 ---

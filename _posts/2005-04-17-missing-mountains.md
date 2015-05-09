@@ -16,7 +16,7 @@ wordpress_id: 584
 wordpress_url: /?p=584
 date: 2005-04-17 08:07:11
 categories:
-- Blogroll
+- Blog
 
 
 ---

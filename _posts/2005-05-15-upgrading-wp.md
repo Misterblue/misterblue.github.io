@@ -16,7 +16,7 @@ wordpress_id: 588
 wordpress_url: http://misterblue.com/wwpp/archives/20050515-upgrading-wp
 date: 2005-05-15 04:24:37
 categories:
-- Blogroll
+- Blog
 
 
 ---

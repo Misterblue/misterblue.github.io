@@ -16,7 +16,7 @@ wordpress_id: 443
 wordpress_url: /?p=443
 date: 2004-07-08 10:56:09
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 195

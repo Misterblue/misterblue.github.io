@@ -16,7 +16,7 @@ wordpress_id: 288
 wordpress_url: /?p=288
 date: 2003-06-19 09:50:34
 categories:
-- Blogroll
+- Blog
 
 
 ---

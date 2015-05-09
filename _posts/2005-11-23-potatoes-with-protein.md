@@ -16,7 +16,7 @@ wordpress_id: 619
 wordpress_url: http://misterblue.com/wwpp/archives/20051123-potatoes-with-protein
 date: 2005-11-23 10:45:39
 categories:
-- Blogroll
+- Blog
 
 
 ---

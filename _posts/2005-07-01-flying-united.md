@@ -16,7 +16,7 @@ wordpress_id: 594
 wordpress_url: http://misterblue.com/wwpp/archives/20050701-flying-united
 date: 2005-07-01 03:16:58
 categories:
-- Blogroll
+- Blog
 
 
 ---

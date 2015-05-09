@@ -18,6 +18,7 @@ date: 2013-11-29 08:14:19
 categories:
 - Misterblue
 - OpenSimulator
+- Blog
 
 
 ---

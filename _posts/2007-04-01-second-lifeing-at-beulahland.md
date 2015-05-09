@@ -16,7 +16,8 @@ wordpress_id: 681
 wordpress_url: http://misterblue.com/wwpp/archives/20070401-second-lifeing-at-beulahland
 date: 2007-04-01 09:36:07
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

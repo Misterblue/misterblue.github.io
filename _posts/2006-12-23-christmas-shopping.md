@@ -16,7 +16,7 @@ wordpress_id: 668
 wordpress_url: http://misterblue.com/wwpp/archives/20061223-christmas-shopping
 date: 2006-12-23 08:23:26
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,8 @@ wordpress_id: 676
 wordpress_url: http://misterblue.com/wwpp/archives/20070217-valentines-day-in-the-world
 date: 2007-02-17 09:57:41
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

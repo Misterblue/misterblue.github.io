@@ -16,7 +16,7 @@ wordpress_id: 593
 wordpress_url: http://misterblue.com/wwpp/archives/20050628-chicago-trip
 date: 2005-06-28 08:53:30
 categories:
-- Blogroll
+- Blog
 
 
 ---

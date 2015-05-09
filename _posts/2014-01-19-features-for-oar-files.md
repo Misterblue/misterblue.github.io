@@ -18,7 +18,7 @@ date: 2014-01-19 10:55:46
 categories:
 - Misterblue
 - OpenSimulator
-
+- Blog
 
 ---
 I wanted to make the creation of varregions easier so I added someÂ parameters to the 'load oar' simulator command. But, while I was inÂ the area, I got a little carried away.

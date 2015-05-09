@@ -16,7 +16,7 @@ wordpress_id: 891
 wordpress_url: http://misterblue.com/?p=891
 date: 2014-02-16 10:47:08
 categories:
-- Blogroll
+- Blog
 - Misterblue
 - OpenSimulator
 

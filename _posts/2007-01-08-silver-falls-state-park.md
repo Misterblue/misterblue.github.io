@@ -16,7 +16,8 @@ wordpress_id: 670
 wordpress_url: http://misterblue.com/wwpp/archives/20070116-silver-falls-state-park
 date: 2007-01-08 08:44:01
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

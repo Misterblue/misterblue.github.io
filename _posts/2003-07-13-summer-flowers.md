@@ -16,7 +16,7 @@ wordpress_id: 301
 wordpress_url: /?p=301
 date: 2003-07-13 04:48:10
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 118

@@ -16,7 +16,7 @@ wordpress_id: 646
 wordpress_url: http://misterblue.com/wwpp/archives/20060723-oregon-is-hot-too
 date: 2006-07-23 07:26:20
 categories:
-- Blogroll
+- Blog
 
 
 ---

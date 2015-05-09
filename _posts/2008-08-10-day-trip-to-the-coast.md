@@ -18,6 +18,7 @@ date: 2008-08-10 11:31:31
 categories:
 - Misterblue
 - Travel
+- Blog
 
 
 ---

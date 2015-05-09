@@ -16,7 +16,8 @@ wordpress_id: 671
 wordpress_url: http://misterblue.com/wwpp/archives/20070111-meditation-in-the-tibetan-tradition
 date: 2007-01-11 08:34:31
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

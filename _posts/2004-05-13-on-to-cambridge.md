@@ -16,7 +16,7 @@ wordpress_id: 427
 wordpress_url: /?p=427
 date: 2004-05-13 03:55:31
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 185

@@ -16,7 +16,7 @@ wordpress_id: 606
 wordpress_url: http://misterblue.com/wwpp/archives/20050831-some-headlines
 date: 2005-08-31 08:26:45
 categories:
-- Blogroll
+- Blog
 
 
 ---

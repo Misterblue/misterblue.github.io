@@ -16,7 +16,7 @@ wordpress_id: 567
 wordpress_url: /?p=567
 date: 2005-01-30 08:14:16
 categories:
-- Blogroll
+- Blog
 
 comments:
 - id: 1017

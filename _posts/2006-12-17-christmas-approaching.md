@@ -16,7 +16,7 @@ wordpress_id: 663
 wordpress_url: http://misterblue.com/wwpp/archives/20061217-christmas-approaching
 date: 2006-12-17 04:08:53
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -18,6 +18,7 @@ date: 2009-05-09 08:54:56
 categories:
 - Misterblue
 - Thoughts
+- Blog
 
 
 ---

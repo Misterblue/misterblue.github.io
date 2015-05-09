@@ -18,6 +18,7 @@ date: 2008-03-02 05:52:02
 categories:
 - Misterblue
 - Web Tech
+- Blog
 
 comments:
 - id: 2645

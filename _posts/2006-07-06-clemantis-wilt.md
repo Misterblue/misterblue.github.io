@@ -16,7 +16,7 @@ wordpress_id: 644
 wordpress_url: http://misterblue.com/wwpp/archives/20060706-clemantis-wilt
 date: 2006-07-06 07:07:25
 categories:
-- Blogroll
+- Blog
 
 
 ---

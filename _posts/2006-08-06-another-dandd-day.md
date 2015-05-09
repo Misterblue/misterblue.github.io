@@ -16,7 +16,7 @@ wordpress_id: 650
 wordpress_url: http://misterblue.com/wwpp/archives/20060806-another-dandd-day
 date: 2006-08-06 07:01:48
 categories:
-- Blogroll
+- Blog
 
 
 ---

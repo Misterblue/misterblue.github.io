@@ -16,7 +16,7 @@ wordpress_id: 662
 wordpress_url: http://misterblue.com/wwpp/archives/20061124-rain-and-showers
 date: 2006-11-24 04:05:36
 categories:
-- Blogroll
+- Blog
 
 
 ---

@@ -16,7 +16,8 @@ wordpress_id: 675
 wordpress_url: http://misterblue.com/wwpp/archives/20070224-strongly-typed
 date: 2007-02-24 01:54:35
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

@@ -16,7 +16,7 @@ wordpress_id: 597
 wordpress_url: http://misterblue.com/wwpp/archives/20050705-postfix-and-smtp
 date: 2005-07-05 04:31:57
 categories:
-- Blogroll
+- Blog
 
 
 ---

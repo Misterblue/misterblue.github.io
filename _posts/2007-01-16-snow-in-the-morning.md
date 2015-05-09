@@ -16,7 +16,8 @@ wordpress_id: 669
 wordpress_url: http://misterblue.com/wwpp/archives/20070116-snow-in-the-morning
 date: 2007-01-16 07:37:45
 categories:
-- Blogroll
+- Blog
+- Misterblue
 
 
 ---

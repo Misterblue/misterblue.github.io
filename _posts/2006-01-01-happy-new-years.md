@@ -16,7 +16,7 @@ wordpress_id: 632
 wordpress_url: http://misterblue.com/wwpp/archives/20060101-happy-new-years
 date: 2006-01-01 02:30:53
 categories:
-- Blogroll
+- Blog
 
 
 ---

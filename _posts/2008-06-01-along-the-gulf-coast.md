@@ -19,6 +19,7 @@ categories:
 - Misterblue
 - Travel
 - AroundAmerica2008
+- Blog
 
 
 ---

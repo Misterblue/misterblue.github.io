@@ -16,7 +16,7 @@ wordpress_id: 612
 wordpress_url: http://misterblue.com/wwpp/archives/20051113-makeup-blogging
 date: 2005-11-13 06:15:49
 categories:
-- Blogroll
+- Blog
 
 
 ---
