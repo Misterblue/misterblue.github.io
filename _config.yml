@@ -2,11 +2,11 @@
 title: Misterblue
 name: Misterblue
 email: misterblue-mb@misterblue.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Not 'blue' like the mood, but blue like the sky, blue like the bird, blue like the ocean.
 
 # url is currently only used only for the RSS feed in feed.xml
-url: "http://misterblue.github.io"
+url: "http://blog.misterblue.com"
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
@@ -27,7 +27,7 @@ disqus: 'MisterblueMisterblue'
 comments: true
 
 permalink: /:year/:year:month:day-:title
-paginate: 3
+paginate: 5
 
 highlighter: pygments
 markdown: redcarpet

@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-  {% if post.categories contains 'Blog' or post.categories contains 'Misterblue' %}
+  {% if post.categories contains 'blog' or post.categories contains 'misterblue' %}
     <div class="article">
         <div class="well">
             <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
