@@ -16,6 +16,17 @@
             {{ content }}
             </div>
             {% if page.comments %}
+                <hr>
+                <h3>Comments:</h3>
+                {% for comment in page.comments %}
+                    <div class="mb-oldcomment">
+                        <span class="author">{{ comment.author }}</span>
+                        ( <span class="date">{{ comment.date }}</span> ):
+                        {{ comment.content }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% if page.commentable %}
             <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
