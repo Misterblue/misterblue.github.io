@@ -16,23 +16,16 @@ wordpress_id: 781
 wordpress_url: http://misterblue.com/?page_id=781
 date: 2009-03-30 10:17:11
 categories:
-- Travel
+- LookingGlass
+- Programming
 
-comments:
-- id: 2709
-  author: kallitokaco
-  author_email: kallitokaco@web.de
-  author_url: 
-  date: 2009-04-27 07:06:07
-  date_gmt: 2015-04-25 04:22:37
-  content: Thx so much. this is exactly what I needed.
 ---
 <h1>Archive Wrapper</h1>
 <blockquote>
 This article was written in March 2009 and relates to OGRE 1.6.1 [Shoggoth]. Maybe some of this is changed or improved in later versions. 
 </blockquote>
 <p>
-As described in the article on <a href="http://misterblue.com/programming/dynamic-ogre-resources">dynamically loading Ogre resources</a>, I achieved much of the dynamic loading by adding an archive manager for my resource group. The routine acts as a wrapper for <code>Ogre::FileSystemArchive</code> which does the actual file searching.
+As described in the article on <a href="/programming/dynamic-ogre-resources">dynamically loading Ogre resources</a>, I achieved much of the dynamic loading by adding an archive manager for my resource group. The routine acts as a wrapper for <code>Ogre::FileSystemArchive</code> which does the actual file searching.
 </p>
 <pre>
 #pragma once

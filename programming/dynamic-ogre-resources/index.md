@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 status: publish
 published: publish
 title: Dynamic Ogre Resources
@@ -16,65 +16,9 @@ wordpress_id: 759
 wordpress_url: http://misterblue.com/?page_id=759
 date: 2009-03-29 08:41:14
 categories:
-- Travel
+- Programming
+- LookingGlass
 
-comments:
-- id: 2701
-  author: James Wynn
-  author_email: james@jameswynn.com
-  author_url: http://jameswynn.com
-  date: 2009-03-30 07:23:28
-  date_gmt: 2015-04-25 04:22:37
-  content: Awesome work man! I have been trying to figure out the material reload thing for quite some time. Good luck on that patch, it will be a nice addition to Ogre.
-- id: 2702
-  author: Misterblue &raquo; Blog Archive &raquo; Dynamic Loading of Ogre Resources
-  author_email: 
-  author_url: http://misterblue.com/wwpp/archives/20090330-dynamic-loading-of-ogre-resources
-  date: 2009-03-30 10:43:44
-  date_gmt: 2015-04-25 04:22:37
-  content: '[...] figured some of it out and wrote up Dynamic Loading of Ogre Resources. Hopefully this will save some other people many frustrating [...]'
-- id: 2753
-  author: Misterblue &raquo; Blog Archive &raquo; More Ogre Dynamic Loading
-  author_email: 
-  author_url: http://misterblue.com/wwpp/archives/20090620-more-ogre-dynamic-loading
-  date: 2009-06-20 01:45:52
-  date_gmt: 2015-04-25 04:22:37
-  content: '[...] Ogre Dynamic Loading  I updated my page on dynamically loading meshes, materials and textures in Ogre with information for textures. Turns out that the requests for the textures works out but [...]'
-- id: 4511
-  author: peter
-  author_email: yizhang88.net@gmail.com
-  author_url: 
-  date: 2010-12-22 12:31:15
-  date_gmt: 2015-04-25 04:22:37
-  content: "Hi MisterBlue!\r\n    I read your article \"Dynamic Loading of Ogre Resources\",since I have same situation that request ogre resources from servers.It's quit useful for me,alse I have some problem with your pseudo code, \r\n             MeshManager::prepare(meshName, groupName)...\r\n             MeshManager::load(meshName, groupName)...\r\n    please give me more tips and some demo code.\r\n\r\n    Thanks"
-- id: 8067
-  author: mehrshad
-  author_email: mehrshad.NkNz@yahoo.com
-  author_url: 
-  date: 2011-07-12 09:26:25
-  date_gmt: 2015-04-25 04:22:37
-  content: i want to load a big city , can i use this way ? :-?
-- id: 8079
-  author: Misterblue
-  author_email: misterblue@misterblue.com
-  author_url: 
-  date: 2011-07-12 11:07:31
-  date_gmt: 2015-04-25 04:22:37
-  content: Not sure what you are asking, Mehrshad. The description is about adding objects to the Ogre scene graph after Ogre has started running. If you do a little scheduling (only adding a limited number of things between each rendering frame) you should be able to load large numbers of items.
-- id: 73019
-  author: Yossi
-  author_email: yossi.tokash@walla.com
-  author_url: 
-  date: 2014-07-15 11:32:21
-  date_gmt: 2015-04-25 04:22:37
-  content: >-
-    Wow !!!
-
-    A complete breakdown of the resource loading system.
-
-
-
-    Kudos :)
 ---
 <h1>Dynamic Loading of Ogre Resources</h1>
 <blockquote>This article was written in March 2009 and relates to OGRE 1.6.1 [Shoggoth]. Maybe some of this is changed or improved in later versions. <strong>Updated 20090620</strong> with discussion and code on reloading of textures.</blockquote>
@@ -152,7 +96,7 @@ MeshManager::load(meshName, groupName)
                     MeshSerializer.importMesh(memoryCopy)</pre>
 What you should get from all that is the resource system searches across all the archives several different ways in an attempt to find the data for the mesh. Once a datastream is found, it is read into memory and later imported as the mesh data. So, if I just slip in a new archive, I can load anything I want into the mesh.
 
-A copy of sample archive code is <a href="http://misterblue.com/programming/dynamic-ogre-resources/ogre-archive-wrapper">HERE</a>. Essentially, it creates an instance of <code>Ogre::FilesystemArchive</code> to do the actual filesystem operations and otherwise looks at the requested resource name and, if it's one of mine, it says "yes it exists". If some thing actually tries to load the resource, the routine starts the process of downloading the actual resource while, in the mean time, returning a stream of default contents. In my case, new meshes show up as a sphere made of a glittery substance until the real mesh is loaded and the displayed mesh is updated.
+A copy of sample archive code is <a href="/programming/dynamic-ogre-resources/ogre-archive-wrapper">HERE</a>. Essentially, it creates an instance of <code>Ogre::FilesystemArchive</code> to do the actual filesystem operations and otherwise looks at the requested resource name and, if it's one of mine, it says "yes it exists". If some thing actually tries to load the resource, the routine starts the process of downloading the actual resource while, in the mean time, returning a stream of default contents. In my case, new meshes show up as a sphere made of a glittery substance until the real mesh is loaded and the displayed mesh is updated.
 
 My updating works by storing the downloaded mesh into the filesystem in the correct cache location (where the filesystem archive will find it) and then, between frames, does a <code>mesh-&gt;reload()</code>. This eventually causes another entry into my archive routine for the mesh of that name and this time it is on the disk. The second time, the mesh is loaded from the disk and all is good.
 <h3>Materials Are Resources But They Are Different</h3>
