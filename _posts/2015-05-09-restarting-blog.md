@@ -14,7 +14,7 @@ author_url: http://misterblue.com
 date: 2015-05-09 11:30:18
 categories:
 - Misterblue
-
+- Meta
 ---
 After a long hiatus, I've decided to start the blog again.
 I have lots of design stuff I want to do around virtual worlds
