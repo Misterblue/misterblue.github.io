@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{%for post in site.posts %}
+    {% if post.categories contains "aroundamerica2008" %}
+        {% include one-post.html thepost=post %}
+    {% endif %}
+{% endfor %}

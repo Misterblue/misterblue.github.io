@@ -1,0 +1,12 @@
+<h1>Categories</h1>
+<ul>
+  {% for cat in site.data.categories.display-categories %}
+    {% assign catinfo = site.data.categories.categories[cat] %}
+    <li><a href="{{ catinfo.url }}"
+      {% if catinfo.hoverText != "" %}
+        alt="{{ catinfo.hoverText }}"
+      {% endif %}
+      >{{ catinfo.label }}</a>
+    </li>
+  {% endfor %}
+</ul>

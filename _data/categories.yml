@@ -1,0 +1,69 @@
+# List of categories and if they should appear in the sidebar
+
+display-categories:
+    - opensimulator
+    - basil
+    - fun and weird
+    - programming
+    - lookingglass
+    - travel
+    - thoughts
+    - life
+    - meta
+    - aroundamerica2008
+    - family
+    - photography
+
+categories:
+    basil:
+      label: Basil
+      url: /categories/basil.html
+    programming:
+      label: Programming
+      url: /categories/programming.html
+    opensimulator:
+      label: OpenSimulator
+      url: /categories/opensimulator.html
+    lookingglass:
+      label: LookingGlass
+      url: /categories/lookingglass.html
+    fun and weird:
+      label: Fun and Weird
+      url: /categories/funandweird.html
+    travel:
+      label: Travel
+      url: /categories/travel.html
+    thoughts:
+      label: Thoughts
+      url: /categories/thoughts.html
+    life:
+      label: Life
+      url: /categories/life.html
+    meta:
+      label: Meta
+      url: /categories/meta.html
+    aroundamerica2008:
+      label: AroundAmerica2008
+      url: /categories/aroundamerica2008.html
+    family:
+      label: Family
+      url: /categories/family.html
+    photography:
+      label: Photography
+      url: /categories/photography.html
+
+    secondlife:
+      label: Second Life
+      url: /categories/secondlife.html
+    blog:
+      label: Blog
+    general:
+      label: General
+    misterblue:
+      label: Misterblue
+    mobile:
+      label: Mobile
+    portlandoregonusa:
+      label: Portland Oregon USA
+    webtech:
+      label: Web Tech
