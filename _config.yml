@@ -26,7 +26,7 @@ gaaccount: ''
 disqus: 'MisterblueMisterblue'
 comments: true
 
-permalink: /:year/:year:month:day-:title
+permalink: /:year/:year-:month-:day-:title
 paginate: 5
 
 highlighter: pygments
