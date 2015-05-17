@@ -1,7 +1,7 @@
 ---
 layout: post
+# status is 'draft' or 'publish'
 status: draft
-published: draft
 title: One Viewer to Rule Them All
 author:
   display_name: Misterblue
@@ -12,6 +12,7 @@ author_login: Misterblue
 author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
 date: 2015-05-15 11:22:20
+# categories contains 'Misterblue' or 'BlogRoll' to be in main blog list
 categories:
 - Misterblue
 - Basil
