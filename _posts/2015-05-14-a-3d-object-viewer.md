@@ -45,6 +45,6 @@ I will describe my approach in fugure posts. Eventually, the GitHub
 project will go public.
 
 
-[1] http://opensimultor.org/
-[2] http://secondlife.com/
-[3] http://highfidelity.io/
+[1]: http://opensimultor.org/
+[2]: http://secondlife.com/
+[3]: http://highfidelity.io/

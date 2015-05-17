@@ -13,7 +13,6 @@ author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
 date: 2015-05-15 11:22:20
 categories:
-- Misterblue
 - Basil
 ---
 My (previous post)[1] referred to something called a 'viewer'.
@@ -41,7 +40,7 @@ Model viewer as a camera and layers
 Description of augmented reality and how it fits into this model.
 
 
-[1] http://blog.misterblue.com/archive/2015/2015-05-14-a-3d-object-viewer
-[2] Oculus
-[3] GearVR
+[1]: http://blog.misterblue.com/archive/2015/2015-05-14-a-3d-object-viewer
+[2]: Oculus
+[3]: GearVR
 
