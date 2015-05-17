@@ -3,8 +3,10 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-  {% if post.categories contains 'blog' or post.categories contains 'misterblue' %}
-    {% include one-post.html thepost=post %}
+  {% if post.status == "published" %}
+    {% if post.categories contains 'blog' or post.categories contains 'misterblue' %}
+      {% include one-post.html thepost=post %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 
