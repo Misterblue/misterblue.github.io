@@ -1,6 +1,8 @@
 ---
 layout: post
+# 'status' is the main flag of where the post will appear.
 # status is 'draft' or 'publish'
+# if status is 'publish', post will apprear in blog roll.
 status: draft
 title: One Viewer to Rule Them All
 author:
@@ -12,9 +14,7 @@ author_login: Misterblue
 author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
 date: 2015-05-15 11:22:20
-# categories contains 'Misterblue' or 'BlogRoll' to be in main blog list
 categories:
-- Misterblue
 - Basil
 ---
 My (previous post)[1] referred to something called a 'viewer'.

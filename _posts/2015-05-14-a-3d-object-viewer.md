@@ -41,8 +41,8 @@ have formed in the virtual world and there is no way of travelling between.
 So, my question is: how could one build a virtual world viewer where an
 OpenSimulator avatar could stand next to a [HighFidelity][3] avatar?
 
-I will describe my approach in fugure posts. Eventually, the GitHub
-project will go public.
+I will describe my approach in future posts.
+Eventually, the GitHub project will go public.
 
 
 [1]: http://opensimultor.org/

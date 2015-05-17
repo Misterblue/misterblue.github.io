@@ -4,9 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
   {% if post.status == "publish" %}
-    {% if post.categories contains 'blog' or post.categories contains 'misterblue' %}
-      {% include one-post.html thepost=post %}
-    {% endif %}
+    {% include one-post.html thepost=post %}
   {% endif %}
 {% endfor %}
 

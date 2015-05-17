@@ -2,7 +2,7 @@
 layout: default
 ---
 {%for post in site.posts %}
-    {% if post.categories contains "programming" %}
+    {% if post.status == "publish" and post.categories contains "programming" %}
         {% include one-post.html thepost=post %}
     {% endif %}
 {% endfor %}
