@@ -41,6 +41,21 @@ support protocol versioning.
 
 Avro is a newer protocol but, rather than pre-compiling the code stubs, it
 evaluates the schemas and messages at runtime.
+The feature of schema evolution is considered the winning feature in a
+post by Jon Zuanich entitled [Three Reasons Why Apache Avro Data Serialization is a Good Choice for OpenRTB][6].
+The three reasons are schema evolution, untagged (smaller) data, and dynamic typing.
+
+Other random things that might affect selection:
+* ProtoBuffers is used by Sirikata
+
+[A case against using Protobuf for transport in REST Services][7] makes the arguement
+that the lack of inheritance and polymorphism in Protobuf is a show stopper for
+game protocols.
+The article concludes that JSON with the [Jackson][8] library is the proper choice.
+
+
+
+
 
 ICE
 
@@ -51,6 +66,7 @@ ICE
 [3]: http://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
 [4]: http://www.slideshare.net/IgorAnishchenko/pb-vs-thrift-vs-avro
 [5]: http://en.wikipedia.org/wiki/Internet_Communications_Engine
-
-
+[6]: http://blog.cloudera.com/blog/2011/05/three-reasons-why-apache-avro-data-serialization-is-a-good-choice-for-openrtb/
+[7]: http://techtraits.com/noproto/
+[8]: http://jackson.codehaus.org/
 
