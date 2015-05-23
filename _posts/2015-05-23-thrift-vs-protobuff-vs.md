@@ -3,7 +3,7 @@ layout: post
 # 'status' is the main flag of where the post will appear.
 # status is 'draft' or 'publish'
 # if status is 'publish', post will apprear in blog roll.
-status: draft
+status: publish
 title: Thrift vs Protocol Buffers vs so many more
 author:
   display_name: Misterblue
