@@ -1,0 +1,112 @@
+---
+layout: page
+title: About
+yearRead: 2005
+---
+<h2>MisterBlue's Books I've Read</h2>
+
+<p>I still read those paper based things.  Here are the books that I have
+read in the last year or so.  Clicking on the cover of book will take you
+to the Amazon page for that book where you can get other reader's comments and,
+if the mood hits you, purchase the book.</p>
+
+<p>To ease your cognitive load, the books are rated with zero to four
+"Roberts".  A rough guide:</p>
+
+<table border="0" cellpadding="2" cellspacing="0" width="86%">
+  <tbody>
+	  <tr>
+		<td width="22%" align="center">
+			<img border="0" src="./images/RobertRate4.jpg" width="97">
+		</td>
+		<td width="78%">
+			<b>Four Roberts</b>
+			: Buy it. Find it, Read it. Good, good, good.
+		</td>
+		</tr>
+		<tr>
+			<td width="22%" align="center">
+				<img border="0" src="./images/RobertRate3.jpg" width="97">
+			</td>
+			<td width="78%">
+				<b>Three Roberts</b>
+				: Well, every author can't be Shakespeare
+				or Huxley.  There are interesting characters or maybe an
+				interesting place.  In general, a good book.
+			</td>
+		</tr>
+		<tr>
+			<td width="22%" align="center">
+				<img border="0" src="./images/RobertRate2.jpg" width="97">
+			</td>
+			<td width="78%">
+				<b>Two Roberts</b>:
+				You are standing in the
+				book store about to fall for the same title or cover art that I
+				did.  You will read the book and conclude it's not the best
+				literature you have read but, on the other hand, 
+				you have also read much
+				worse. You are trapped in an airplane or bored at the
+				beach and this book will fill the time.</td>
+		</tr>
+		<tr>
+			<td width="22%" align="center">
+				<img border="0" src="./images/RobertRate1.jpg" width="97">
+			</td>
+			<td width="78%">
+				<b>One Robert</b>: 
+				you will have regrets in the morning.
+			</td>
+		</tr>
+		<tr>
+			<td width="22%" align="center">
+				<img border="0" src="./images/RobertRate0.jpg" width="97">
+			</td>
+			<td width="78%">
+				<b>Zero Roberts</b>: 
+				why did the publisher bother?  
+				Don't be an accessory to the crime.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p> </p>
+
+<table class="mb-bookTable">
+    <tbody>
+        <tr>
+            <td class="mb-bookCover">
+            </td>
+            <td class="mb-bookDescription">
+                <font size="+1">
+                    <b>Books Currently Being Read</b>
+                </font>
+            </td>
+        </tr>
+        {% for book in site.data.books %}
+            {% if book.yearRead == page.yearRead %}
+                <tr>
+                    <td class="mb-bookCover">
+                        <a name="{{ book.title }}"></a>
+                        <a href="{{ book.amazonUrl }}">
+                            <img src="./images/{{ book.coverImage }}" border="0" width="100">
+                            <img src="./images/AmazonSmall.gif" border="0" width="100" height="21">
+                        </a>
+                    </td>
+                    <td class="mb-bookDescription">
+                        <div class="mb-bookTitle"> {{ book.title }} </div>
+                        <div class="mb-bookAuthor">
+                            by
+                            <a href="{{ book.authorUrl }}"> {{ book.author }} </a> 
+                        </div>
+                        <p class="mb-bookComment">
+                            {{ book.comment }}
+                        </p>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+{% include bookNav.html %}

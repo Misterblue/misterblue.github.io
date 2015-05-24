@@ -1,0 +1,27 @@
+# Listing of current books
+
+- title: Baudolino
+  yearRead: 2005
+  amazonUrl: http://www.amazon.com/exec/obidos/ASIN/0151006903/misterblue
+  coverImage: Book_Baudolino.jpg
+  author: Umberto Eco
+  authorUrl: http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-author=Eco%2C%20Unberto/
+  comment:
+
+- title: The Contemplative Heart
+  yearRead: 2005
+  amazonUrl: http://www.amazon.com/exec/obidos/ASIN/189373210X/misterblue
+  coverImage: Book_ContemplativeHeart.jpg
+  authorUrl: http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-author=inley%2C%20James/
+  author: James Finley
+  comment:
+
+- title: Genome
+  yearRead: 2005
+  amazonUrl: http://www.amazon.com/exec/obidos/ASIN/0060932902/misterblue
+  coverImage: Book_Genome.jpg
+  authorUrl: http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-author=Ridley,%20Matt/
+  author: Matt Ridley
+  comment:
+
+
