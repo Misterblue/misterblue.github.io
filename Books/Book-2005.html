@@ -1,0 +1,43 @@
+---
+layout: page
+title: Misterblue Books 2005
+yearRead: 2005
+---
+<table class="mb-bookTable">
+    <tbody>
+        <tr>
+            <td class="mb-bookCover">
+            </td>
+            <td class="mb-bookDescription">
+                <font size="+1">
+                    <b>Books read in {{ page.yearRead }}</b>
+                </font>
+            </td>
+        </tr>
+        {% for book in site.data.books %}
+            {% if book.yearRead == page.yearRead %}
+                <tr>
+                    <td class="mb-bookCover">
+                        <a name="{{ book.title }}"></a>
+                        <a href="{{ book.amazonUrl }}">
+                            <img src="./images/{{ book.coverImage }}" border="0" width="100">
+                            <img src="./images/AmazonSmall.gif" border="0" width="100" height="21">
+                        </a>
+                    </td>
+                    <td class="mb-bookDescription">
+                        <div class="mb-bookTitle"> {{ book.title }} </div>
+                        <div class="mb-bookAuthor">
+                            by
+                            <a href="{{ book.authorUrl }}"> {{ book.author }} </a> 
+                        </div>
+                        <p class="mb-bookComment">
+                            {{ book.review }}
+                        </p>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+{% include bookNav.html %}
