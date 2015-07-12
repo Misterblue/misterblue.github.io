@@ -19,13 +19,14 @@ date: 2015-07-10 21:06:20   # SET DATE
 categories:
 - Basil
 - Programming
-# comments:
-# - id: 100   # unused number
-#   author: AUTHOR-HANDLE
-#   author_email: AUTHOR-EMAIL
-#   author_url:
-#   date: 2004-10-09 09:22:40  # SET DATE
-#   content: COMENT TEXT
+comments:
+- id: 100   # unused number
+  author: Misterblue
+  author_email: misterblue-blog@misterblue.com
+  author_url:
+  date: 2015-07-12 09:22:40  # SET DATE
+  content: >-
+    Not a real comment. This is just a test of my Jekyll/Liquid hacking to make comments work.
 # - id: 101
 #   author: Misterblue
 #   author_email: misterblue-mt@misterblue.com

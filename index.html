@@ -4,7 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
   {% if post.status == "publish" %}
-    {% include one-post.html thepost=post %}
+    {% include one-post.html thepost=post thecontent=post.content ownpage="no" %}
   {% endif %}
 {% endfor %}
 
