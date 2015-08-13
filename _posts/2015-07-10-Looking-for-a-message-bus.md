@@ -44,6 +44,7 @@ A message bus seems the right thing to send notices and updates
 around the whole distributed application.
 
 I'm thinking some pub/sub system. Some criteria are:
+
 * provides asynchronous notifications and status between network distributed programs
 * low volume: after setup, messages will be rare
 * light weight: both the clients and servers needs to be small and simple
