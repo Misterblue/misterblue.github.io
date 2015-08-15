@@ -1,3 +1,12 @@
+{% comment %}
+    Display one post.
+    This is used on a page (like in the main page blog loop) to display the blog entries.
+    The parameters:
+        thepost: the control structure for the post (with date, url, ...)
+        thecontent: the content of the post (often post.content)
+        ownpage: either 'yes' or 'no' if this is displaying the article on its own page.
+            If on own page, comments are expanded otherwise they are summarized.
+{% endcomment %}
 {% assign thepost = include.thepost %}
 {% assign thecontent = include.thecontent %}
 {% assign ownpage = include.ownpage %}

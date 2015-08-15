@@ -1,15 +1,16 @@
 # List of categories and if they should appear in the sidebar
+# Remember to update categories/_categories and run _buildCategories.sh.
 
 display-categories:
-    - opensimulator
     - basil
-    - fun and weird
+    - meta
+    - opensimulator
     - programming
     - lookingglass
     - travel
+    - fun and weird
     - thoughts
     - life
-    - meta
     - aroundamerica2008
     - family
     - photography
