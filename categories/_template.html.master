@@ -2,7 +2,7 @@
 layout: default
 ---
 {%for post in site.posts %}
-    {% if post.status == "publish" and post.categories contains "second life" %}
+    {% if post.status == "publish" and post.categories contains "CATEGORYNAME" %}
         {% include one-post.html thepost=post %}
     {% endif %}
 {% endfor %}

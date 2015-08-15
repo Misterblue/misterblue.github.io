@@ -18,15 +18,18 @@ categories:
     basil:
       label: Basil
       url: /categories/basil.html
+      hoverText: 3D viewer part of the Herbal system
     programming:
       label: Programming
       url: /categories/programming.html
     opensimulator:
       label: OpenSimulator
       url: /categories/opensimulator.html
+      hoverText: the OpenSimulator virtual world project
     lookingglass:
       label: LookingGlass
       url: /categories/lookingglass.html
+      hoverText: an old virtual world viewer using Ogre and C#
     fun and weird:
       label: Fun and Weird
       url: /categories/funandweird.html
