@@ -1,13 +1,10 @@
 {% comment %}
-    A page that contains just the content.
+    A page that contains just the content without the navigation on the left.
 {% endcomment %}
 {% include header.html %}
 
 <div class="container container-left">
     <div class="row">
-        <div class="col-md-3 hidden-xs">
-            {% include sidebar.html %}
-        </div>
         <div class="col-md-9">
             {{ content }}
         </div>

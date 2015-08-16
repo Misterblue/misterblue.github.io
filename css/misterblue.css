@@ -44,3 +44,10 @@ td.mb-bookDescription {
 }
 .mb-bookComment {
 }
+
+#herbal-toc {
+    float: right;
+    border: 2px solid #c0c0c0;
+    margin: 10px;
+    padding: 5px;
+}
