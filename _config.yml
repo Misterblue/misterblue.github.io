@@ -33,7 +33,7 @@ highlighter: pygments
 # Redcarpet doc: https://github.com/vmg/redcarpet
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "footnotes", "tables", "with_toc_data"]
 encoding: utf-8
 
 excerpt_separator: <!-- more -->
