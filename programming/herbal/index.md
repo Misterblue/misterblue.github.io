@@ -3,7 +3,7 @@ layout: page
 ---
 <div id="herbal-toc">
   <ol>
-    <li><a href="#3d-virtual-world-and-augmented-reality-architecture">Introduction</a></li>
+    <li><a href="#3d-virtual-world-and-augmented-reality-viewer-architecture">Introduction</a></li>
     <li><a href="#finding-content-servers">Finding Content Servers</a></li>
     <li><a href="#the-basil-viewer">The Basil Viewer</a></li>
     <li><a href="#coordinate-system">Coordinate System</a></li>
@@ -26,7 +26,7 @@ layout: page
   </ol>
 </div>
 
-# 3D Virtual World and Augmented Reality Architecture
+# 3D Virtual World and Augmented Reality Viewer Architecture
 
 This article describes a system for
 viewing virtual worlds and augmented reality.
@@ -40,6 +40,9 @@ The goal is to create a system where an
 For augmented reality, one can look out into the
 real world and see information from different sources all merged
 into one enhanced view.
+This viewing system can have many instantiations from 3D headsets to
+phones to desktops and can be used for education, entertainment,
+training, and gaming.
 
 I hope that, after reading this document, that you will have an understanding
 on how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
