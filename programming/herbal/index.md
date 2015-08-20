@@ -9,6 +9,7 @@ layout: page
     <li><a href="#coordinate-system">Coordinate System</a></li>
     <li><a href="#space-servers">Space Servers</a></li>
     <li><a href="#making-a-system">Making a System</a></li>
+    <li><a href="#the-virtual-worlds">The Virtual Worlds</a></li>
     <li><a href="#use-cases">Use Cases
       <ol>
         <li><a href="#use-case:-virtual-worlds">Virtual Worlds</a></li>
@@ -27,13 +28,16 @@ layout: page
 
 # 3D Virtual World and Augmented Reality Architecture
 
-This article describes an overall system for creating a
-virtual world and augmented reality display system.
-
-For virtual worlds, the goal is to have a system where an
+This article describes a system for
+viewing virtual worlds and augmented reality.
+This 'herbal' system is not only good for you
+but it has interfaces for adapting many different
+existing virtual world and augmented reality
+systems to a single view.
+The goal is to create a system where an
 [OpenSimulator] avatar can stand next to and interact with a
 [High Fidelity] avatar.
-For augmented reality, one should be able to look out into the
+For augmented reality, one can look out into the
 real world and see information from different sources all merged
 into one enhanced view.
 
@@ -41,11 +45,14 @@ I hope that, after reading this document, that you will have an understanding
 on how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
 to name a few) as well as existing augmented reality systems (ADD SOME HERE)
 can be made part of this general architecture.
+This article describes the general concepts and architecture
+and more detailed and focused documents will be created for the
+different components of the system.
 
 ## Finding Content Servers
 
-Image building a computer system for looking at a place.
-This 'view' looking into a virtual world
+Imagine building a computer system for looking at a place.
+The 'view' looking into a virtual world
 or looking out into the real world
 has a 'camera' at some location that is looking in some direction.
 The problem is is figure out what that camera sees and how to access
@@ -77,7 +84,7 @@ consists of the local village as well as the mountains in the distance.
 This introduces the idea of a service
 that holds information about all the object servers for filling 
 the world space.
-All the object servers  register with this "location service"
+All the object servers register with this "location service"
 and the location service is queried by viewers to get the handlers
 for all the space being viewed.
 Think of it as the view being split into 3D
@@ -101,15 +108,15 @@ is easy.
 
 This leads us to the viewer -- the piece of code that combines the objects
 presented by the multiple space servers into a coordinated view for a user.
-For ease of reference, the initial viewer is named "Basil".
+For ease of reference, the viewer is named "Basil".
 
 Basil has the job of communicating with multiple space servers and combining
 their objects into a consistent view for the user.
 
-Think of the [X11 server] architecture for 2D content.
-The X11 server was a viewer service for 2D content.
+Think of the [X11 server] architecture.
+The X11 server is a viewer service for 2D content.
 Multiple 2D content providers (xterm consoles, xclocks, ...) connected to
-one server that managed the display of multiple 2D object on one display.
+one server that manages the display of multiple 2D object on one display.
 The applications that presented 2D information were separate from the
 display engine and the manager for the multiple 2D areas (the "windows manager")
 was also separate from the 2D applications.
@@ -120,7 +127,7 @@ while the manager of this coordinated view is separate from both the viewer
 and the multiple sources.
 This would solve many problems of existing viewers where the content connection
 and the UI were intimately linked.
-For Basil, the UI would be separate code that connects to the view service and
+For Basil, the UI is a separate program that connects to the view service and
 manages the multiple space servers.
 The UI is just another service and thus can be replaced if needed.
 
@@ -136,12 +143,12 @@ the features available in current game engines
 That plus some coordination
 functions so multiple object suppliers can present a unified view for the user.
 
-One feature of Basils additive nature is that multiple space servers can
+One feature of Basil's additive nature is that multiple space servers can
 fill the same space.
-For instance, if a space was filled with both static and dynamic objects
-(tables and walls along with a realtime avatar), there could be multiple
+For instance, a space could be filled with both static and dynamic objects
+(tables and walls along with a real-time avatar) and there would be multiple
 space servers with one presenting the static objects and a different
-one displaying the realtime avatar.
+one displaying the real-time avatar.
 In this case, the two space servers could be using completely different
 protocols, caching schemes, and update strategies for the display of their objects.
 
@@ -170,7 +177,7 @@ Rendering a view for a machine is not precluded either.
 
 One problem with merging multiple real world and virtual world
 spaces is the coordinate system.
-The Herbal System attempts to solve this by using a 
+The [Herbal System] attempts to solve this by using a 
 known coordinate system that all applications can fit into.
 That coordinate system is [WGS 1984] which is the world coordinate
 system used by the GPS system.
@@ -218,8 +225,6 @@ So the space servers have to solve the problems of synchronization and
 latency between the simulated world and the view being presented.
 This is the main job of the space servers that connect to Basil.
 
-The space server is where most of the adaption and conversion happens
-between some virtual world server.
 The space server is the adaptor between, for instance, a [OpenSimulator]
 based region and Basil.
 This has to include format conversion and event passing.
@@ -239,7 +244,7 @@ necessary as well as coordinate conversion to make the
 [OpenSimulator] regions appear in a reasonable place in the
 real-world coordinates of Basil.
 
-## Making a System
+## Making Viewer System
 
 The space server query service and the Basil viewer are just parts
 of a system that can create a view of layers of a world. The following
@@ -247,29 +252,91 @@ diagram shows many of the parts.
 
 There exists a session server ([Pesto]) that handles the user's ongoing
 state and which viewer is interesting at the moment.
-Although not an early part of the Herbal design, it is expected that,
+Although not an early part of the [Herbal System] design, it is expected that,
 in the future, users will always be online and their connection to the
 shared world will be through multiple viewers.
-Pesto has the job of connecting the user to viewers and the necessary
+[Pesto] has the job of connecting the user to viewers and the necessary
 services in these different environments.
 
 One early project is [Ragu] which is a space server for [OpenSimulator].
+
+## The Virtual Worlds
+
 
 # Use Cases
 
 ## Use Case: Virtual Worlds
 
+Putting on a headset, you enter a 3D virtual world. As you look around
+you see a rich landscape under the foriegn sun with animals and avatars
+wandering around. As you turn your head and walk, you move in the
+landscape where you interact with the other inhabitants of this
+virtual world.
+
+To create this view, the "viewer" -- in this case, the program collecting
+and displaying the 3D view in the headset -- queries the location service
+to find the space servers for the direction the headset is "looking".
+What is returned is a set of space servers that can fill the viewed
+area.
+
+It might also receive multiple 'layers' within a space.
+
+
+
 ## Use Case: Augmented Reality
 
+Imagine a manually driven car (radical, I know) that has an enhanced
+front wind shield that can display text and images. The wind shield could
+be a transparent OLED screen where images can appear anywhere on the glass.
+
+Further imagine a eye tracking system that tracks the location of the driver's
+eyes. Using this information, the display system can compute where on the
+wind shield to display something so it would overlay the view of something
+ahead of the car. For instance, a stop light hanging over the road could
+have text counting down the seconds until the light turns green
+semi-transparently appearing on the wind shield where it would appear to
+the driver as being on the stop light. As the driver moves her head, the
+text on the wind shield would move around so it stayed overlaid on the
+stoplight.
+
+In addition to the stoplight, there is information about the road (speed
+limits, lane information, ...), information about the weather, information
+about the traffic, and information about the businesses and homes
+around the car. So, in addition to all the technical problems of deciding
+what and how to display information on this wind shield, there is the
+problem of connecting to the multiplicity of information services needed
+to create this view.
+
+Thinking of the Herbal architecture, the car would query the location service
+requesting connections to the space servers ahead of the car.
+The response would be city servers (for intersection information and
+construction alerts), servers for the buildings within the view, and more.
+The "viewer" -- in this case the program displaying the information on
+the wind shield -- would then query the multitude of space servers and
+receive infromation on displayable information. All this would appear
+on the wind shield.
+
+You can easily see how this would also work for augmented reality glasses
+or anything that wants to visually map information onto the real world.
+
 # Extra Stuff
+
+* Challanges
+  * Latency
+  * Control plane
+  * Managing distribution
+* Docker
+* Scalability
+* Mobile
+* Bearer Certificates
 
 ## Some Licensing Philosophy
 
 I believe that business and innovation is advanced by common infrastructures.
-One example is the road system.
-There could be independently owned roads with tolls so each owner can support
-their piece of road.
-Think of such a world.
+One real world expression of this is the public road system.
+The world could consist of independently owned roads with tolls.
+In this world, each owner supports their piece of road.
+Imagine such a road system.
 Different pieces of road would conform to different design standards.
 Toll collection system would be different with different payment and membership
 requirements.
@@ -279,16 +346,16 @@ Some destinations just wouldn't have roads.
 
 But if an entity creates a common infrastructure of uniform roads, travel
 and shipment becomes easy. The roads still aren't free (taxes through
-a government or some such) but now commerce and mobility explodes.
+a government or a single company) but now commerce and mobility explodes.
 
 My assertion is that overall prosperity is greater when there are many
 uses and businesses built upon the common infrastructure vs the world
 where there are businesses making money off creating the infrastructure.
 Some economists probably have opinions here.
 
-For the [Herbal System], I see it as a common infrastructure that enables
-shared and extensible viewing of images in the real and virtual worlds
-and the overall ecosystem will be larger, more innovative, and more
+I see the [Herbal System] as a common infrastructure that enables
+shared and extensible viewing of images in the real and virtual worlds.
+The overall ecosystem will be larger, more innovative, and more
 prosperous if this common infrastructure is created and made available
 without barriers.
 
@@ -298,7 +365,7 @@ available and in the open.
 Some of the modules could have instances
 created for specific uses and, since the glue between components is
 the protocols, these instances could be proprietary.
-Addtionally, some reference designs of certain modules could
+Additionally, some reference designs of certain modules could
 have a more flexible license ([BSD License], [Apache License], [MIT License], ...) 
 but, in general, the core development should happen in a larger,
 public community.
@@ -308,7 +375,7 @@ public community.
 Just for fun, the various components have herbal names.
 This started with the [Basil Viewer] and 
 spilled over into [Pesto] and [Ragu].
-Green, leafy herbs are good for you.
+Green, leafy herbs are good for you and taste good too.
 
 ## Legal Stuff
 
@@ -324,12 +391,12 @@ described above.
 [WGS 1984]: http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html
 [double]: https://en.wikipedia.org/wiki/Double-precision_floating-point_format
 [X11 Server]: https://en.wikipedia.org/wiki/X_Window_System
-[Basil Viewer]: http://basilviewer.org/
-[View Service]: http://loc-loc.net/
 [OpenSimulator]: http://opensimulator.org/
 [High Fidelity]: http://highfidelity.io/
 [Oculus]: http://www.oculus.com/
+[View Service]: http://loc-loc.net/
 [Herbal System]: http://herbal3d.org/
+[Basil Viewer]: http://basilviewer.org/
 [Pesto]: http://misterblue.github.io/pesto/
 [Ragu]: http://misterblue.github.io/ragu/
 [Sirikata]: http://sirikata.org/
