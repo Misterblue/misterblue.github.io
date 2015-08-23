@@ -34,27 +34,30 @@ This 'herbal' system is not only good for you
 but it has interfaces for adapting many different
 existing virtual world and augmented reality
 systems to a single view.
-The goal is to create a system where an
+Thist creates a system where an
 [OpenSimulator] avatar can stand next to and interact with a
 [High Fidelity] avatar.
+
 For augmented reality, one can look out into the
 real world and see information from different sources all merged
 into one enhanced view.
-This viewing system can have many instantiations from 3D headsets to
+
+This works for everything from 3D headsets to
 phones to desktops and can be used for education, entertainment,
 training, and gaming.
 
-I hope that, after reading this document, that you will have an understanding
-on how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
+After reading this document you will understand
+how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
 to name a few) as well as existing augmented reality systems (ADD SOME HERE)
-can be made part of this general architecture.
+can be a part of this general architecture.
+
 This article describes the general concepts and architecture
-and more detailed and focused documents will be created for the
+while more detailed and focused documents will be created for the
 different components of the system.
 
 ## Finding Content Servers
 
-Imagine building a computer system for looking at a place.
+Imagine a computer system for looking at a place.
 The 'view' looking into a virtual world
 or looking out into the real world
 has a 'camera' at some location that is looking in some direction.
