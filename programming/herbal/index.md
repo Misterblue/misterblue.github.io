@@ -6,7 +6,7 @@ layout: page
     <li><a href="#3d-virtual-world-and-augmented-reality-viewer-architecture">Introduction</a></li>
       <ol>
         <li><a href="#the-pieces">The Pieces</a></li>
-        <li><a href="#finding-content-servers">Finding Content Servers</a></li>
+        <li><a href="#finding-space-servers">Finding Space Servers</a></li>
         <li><a href="#the-basil-viewer">The Basil Viewer</a></li>
         <li><a href="#coordinate-system">Coordinate System</a></li>
         <li><a href="#space-servers">Space Servers</a></li>
@@ -33,8 +33,8 @@ layout: page
 
 This article describes a system for
 viewing virtual worlds and augmented reality.
-This 'herbal' system is not only good for you
-but it has interfaces for adapting many different
+This 'herbal' system is not only healthy
+but it adapts many different
 existing virtual world and augmented reality
 systems to a single view.
 This creates a single 3D view where an
@@ -47,22 +47,21 @@ different sources all merged into one enhanced view.
 
 This viewer architecture works for everything from 3D headsets to
 phones to desktops.
-It is useful for uses including education, entertainment,
-training, and gaming.
+It is useful for education, entertainment, training, and gaming.
 
 After reading this document you will understand
 how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
 to name a few) as well as existing augmented reality systems (ADD SOME HERE)
 can be connected to a single 3D view.
 
-This article describes the general concepts and architecture
-while more detailed and focused documents will be created for the
-different components of the system.
+
+General concepts and architecture are described here.
+More detailed and focused documents will be created for the
+implementation details.
 
 ## The Pieces
 
-The world a 3D views needs to fit into has many, many sources
-of 3D content. There are many virtual worlds to explore
+There are many virtual worlds to explore
 and, for augmented reality, there are many companies all wanting
 to own and control the sources of information.
 
@@ -70,7 +69,7 @@ So, any viewer has to first and foremost be able to merge these
 multitude data sources.
 
 Next, a 3D viewer has to adapt to many configurations.
-Head mounted 3D displays are hot at the moment but people still
+Head mounted 3D displays are 'hot' at the moment but people still
 have computer screens and then there are the mobile phones.
 Augmented reality will have glasses, tablets, and anywhere there
 is glass.
@@ -83,11 +82,11 @@ the user's interactions.
 Pesto gets login information from the user,
 creates the Basil viewer,
 sets the initial place in the world to view,
-queries for the Content Servers, and
-links the Content Servers to Basil.
-The Content Servers then send Basil the items to display.
+queries for the Space Servers, and
+links the Space Servers to Basil.
+The Space Servers then send Basil the items to display.
 
-## Finding Content Servers
+## Finding Space Servers
 
 The Basil model of looking into a virtual world
 or looking out into the real world
@@ -101,7 +100,7 @@ The view process is imagined to be:
   (a view camera has a location and a direction);
 * the world is queried as to what can be seen from here in that direction;
 * the response to this query is multiple handles to various information and
-  3D content servers that will handle portions of the 3D space being viewed.
+  3D space servers that will handle portions of the 3D space being viewed.
   This fills the view space with smaller 3D spaces and their associated
   servers who have the information to fill the spaces;
 * the viewer then queries the servers for contents for the smaller view spaces;
@@ -284,7 +283,7 @@ real-world coordinates of Basil.
 ## Making Viewer System
 
 The space server query service and the Basil viewer are just parts
-of a system that can create a view of layers of a world. The following
+of a system that creates a view of layers of a world. The following
 diagram shows many of the parts.
 
 There exists a session server ([Pesto]) that handles the user's ongoing
@@ -296,9 +295,6 @@ shared world will be through multiple viewers.
 services in these different environments.
 
 One early project is [Ragu] which is a space server for [OpenSimulator].
-
-## The Virtual Worlds
-
 
 # Use Cases
 
@@ -317,8 +313,6 @@ What is returned is a set of space servers that can fill the viewed
 area.
 
 It might also receive multiple 'layers' within a space.
-
-
 
 ## Use Case: Augmented Reality
 
