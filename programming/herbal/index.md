@@ -4,12 +4,15 @@ layout: page
 <div id="herbal-toc">
   <ol>
     <li><a href="#3d-virtual-world-and-augmented-reality-viewer-architecture">Introduction</a></li>
-    <li><a href="#finding-content-servers">Finding Content Servers</a></li>
-    <li><a href="#the-basil-viewer">The Basil Viewer</a></li>
-    <li><a href="#coordinate-system">Coordinate System</a></li>
-    <li><a href="#space-servers">Space Servers</a></li>
-    <li><a href="#making-a-system">Making a System</a></li>
-    <li><a href="#the-virtual-worlds">The Virtual Worlds</a></li>
+      <ol>
+        <li><a href="#the-pieces">The Pieces</a></li>
+        <li><a href="#finding-content-servers">Finding Content Servers</a></li>
+        <li><a href="#the-basil-viewer">The Basil Viewer</a></li>
+        <li><a href="#coordinate-system">Coordinate System</a></li>
+        <li><a href="#space-servers">Space Servers</a></li>
+        <li><a href="#making-a-system">Making a System</a></li>
+        <li><a href="#the-virtual-worlds">The Virtual Worlds</a></li>
+      </ol>
     <li><a href="#use-cases">Use Cases
       <ol>
         <li><a href="#use-case:-virtual-worlds">Virtual Worlds</a></li>
@@ -34,35 +37,63 @@ This 'herbal' system is not only good for you
 but it has interfaces for adapting many different
 existing virtual world and augmented reality
 systems to a single view.
-Thist creates a system where an
+This creates a single 3D view where an
 [OpenSimulator] avatar can stand next to and interact with a
 [High Fidelity] avatar.
 
 For augmented reality, one can look out into the
-real world and see information from different sources all merged
-into one enhanced view.
+real world and have a combined view of information from
+different sources all merged into one enhanced view.
 
-This works for everything from 3D headsets to
-phones to desktops and can be used for education, entertainment,
+This viewer architecture works for everything from 3D headsets to
+phones to desktops.
+It is useful for uses including education, entertainment,
 training, and gaming.
 
 After reading this document you will understand
 how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
 to name a few) as well as existing augmented reality systems (ADD SOME HERE)
-can be a part of this general architecture.
+can be connected to a single 3D view.
 
 This article describes the general concepts and architecture
 while more detailed and focused documents will be created for the
 different components of the system.
 
+## The Pieces
+
+The world a 3D views needs to fit into has many, many sources
+of 3D content. There are many virtual worlds to explore
+and, for augmented reality, there are many companies all wanting
+to own and control the sources of information.
+
+So, any viewer has to first and foremost be able to merge these
+multitude data sources.
+
+Next, a 3D viewer has to adapt to many configurations.
+Head mounted 3D displays are hot at the moment but people still
+have computer screens and then there are the mobile phones.
+Augmented reality will have glasses, tablets, and anywhere there
+is glass.
+
+So, at the center of a view experience, is a viewer ("Basil")
+which connects to a multitude of 3D object sources.
+To get Basil hooked up, a session manager ("Pesto") 
+sets up the connections and is the coordination hub of
+the user's interactions.
+Pesto gets login information from the user,
+creates the Basil viewer,
+sets the initial place in the world to view,
+queries for the Content Servers, and
+links the Content Servers to Basil.
+The Content Servers then send Basil the items to display.
+
 ## Finding Content Servers
 
-Imagine a computer system for looking at a place.
-The 'view' looking into a virtual world
+The Basil model of looking into a virtual world
 or looking out into the real world
-has a 'camera' at some location that is looking in some direction.
+is based on a 'camera' at some location that is pointing in some direction.
 The problem is is figure out what that camera sees and how to access
-representations for what should be in the view.
+representations for what should be in the camera view.
 
 The view process is imagined to be:
 
@@ -70,27 +101,27 @@ The view process is imagined to be:
   (a view camera has a location and a direction);
 * the world is queried as to what can be seen from here in that direction;
 * the response to this query is multiple handles to various information and
-  3d object servers that will handle portions of the 3d space being viewed.
-  This fills the view space with smaller 3d spaces and their associated
+  3D content servers that will handle portions of the 3D space being viewed.
+  This fills the view space with smaller 3D spaces and their associated
   servers who have the information to fill the spaces;
 * the viewer then queries the servers for contents for the smaller view spaces;
 * the viewer displays the received information and objects relative to
   the viewers camera location;
 * as the viewers camera moves, the display of information and objects is
   adjusted and, potentially, additional world queries are made to find more
-  information and object servers to fill the viewed space.
+  information and content servers to fill the viewed space.
 
 So, the idea is that a view consists of the combination of multiple spaces.
 For instance, looking down a street one would see multiple businesses
 and each of those businesses would have something they want to display
 for their 3D space that you see.
-Similarily, for a virtual world, one would look out into a vista that
+Similarity, for a virtual world, one would look out into a vista that
 consists of the local village as well as the mountains in the distance.
 
 This introduces the idea of a service
-that holds information about all the object servers for filling 
+that holds information about all the content servers for filling 
 the world space.
-All the object servers register with this "location service"
+All the content servers register with this "location service"
 and the location service is queried by viewers to get the handlers
 for all the space being viewed.
 Think of it as the view being split into 3D
@@ -274,7 +305,7 @@ One early project is [Ragu] which is a space server for [OpenSimulator].
 ## Use Case: Virtual Worlds
 
 Putting on a headset, you enter a 3D virtual world. As you look around
-you see a rich landscape under the foriegn sun with animals and avatars
+you see a rich landscape under the foreign sun with animals and avatars
 wandering around. As you turn your head and walk, you move in the
 landscape where you interact with the other inhabitants of this
 virtual world.
@@ -319,7 +350,7 @@ The response would be city servers (for intersection information and
 construction alerts), servers for the buildings within the view, and more.
 The "viewer" -- in this case the program displaying the information on
 the wind shield -- would then query the multitude of space servers and
-receive infromation on displayable information. All this would appear
+receive information on displayable information. All this would appear
 on the wind shield.
 
 You can easily see how this would also work for augmented reality glasses
@@ -327,7 +358,7 @@ or anything that wants to visually map information onto the real world.
 
 # Extra Stuff
 
-* Challanges
+* Challenges
   * Latency
   * Control plane
   * Managing distribution
