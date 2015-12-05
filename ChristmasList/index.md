@@ -19,6 +19,8 @@ Dining gift cards (for dinners out at interesting restaurants)
 Google Cardboard viewer with head straps. Similar to the [VR ShineCon]. Ideal
 would have width and depth lense adjustments.
 
+I like sweet liquors like B&B or Drambuie.
+
 [History]: http://www.amazon.com/gp/registry/wishlist/3U62EILWNWA0N/
 [Science Fiction]: http://www.amazon.com/gp/registry/wishlist/18I0UWU7837XL/
 [Fiction]: http://www.amazon.com/gp/registry/wishlist/X0774K777WYB/
