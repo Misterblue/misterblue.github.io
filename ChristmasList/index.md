@@ -14,6 +14,8 @@ I'd prefer the audio book version as it makes my commute entertaining.
 
 [Amazon gift cards] (for buying more books)
 
+Dining gift cards (for dinners out at interesting restaurants)
+
 Google Cardboard viewer with head straps. Similar to the [VR ShineCon]. Ideal
 would have width and depth lense adjustments.
 
