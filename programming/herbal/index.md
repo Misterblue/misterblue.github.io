@@ -294,7 +294,11 @@ shared world will be through multiple viewers.
 [Pesto] has the job of connecting the user to viewers and the necessary
 services in these different environments.
 
-One early project is [Ragu] which is a space server for [OpenSimulator].
+The following diagram shows the major parts of a complete virtual world
+session that implements a unified, merged view of multiple virtual worlds.
+
+<img src="HerbalHighLevelBlock-20151205.png" alt="Herbal block diagram" width="800"/>
+
 
 # Use Cases
 
