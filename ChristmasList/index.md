@@ -16,8 +16,9 @@ I'd prefer the audio book version as it makes my commute entertaining.
 
 Dining gift cards (for dinners out at interesting restaurants)
 
-Google Cardboard viewer with head straps. Similar to the [VR ShineCon]. Ideal
-would have width and depth lense adjustments.
+Google Cardboard viewer with head straps. Similar to the [VR ShineCon]
+or listed in one of the many [VR headset reviews].
+Ideal would have width and depth lense adjustments.
 
 I like sweet liquors like B&B or Drambuie.
 
@@ -27,6 +28,7 @@ I like sweet liquors like B&B or Drambuie.
 [Non-Fiction]: http://www.amazon.com/gp/registry/wishlist/3RRPBD5NAHSJ9/
 [Amazon gift cards]: http://www.amazon.com/gift-cards 
 [VR ShineCon]: http://www.amazon.com/SainSonic-SHIECON-Virtual-Reality-Smartphones/dp/B015DZTCI2/
+[VR headset reviews]: http://www.hypergridbusiness.com/faq/best-virtual-reality-headsets/
 
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
