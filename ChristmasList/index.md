@@ -22,6 +22,8 @@ Ideal would have width and depth lense adjustments.
 
 I like sweet liquors like B&B or Drambuie.
 
+A new wired mouse for my desktop (sadly, the fish mouse is getting flakey)
+
 [History]: http://www.amazon.com/gp/registry/wishlist/3U62EILWNWA0N/
 [Science Fiction]: http://www.amazon.com/gp/registry/wishlist/18I0UWU7837XL/
 [Fiction]: http://www.amazon.com/gp/registry/wishlist/X0774K777WYB/
