@@ -31,13 +31,3 @@ which is released under
 ```
 Copyright jQuery Foundation and other contributors, https://jquery.org/
 ```
-
-
-
-
-
-
-
-
-
-
