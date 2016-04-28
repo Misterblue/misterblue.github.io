@@ -24,7 +24,10 @@ video was considered reasonable because of bandwidth and file size.
     </td>
     <td>
       <h3>21st Avenue SecondLife Sim Opening, Sept 22, 2007</h3>
-      The [21st Avenue] [SecondLife] sim held a grand opening
+      The
+      21st Avenue
+      <a href="http://secondlife.com/">SecondLife</a>.
+      sim held a grand opening
       event on September 22, 2007.
       Several performers provided dance music.
       This video has Rosedrop Rust performing
@@ -41,25 +44,14 @@ video was considered reasonable because of bandwidth and file size.
     <td>
       <h3>Komuso Tokogawa performs "Amazing Grace" at the
       21st Avenue SecondLife Sim Opening, Sept 22, 2007</h3>
-      Another performer at the [21st Avenue] grand opening
+      Another performer at the 21st Avenue grand opening
       event on September 22, 2007
-      was Komuso Tokogawa who performed his personal version of "Amazing Grace".
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/eYjU_ASbDPw"
-        frameborder="0" allowfullscreen>
-      </iframe>
-    </td>
-    <td>
-      <h3>Komuso Tokogawa performs "Amazing Grace" at the
-      21st Avenue SecondLife Sim Opening, Sept 22, 2007</h3>
-      Another performer at the [21st Avenue] grand opening
-      event on September 22, 2007
-      was [Komuso Tokogawa] who performed his personal version of "Amazing Grace".
-      Like Grif, he is still [performing in SecondLife].
+      was
+      <a href="http://music.sonicviz.com/">Komuso Tokogawa</a>
+      who performed his personal version of "Amazing Grace".
+      Like Grif, he is still
+      <a href="https://www.youtube.com/watch?v=LQOcfzUygqI">
+      performing in SecondLife</a>.
     </td>
   </tr>
   <tr>
@@ -72,7 +64,8 @@ video was considered reasonable because of bandwidth and file size.
     <td>
       <h3>Grif Bamaisin performs, December 28, 2007</h3>
       This is possibly the very first time that Grif performed
-      in [SecondLife].
+      in
+      <a href="http://secondlife.com/">SecondLife</a>.
       This was before he was willing to sing.
     </td>
   </tr>
