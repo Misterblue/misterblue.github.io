@@ -51,3 +51,10 @@ td.mb-bookDescription {
     margin: 10px;
     padding: 5px;
 }
+
+table.slvideo {
+    border: 1px solid #c0c0c0;
+}
+td.slvideo-desc {
+    padding: 15px;
+}

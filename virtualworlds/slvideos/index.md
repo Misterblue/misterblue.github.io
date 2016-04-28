@@ -14,7 +14,7 @@ Some of these videos are only 320 resolution.
 I've misplaced the original source videos and, in 2007, a 320 resolution
 video was considered reasonable because of bandwidth and file size.
 
-<table>
+<table class="slvideo">
   <tr>
     <td>
       <iframe width="420" height="315"
@@ -22,7 +22,7 @@ video was considered reasonable because of bandwidth and file size.
         frameborder="0" allowfullscreen>
       </iframe>
     </td>
-    <td>
+    <td class="slvideo-desc">
       <h3>21st Avenue SecondLife Sim Opening, Sept 22, 2007</h3>
       The
       21st Avenue
@@ -31,7 +31,7 @@ video was considered reasonable because of bandwidth and file size.
       event on September 22, 2007.
       Several performers provided dance music.
       This video has Rosedrop Rust performing
-      "The Fred Meyers Blues" for the Portland, Oregon themed location.
+      "The Fred Meyer Blues" for the Portland, Oregon themed location.
     </td>
   </tr>
   <tr>
@@ -41,7 +41,7 @@ video was considered reasonable because of bandwidth and file size.
         frameborder="0" allowfullscreen>
       </iframe>
     </td>
-    <td>
+    <td class="slvideo-desc">
       <h3>Komuso Tokogawa performs "Amazing Grace" at the
       21st Avenue SecondLife Sim Opening, Sept 22, 2007</h3>
       Another performer at the 21st Avenue grand opening
@@ -61,7 +61,7 @@ video was considered reasonable because of bandwidth and file size.
         frameborder="0" allowfullscreen>
       </iframe>
     </td>
-    <td>
+    <td class="slvideo-desc">
       <h3>Grif Bamaisin performs, December 28, 2007</h3>
       This is possibly the very first time that Grif performed
       in
