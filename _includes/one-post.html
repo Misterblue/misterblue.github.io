@@ -13,18 +13,17 @@
 
 <div class="article">
     <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ thepost.url }}">{{ thepost.date | date: "%b %-d, %Y" }} - {{ thepost.title }}</a></h1>
+        <h1><a href="{{ site.baseurl}}{{ thepost.url }}">
+            {{ thepost.date | date: "%b %-d, %Y" }} - {{ thepost.title }}</a></h1>
         <div class="post-content">
             {{ thecontent }}
 
-            {% assign commentClass = "" %}
             {% if ownpage == "yes" %}
-                {% assign commentClass = "" %}
                 {% if thepost.comments %}
                     <hr>
                     <h3>Comments:</h3>
                     {% for comment in thepost.comments %}
-                        <div class="mb-oldcomment" {{ commentClass }} >
+                        <div class="mb-oldcomment">
                             <span class="author">{{ comment.author }}</span>
                             ( <span class="date">{{ comment.date }}</span> ):
                             {{ comment.content }}
@@ -50,10 +49,9 @@
                 {% endif %}
 
             {% else %}
-                {% assign commentClass = 'class="blindtoggle"' %}
                 {% if site.disqus != '' %}
                     <p class="author">
-                        <a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread"
+                        <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"
                             data-disqus-identifier="{{ post.url | slugify }}">
                                 Comments
                         </a>

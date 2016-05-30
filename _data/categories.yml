@@ -2,63 +2,67 @@
 # Remember to update categories/_categories and run _buildCategories.sh.
 
 display-categories:
-    - basil
-    - meta
-    - opensimulator
-    - programming
-    - lookingglass
-    - travel
-    - fun and weird
-    - thoughts
-    - life
-    - aroundamerica2008
-    - family
-    - photography
+    - VR
+    - Basil
+    - Meta
+    - OpenSimulator
+    - Programming
+    - LookingGlass
+    - Travel
+    - Fun And Weird
+    - Thoughts
+    - Life
+    - AroundAmerica2008
+    - Family
+    - Photography
 
 categories:
-    basil:
+    VR:
+      label: VR
+      url: /categories/VR.html
+    Basil:
       label: Basil
-      url: /categories/basil.html
+      url: /categories/Basil.html
       hoverText: 3D viewer part of the Herbal system
-    programming:
+    Programming:
       label: Programming
-      url: /categories/programming.html
-    opensimulator:
+      url: /categories/Programming.html
+    OpenSimulator:
       label: OpenSimulator
-      url: /categories/opensimulator.html
+      url: /categories/OpenSimulator.html
       hoverText: the OpenSimulator virtual world project
-    lookingglass:
+    LookingGlass:
       label: LookingGlass
-      url: /categories/lookingglass.html
+      url: /categories/LookingGlass.html
       hoverText: an old virtual world viewer using Ogre and C#
-    fun and weird:
-      label: Fun and Weird
-      url: /categories/funandweird.html
-    travel:
+    Fun And Weird:
+      label: Fun And Weird
+      url: /categories/FunAndWeird.html
+    Travel:
       label: Travel
-      url: /categories/travel.html
-    thoughts:
+      url: /categories/Travel.html
+    Thoughts:
       label: Thoughts
-      url: /categories/thoughts.html
-    life:
+      url: /categories/Thoughts.html
+    Life:
       label: Life
-      url: /categories/life.html
-    meta:
+      url: /categories/Life.html
+    Meta:
       label: Meta
-      url: /categories/meta.html
-    aroundamerica2008:
+      url: /categories/Meta.html
+    AroundAmerica2008:
       label: AroundAmerica2008
-      url: /categories/aroundamerica2008.html
-    family:
+      url: /categories/AroundAmerica2008.html
+    Family:
       label: Family
-      url: /categories/family.html
-    photography:
+      url: /categories/Family.html
+    Photography:
       label: Photography
-      url: /categories/photography.html
+      url: /categories/Photography.html
 
     secondlife:
       label: Second Life
-      url: /categories/secondlife.html
+      url: /categories/Secondlife.html
     blog:
       label: Blog
     general:

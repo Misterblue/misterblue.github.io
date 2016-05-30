@@ -2,7 +2,6 @@
 layout: post
 # 'status' is the main flag of where the post will appear.
 # status is 'draft' or 'publish'
-# if status is 'publish', post will apprear in blog roll.
 status: draft
 title: ADD-A-TITLE
 author:

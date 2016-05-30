@@ -1,8 +1,0 @@
----
-layout: default
----
-{%for post in site.posts %}
-    {% if post.status == "publish" and post.categories contains "life" %}
-        {% include one-post.html thepost=post thecontent=post.content ownpage="no" %}
-    {% endif %}
-{% endfor %}
