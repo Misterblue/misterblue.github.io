@@ -18,7 +18,7 @@ date: 2004-02-29 08:02:44
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 167
   author: christina
   author_email: christina.trillidou@bocmutualfunds.bankofcyprus.com

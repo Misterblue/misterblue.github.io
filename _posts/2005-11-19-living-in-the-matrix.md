@@ -18,7 +18,7 @@ date: 2005-11-19 03:53:48
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 2324
   author: MissusBlue
   author_email: MissusBlue@princessblu.com

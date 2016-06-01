@@ -18,7 +18,7 @@ date: 2003-05-26 07:24:44
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 109
   author: amy
   author_email: amy@livingreflections.com

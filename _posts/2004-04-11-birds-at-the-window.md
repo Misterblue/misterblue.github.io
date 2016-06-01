@@ -18,7 +18,7 @@ date: 2004-04-11 10:42:05
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 180
   author: catpurrson
   author_email: none@none.net

@@ -20,7 +20,7 @@ categories:
 - Fun and Weird
 - Blog
 
-comments:
+static-comments:
 - id: 2512
   author: dickey45
   author_email: kh@kathyandacalvin.com

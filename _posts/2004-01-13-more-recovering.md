@@ -18,7 +18,7 @@ date: 2004-01-13 10:30:04
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 142
   author: Geek Stuff
   author_email: 

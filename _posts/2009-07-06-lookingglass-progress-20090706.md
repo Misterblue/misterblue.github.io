@@ -20,7 +20,7 @@ categories:
 - LookingGlass
 - Blog
 
-comments:
+static-comments:
 - id: 2762
   author: Toni Alatalo
   author_email: toni@playsign.net

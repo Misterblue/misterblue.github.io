@@ -18,7 +18,7 @@ date: 2003-11-09 10:23:44
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 125
   author: Chris with Pez (my cat)
   author_email: camm242@msn.com

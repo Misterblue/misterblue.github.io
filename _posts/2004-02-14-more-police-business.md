@@ -18,7 +18,7 @@ date: 2004-02-14 10:54:00
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 164
   author: eskieluvr.net
   author_email: 

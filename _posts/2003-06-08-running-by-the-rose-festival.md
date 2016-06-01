@@ -18,7 +18,7 @@ date: 2003-06-08 09:50:29
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 113
   author: Smoker Jeanene
   author_email: sespam@torba.com

@@ -21,7 +21,7 @@ categories:
 - AroundAmerica2008
 - Blog
 
-comments:
+static-comments:
 - id: 2662
   author: Ty Magpie
   author_email: typhoid_mary@comcast.net

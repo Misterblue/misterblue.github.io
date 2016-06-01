@@ -18,7 +18,7 @@ date: 2004-03-20 07:24:11
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 171
   author: Isaac Laquedem
   author_email: isaaclaquedem@aol.com

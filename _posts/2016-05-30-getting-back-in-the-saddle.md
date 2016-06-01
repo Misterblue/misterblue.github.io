@@ -15,9 +15,9 @@ author_url: http://misterblue.com
 date: 2016-05-30 07:44:20
 # categories: VR, OpenSimulator, Basil, Fun and Weird, Programming, LookingGlass, Travel
 #      Thoughts, Life, Meta, Family, Photography
-commentable: true
 categories:
 - Meta
+comments: true
 ---
 After a year of ignoring the social portions of the Interwebs,
 it's time to get back and work on virtual worlds.

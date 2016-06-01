@@ -18,7 +18,7 @@ date: 2004-04-18 10:56:32
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 181
   author: Vicki
   author_email: zmama@zmama.com

@@ -18,7 +18,7 @@ date: 2004-01-25 02:14:58
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 155
   author: AboutItAll.com | Oregon
   author_email: 

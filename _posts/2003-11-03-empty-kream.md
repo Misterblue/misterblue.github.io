@@ -18,7 +18,7 @@ date: 2003-11-03 09:31:49
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 124
   author: Busy Mom
   author_email: busy_mom64@yahoo.com

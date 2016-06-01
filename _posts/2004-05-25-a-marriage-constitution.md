@@ -18,7 +18,7 @@ date: 2004-05-25 08:11:21
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 367
   author: Brittney
   author_email: SolarChronic@aol.com

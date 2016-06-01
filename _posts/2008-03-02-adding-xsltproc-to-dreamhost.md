@@ -20,7 +20,7 @@ categories:
 - Web Tech
 - Blog
 
-comments:
+static-comments:
 - id: 2645
   author: Arthur Zhu
   author_email: arthurzhuwei@gmail.com

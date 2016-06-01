@@ -20,7 +20,7 @@ categories:
 - Fun and Weird
 - Blog
 
-comments:
+static-comments:
 - id: 2696
   author: Your niece Jennifer!
   author_email: jnj716@gmail.com

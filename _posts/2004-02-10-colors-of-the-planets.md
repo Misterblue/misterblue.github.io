@@ -18,7 +18,7 @@ date: 2004-02-10 08:03:29
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 161
   author: Anna
   author_email: annarocks5566@yahoo.com

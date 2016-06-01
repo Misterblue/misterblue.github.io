@@ -22,7 +22,7 @@ categories:
 - AroundAmerica2008
 - Blog
 
-comments:
+static-comments:
 - id: 2690
   author: conejo
   author_email: conejo_feo@hotmail.com

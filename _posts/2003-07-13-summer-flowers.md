@@ -18,7 +18,7 @@ date: 2003-07-13 04:48:10
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 118
   author: Finn Judy
   author_email: nospam@root.com.ro

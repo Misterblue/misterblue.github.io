@@ -18,7 +18,7 @@ date: 2004-03-06 08:53:00
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 169
   author: Torridjoe
   author_email: torridjoe@yahoo.com

@@ -18,7 +18,7 @@ date: 2004-05-13 03:55:31
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 185
   author: jill
   author_email: cnjblevins@earthlink.net

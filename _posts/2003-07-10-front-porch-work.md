@@ -18,7 +18,7 @@ date: 2003-07-10 10:32:42
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 117
   author: Polley Meegan
   author_email: draime2000@yahoo.com

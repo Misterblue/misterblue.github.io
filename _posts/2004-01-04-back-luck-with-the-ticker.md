@@ -18,7 +18,7 @@ date: 2004-01-04 10:22:36
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 131
   author: Janice
   author_email: bookworm4u@lycos.com

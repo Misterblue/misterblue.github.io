@@ -18,7 +18,7 @@ date: 2004-03-21 07:16:29
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 172
   author: catwoecat
   author_email: catwoecat@yahoo.com.cn

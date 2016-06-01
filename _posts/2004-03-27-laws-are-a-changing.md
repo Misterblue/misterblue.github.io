@@ -18,7 +18,7 @@ date: 2004-03-27 08:42:02
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 175
   author: Rob Salzman
   author_email: oregonblog@aboutitall.com

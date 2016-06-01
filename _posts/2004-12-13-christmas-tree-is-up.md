@@ -18,7 +18,7 @@ date: 2004-12-13 10:42:59
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 1063
   author: ChristmasCamMom
   author_email: 

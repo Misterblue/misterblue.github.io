@@ -17,8 +17,9 @@ date: 2015-05-23 11:22:20   # SET DATE
 #      Thoughts, Life, Meta, Family, Photography
 categories:
 - Basil
-# commentable:
-# comments:
+# 'comments: true' is needed for Disqus. 'static-comments' is legacy, imbedded comments.
+comments: true
+# static-comments:
 # - id: 100   # unused number
 #   author: AUTHOR-HANDLE
 #   author_email: AUTHOR-EMAIL

@@ -18,7 +18,7 @@ date: 2004-01-23 11:01:41
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 151
   author: Justin L Croonenberghs
   author_email: danruiid@geekstuff.info

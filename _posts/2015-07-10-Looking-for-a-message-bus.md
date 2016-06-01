@@ -19,7 +19,7 @@ date: 2015-07-10 21:06:20   # SET DATE
 categories:
 - Basil
 - Programming
-comments:
+static-comments:
 - id: 100   # unused number
   author: Misterblue
   author_email: misterblue-blog@misterblue.com

@@ -18,7 +18,7 @@ date: 2003-06-28 06:53:28
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 116
   author: dennis
   author_email: c_d_painting@yahoo.com

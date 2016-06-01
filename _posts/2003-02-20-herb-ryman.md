@@ -18,7 +18,7 @@ date: 2003-02-20 05:47:40
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 100
   author: rhonda
   author_email: rhondaarn@yahoo.com

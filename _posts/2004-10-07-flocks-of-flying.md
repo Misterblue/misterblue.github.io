@@ -18,7 +18,7 @@ date: 2004-10-07 10:46:24
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 328
   author: cammwithpezz
   author_email: camm242@msn.com

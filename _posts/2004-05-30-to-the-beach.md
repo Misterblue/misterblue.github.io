@@ -18,7 +18,7 @@ date: 2004-05-30 09:26:59
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 192
   author: pril
   author_email: reebdogpril@partlycloudy.com

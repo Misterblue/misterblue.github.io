@@ -24,7 +24,7 @@
             {{ thecontent }}
 
             {% if ownpage == "yes" %}
-                {% if thepost.comments %}
+                {% if thepost.static-comments %}
                     <hr>
                     <h3>Comments:</h3>
                     {% for comment in thepost.comments %}
@@ -35,7 +35,7 @@
                         </div>
                     {% endfor %}
                 {% else %}
-                    {% if thepost.commentable %}
+                    {% if thepost.comments %}
                         {% if site.disqus != '' %}
                             <div id="disqus_thread">
                                 <noscript>Please enable JavaScript to view the

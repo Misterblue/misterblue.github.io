@@ -18,7 +18,7 @@ date: 2005-10-07 09:31:59
 categories:
 - Blog
 
-comments:
+static-comments:
 - id: 2312
   author: Jack Bog
   author_email: jackbogsblog@comcast.net
