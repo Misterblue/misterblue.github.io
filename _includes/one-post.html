@@ -11,9 +11,9 @@
 {% assign thecontent = include.thecontent %}
 {% assign ownpage = include.ownpage %}
 
-{% assign disqusTag = "" %}
+{% assign disqusTag = '' %}
 {% if site.disqus != '' %}
-    {% assign disqusTag = "#disqus_thread" %}
+    {% assign disqusTag = '#disqus_thread' %}
 {% endif %}
 
 <div class="article">
@@ -27,7 +27,7 @@
                 {% if thepost.static-comments %}
                     <hr>
                     <h3>Comments:</h3>
-                    {% for comment in thepost.comments %}
+                    {% for comment in thepost.static-comments %}
                         <div class="mb-oldcomment">
                             <span class="author">{{ comment.author }}</span>
                             ( <span class="date">{{ comment.date }}</span> ):
@@ -54,19 +54,21 @@
                 {% endif %}
 
             {% else %}
-                {% if site.disqus != '' %}
-                    <p class="author">
-                        <a href="{{ site.baseurl }}{{ post.url }}{{ disqusTag }}
-                            data-disqus-identifier="{{ post.url | slugify }}">
+                {% if thepost.comments %}
+                    {% if site.disqus != '' %}
+                        <p class="author">
+                            <a href="{{ site.baseurl }}{{ post.url }}{{ disqusTag }}"
+                                data-disqus-identifier="{{ post.url | slugify }}">
+                                    Comments
+                            </a>
+                        </p>
+                    {% elsif site.isso != '' %}
+                        <p class="author">
+                            <a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">
                                 Comments
-                        </a>
-                    </p>
-                {% elsif site.isso != '' %}
-                    <p class="author">
-                        <a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">
-                            Comments
-                        </a>
-                    </p>
+                            </a>
+                        </p>
+                    {% endif %}
                 {% endif %}
             {% endif %}
 
