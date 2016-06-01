@@ -11,9 +11,14 @@
 {% assign thecontent = include.thecontent %}
 {% assign ownpage = include.ownpage %}
 
+{% assign disqusTag = "" %}
+{% if site.disqus != '' %}
+    {% assign disqusTag = "#disqus_thread" %}
+{% endif %}
+
 <div class="article">
     <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ thepost.url }}">
+        <h1><a href="{{ site.baseurl}}{{ thepost.url }}{{ disqusTag }}">
             {{ thepost.date | date: "%b %-d, %Y" }} - {{ thepost.title }}</a></h1>
         <div class="post-content">
             {{ thecontent }}
@@ -51,7 +56,7 @@
             {% else %}
                 {% if site.disqus != '' %}
                     <p class="author">
-                        <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"
+                        <a href="{{ site.baseurl }}{{ post.url }}{{ disqusTag }}
                             data-disqus-identifier="{{ post.url | slugify }}">
                                 Comments
                         </a>
