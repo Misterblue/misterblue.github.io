@@ -10,6 +10,7 @@ url: "http://blog.misterblue.com"
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
+# Refer to https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
 #baseurl: '/mb-test'
