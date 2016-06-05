@@ -16,7 +16,8 @@ date: 2016-06-04 19:04:00
 # categories: OpenSimulator, Basil, Fun and Weird, Programming, LookingGlass, Travel
 #      Thoughts, Life, Meta, Family, Photography
 categories:
-- Basil
+- Thoughts
+- Fun And Weird
 # 'comments: true' is needed for Disqus. 'static-comments' is legacy, imbedded comments.
 comments: true
 # static-comments:
