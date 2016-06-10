@@ -55,7 +55,7 @@ from 1941 to present. The observation is that, while the current temperature
 streak is not that out of line, the overall tread for the last 70 years is
 upward.
 
-<img src="/images/PortlandTemperatureTrend-20160604.png"
+<img src="{{site.baseurl}}/images/PortlandTemperatureTrend-20160604.png"
             alt="Portland, Oregon Days Over Temperatures"
             width="600"/>
 
@@ -66,5 +66,5 @@ you can get the really raw data from the [US weather service].
 How does your part of the world trend?
 
 [US weather service]: http://w2.weather.gov/climate/local_data.php?wfo=pqr
-[Weather graph]: /images/PortlandTemperatureTrend-20160604.png
+[Weather graph]: {{site.baseurl}}/images/PortlandTemperatureTrend-20160604.png
 [spreadsheet calculations]: https://docs.google.com/spreadsheets/d/1sCwOAxoYgv6cw7SL8UdZm8hsIqwuvXt8LgzKqS0lZPo/edit?usp=sharing
