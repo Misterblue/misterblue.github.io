@@ -63,7 +63,7 @@ I'll leave other people to argue about why and what to do about it.
 The computation is available in [spreadsheet calculations] and
 you can get the really raw data from the [US weather service].
 
-How does your part of the world trend?
+How is your part of the world trending?
 
 [US weather service]: http://w2.weather.gov/climate/local_data.php?wfo=pqr
 [Weather graph]: {{site.baseurl}}/images/PortlandTemperatureTrend-20160604.png
