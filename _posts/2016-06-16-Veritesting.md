@@ -49,8 +49,9 @@ the program.
 
 Mind blown. :astonished: :boom:
 
-Having been programming computers for decades, I have a lot of programming habits left over
-from a more constrained era. I still worry about the amount of memory or the number of
+Because I have been programming computers for decades,
+I have a lot of programming habits left over from a more constrained era.
+I still worry about the amount of memory or the number of
 iterations. While it *is* a consideration and performance is always necessary, the limits
 and bounds have changed a lot.
 
