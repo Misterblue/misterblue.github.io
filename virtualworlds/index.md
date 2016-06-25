@@ -14,6 +14,8 @@ The above links will come into existance over time.
 One thing I played with in [SecondLife] was the creation of videos
 of events. I've uploaded them to [YouTube] and here is an
 [index and description] of them.
+There is also a collection of images to go with the videos so
+check out the complete list of historical [Portland Images and Videos].
 
 
 [SecondLife]: http://secondlife.com/
@@ -21,6 +23,7 @@ of events. I've uploaded them to [YouTube] and here is an
 [Portland Connection]: {{ site.baseurl }}/virtualworlds/portlandconnection/
 [YouTube]: http://youtube.com/
 [index and description]: {{ site.baseurl }}/virtualworlds/slvideos/
+[Portland Images and Videos]: {{ site.baseurl }}/virtualworlds/portlandsl/
 
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
