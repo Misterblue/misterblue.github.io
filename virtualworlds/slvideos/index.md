@@ -155,5 +155,6 @@ video was considered reasonable because of bandwidth and file size.
 [Komuso Tokugawa]: http://music.sonicviz.com/
 [Pioneer Courthouse Square]: https://thesquarepdx.org/
 
+
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
