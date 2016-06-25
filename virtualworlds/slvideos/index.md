@@ -135,7 +135,7 @@ video was considered reasonable because of bandwidth and file size.
   <tr>
     <td>
       <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/7rys1S3u69Y
+        src="https://www.youtube.com/embed/7rys1S3u69Y"
         frameborder="0" allowfullscreen>
       </iframe>
     </td>
