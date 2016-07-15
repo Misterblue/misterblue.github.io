@@ -17,7 +17,7 @@ date: 2016-07-11 17:14:20
 #      Thoughts, Life, Meta, Family, Photography
 categories:
 - VR
-commentable:
+comments: true
 ---
 I attended the
 [Portland Virtual Reality Meetup]
