@@ -55,6 +55,21 @@ They have an SDK and a
 The software seems to be built for Windows and Mac.
 OSVR is maintained by Sensics and Razer.
 
+### JanusVR
+
+[JanusVR] is an attempt to build a 3D browser for the web.
+Their description is:
+"JanusVR is a collaborative web browser for Virtual Reality, where links
+are portals and pages are rooms.
+The platform is written in C++ with the OpenGL, OpenAL and Qt libraries.".
+
+The principle innovation seems to be their integration with existing web pages.
+You can display web pages, navigate the 2D and 3D works through links,
+and enhance existing web pages so that they display 3D when viewed by the
+JanusVR viewer. This latter feature includes a definition of an embeddable
+XML scene description language. Haven't looked to see if it has any
+relation to the [XML3D] definition.
+
 [Portland Virtual Reality Meetup]: http://www.meetup.com/Portland-Virtual-Reality-Meetup/events/231253911/
 [AFrame]: http://aframe.io/
 [WebVR]: http://webvr.info
@@ -63,4 +78,6 @@ OSVR is maintained by Sensics and Razer.
 [OSVR on Github]: http://osvr.github.io/
 [2160 X 1200 dual display headset]: http://www.osvr.org/forum/viewtopic.php?f=2&t=3930
 [HDK]: http://www.osvr.org/hdk2.html
+[JanusVR]: http://janusvr.com/
+[XML3D]: http://xml3d.org/
 
