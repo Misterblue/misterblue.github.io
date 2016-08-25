@@ -1,18 +1,23 @@
 ---
 layout: page
+style: herbal3d
 title: "Herbal3D: Overview of End-to-End Virtual World Infrastructure"
 ---
 
-WARNING TO ALL READING THIS: As of August 2016, this is a growing document
-that is being added to over time. It won't be finished for a month or two
-so hang tight.
+**WARNING TO ALL READING THIS:**
+As of August 2016, this is an in-progress draft and is growing over time.
+Expected completion is in a month or two.
+Direct questions to [the author](mailto:herbal3d@misterblue.com).
 
 # Herbal3D: Infrastructure for Virtual Worlds
 
-This document describes an system architecture for storing
-and displaying three dimensional objects.
-The three dimensional objects is in a scene which can be
-used for immersive virtual reality or
+This document describes an architecture for
+storing and displaying three dimensional objects and scenes.
+The system is partitioned and defined to enable
+display and interaction of several existing virtual world systems
+as well as supporting different display hardware implementations.
+The Herbal3D system can  support
+immersive virtual reality or
 can be mapped onto the real world for augmented reality.
 
 Some high level goals of the system are:
@@ -61,6 +66,9 @@ This has led me to start thinking about what it would take to build a
 3D viewer where one could see into the world as well as the
 needed infrastructure behind that viewer to
 store, convert, interact and simulate the virtual world.
+
+That is, how can I build a system where an [OpenSimulator] avatar can
+stand next to a [HighFidelity] avatar.
 
 Many of the virtual implementations are oriented toward specific use case.
 Whether making a multi-user game, or making a very precise real-time
@@ -122,6 +130,9 @@ Refer to [Other Virtual Worlds] for a description of some of the alternatives.
 ## Virtual World Simulators
 
 ### Asset Repositories
+
+## Space Registry
+
 
 # Security
 
