@@ -9,20 +9,20 @@ so hang tight.
 
 # Herbal3D: Infrastructure for Virtual Worlds
 
-This document describes an architecture for a system that stores
-and displays three dimensional objects.
-The display of three dimensional objects is in a scene which can be
+This document describes an system architecture for storing
+and displaying three dimensional objects.
+The three dimensional objects is in a scene which can be
 used for immersive virtual reality or
 can be mapped onto the real world for augmented reality.
 
-The goal of the system is several fold:
-be open source
-be secure
-be scalable
+Some high level goals of the system are:
+be open source,
+be secure,
+be scalable,
 and to be generally extensible.
 
-There are many proprietary systems being created to contain virtual worlds
-and to deployment augmented reality systems.
+There are many proprietary systems built for virtual worlds
+and for augmented reality.
 The systems are proprietary and they have their silo of implementation.
 This tends to create a closed ecosystem of libraries and expertise that
 does not extend across the open space of the Internet.
@@ -30,10 +30,10 @@ This project is to be open source so it can be modified, tweaked,
 and added to by the Internet community at large rather than just by the implementers of one company.
 
 This project is intended to be secure.
-Secure the fact that it's designed with security from the beginning rather than
+Secure in the fact that it's designed with security from the beginning rather than
 having security added later.
 This means passing around authentication, continually checking for access level,
-and otherwise enforcing access identity and use each controls at all levels.
+and otherwise enforcing access identity and useage controls at all levels.
 
 The system is to use the latest Internet technologies for scalability.
 This means things like containers, multiple processors, the APIs,
@@ -51,15 +51,16 @@ users and bots are interacting.
 
 # Background
 
-This project has grown out of the general interest in virtual worlds.
-After working with many existing systems which our client server based
+This project has grown out of my general interest in virtual worlds.
+After working with many existing systems which are client server based
 (that is there is a world simulation and the server at a client that receives
-some representation of that world to display it) I have noticed requirements
-for scalability and also can't can't control that don't seem to exist in
-any of the existing implementations.
+some representation of that world to display it) I have noticed
+requirements
+for scalability, security, and content mixing.
 This has led me to start thinking about what it would take to build a
-viewer where you'd see into the world as well as the levels of income into
-structure behind that viewer that are needed to store, convert, interact and simulate the virtual world.
+3D viewer where one could see into the world as well as the
+needed infrastructure behind that viewer to
+store, convert, interact and simulate the virtual world.
 
 Many of the virtual implementations are oriented toward specific use case.
 Whether making a multi-user game, or making a very precise real-time
@@ -130,7 +131,7 @@ Refer to [Other Virtual Worlds] for a description of some of the alternatives.
 [OpenSimulator]: http://opensimulator.org/
 [SecondLife]: http://secondlife.com/
 [YouTube]: http://youtube.com/
-[Other Virtual Worlds]: {{ site.baseurl }}/virtualworlds/herbal3D/otherWorlds.html
+[Other Virtual Worlds]: {{ site.baseurl }}/virtualworlds/herbal3d/otherWorlds.html
 
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
