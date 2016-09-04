@@ -9,6 +9,9 @@ As of August 2016, this is an in-progress draft and is growing over time.
 Expected completion is in a month or two.
 Direct questions to [the author](mailto:herbal3d@misterblue.com).
 
+The text and ideas expressed in this document are Copyright 2016, by Robert Adams
+and can be used only with permission.
+
 # Herbal3D: Infrastructure for Virtual Worlds
 
 This document describes an architecture for
@@ -19,6 +22,10 @@ as well as supporting different display hardware implementations.
 The Herbal3D system can  support
 immersive virtual reality or
 can be mapped onto the real world for augmented reality.
+
+# Summary
+
+# Introduction
 
 Some high level goals of the system are:
 be open source,
@@ -70,7 +77,7 @@ store, convert, interact and simulate the virtual world.
 That is, how can I build a system where an [OpenSimulator] avatar can
 stand next to a [HighFidelity] avatar.
 
-Many of the virtual implementations are oriented toward specific use case.
+Many virtual world implementations are oriented toward specific use cases.
 Whether making a multi-user game, or making a very precise real-time
 interaction between users, the use case pushes the implementation of existing systems.
 
@@ -119,13 +126,74 @@ but using newer technologies and newer design patterns
 
 Refer to [Other Virtual Worlds] for a description of some of the alternatives.
 
-# Grand Architecture
+# Architectural Overview
+
+The Herbal3D system consists of several major componenets:
+
+<dl>
+  <dt>Session manager</dt>
+  <dd>
+    The session manager is the coordinating process for an interaction.
+    When used for virtual world viewing, for instance, the session manager
+    interacts with the user, handles authentication, detects the user's
+    session requests, and instantiates instances of the following components
+    for the user.
+  </dd>
+  <dt>Viewer</dt>
+  <dd>
+    The Viewer is the process that converts 3D Objects into a view for a user
+    or a bot 
+    <sup>[1](#footnote1)</sup>.
+    That is the only job of the viewer.
+    The viewer does not do user interface nor does it participate in the 
+    simulation of any environment.
+    The Viewer models a camera and is told about 3D objects that might be
+    viewed. The Viewer does all the processing necessary to display those
+    visual objects for the camera. 
+    The camera can be anything -- a computer screen, a projection on a wall,
+    a head mounted display. Whatever the actual display, the viewer's job
+    is to render the 3D objects.
+    Other processes around the viewer handle passing the 3D object descriptions
+    to the viewer, selecting the sources of the 3D objects, and creating any
+    user interface displays to show to the camera.
+    The [Viewer]("#Viewer") section below describes the Viewer in detail.
+  </dd>
+  <dt>Space manager</dt>
+  <dd>
+    A space manager is the process that tells the Viewer what should appear
+    in a specific 3D region. If a space manager is representing a simulated
+    virtual world space, for instance, the space manager communicates to the
+    virtual world to figure out what objects are in that space and then
+    communicates the object location and representation to the viewer.
+    There can be multiple space managers feeding the viewer and the space
+    managers can be telling the Viewer about different types of objects.
+    Again, for a virtual world, there could be several space managers telling
+    a viewer about static objects in multiple spaces while other space
+    managers are telling the viewer about fast changing objects (like avatars).
+  </dd>
+  <dt>Space Manager Registry</dt>
+  <dd>
+    The Viewer's camera is at some point and looking in some direction.
+    What does it see?
+    The Space Manager Registry is where object sources are looked up.
+    The Space Manager Registry accepts queries of the form "I am at location
+    X looking in direction R, what do I see?" and a list of Space Managers
+    is returned. These are the Space Managers that are sourcing objects for that
+    camera view.
+  </dd>
+  <dt>Asset manager</dt>
+  <dd>
+  </dd>
+  <dt>Virtual world simulator</dt>
+  <dd>
+  </dd>
+</dl>
 
 ## Session Manager (Pesto)
 
 ## Viewer (Basil)
 
-## Space Managers
+## Space Managers (Ragu and others)
 
 ## Virtual World Simulators
 
@@ -136,6 +204,9 @@ Refer to [Other Virtual Worlds] for a description of some of the alternatives.
 
 # Security
 
+<a name="footnote1">1</a>: Multiple viewers can be used to create different
+views of a space. The user of the view could be a person or some program (or 'bot')
+that wants an image.
 
 
 

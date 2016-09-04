@@ -1,5 +1,7 @@
 ---
 layout: page
+style: herbal3d
+title: "Herbal3D: Overview of End-to-End Virtual World Infrastructure"
 ---
 <div id="herbal-toc">
   <ol>
@@ -13,19 +15,17 @@ layout: page
         <li><a href="#making-a-system">Making a System</a></li>
         <li><a href="#the-virtual-worlds">The Virtual Worlds</a></li>
       </ol>
-    <li><a href="#use-cases">Use Cases
+    <li><a href="#use-cases">Use Cases</a></li>
       <ol>
         <li><a href="#use-case:-virtual-worlds">Virtual Worlds</a></li>
         <li><a href="#use-case:-augmented-reality">Augmented Reality</a></li>
       </ol>
-    </li>
-    <li>Other Stuff
+    <li>Other Stuff</li>
       <ol>
         <li><a href="#some-licensing-philosophy">Some Licensing Philosophy</a></li>
         <li><a href="#herbal-names">Herbal Names</a></li>
         <li><a href="#legal-stuff">Legal Stuff</a></li>
       </ol>
-    </li>
   </ol>
 </div>
 
