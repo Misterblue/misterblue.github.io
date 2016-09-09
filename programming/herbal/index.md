@@ -33,7 +33,7 @@ title: "Herbal3D: Overview of End-to-End Virtual World Infrastructure"
 
 This article describes a system for
 viewing virtual worlds and augmented reality.
-This 'herbal' system is not only healthy
+The 'herbal' system is not only healthy
 but it adapts many different
 existing virtual world and augmented reality
 systems to a single view.
@@ -54,7 +54,6 @@ how existing world simulations ([OpenSimulator], [High Fidelity], [Sirikata],
 to name a few) as well as existing augmented reality systems (ADD SOME HERE)
 can be connected to a single 3D view.
 
-
 General concepts and architecture are described here.
 More detailed and focused documents will be created for the
 implementation details.
@@ -66,10 +65,10 @@ and, for augmented reality, there are many companies all wanting
 to own and control the sources of information.
 
 So, any viewer has to first and foremost be able to merge these
-multitude data sources.
+multitude of data sources.
 
-Next, a 3D viewer has to adapt to many configurations.
-Head mounted 3D displays are 'hot' at the moment but people still
+Additionally, a 3D viewer has to adapt to many configurations --
+head mounted 3D displays are 'hot' at the moment but people still
 have computer screens and then there are the mobile phones.
 Augmented reality will have glasses, tablets, and anywhere there
 is glass.
@@ -88,7 +87,7 @@ The Space Servers then send Basil the items to display.
 
 ## Finding Space Servers
 
-The Basil model of looking into a virtual world
+Looking into a virtual world
 or looking out into the real world
 is based on a 'camera' at some location that is pointing in some direction.
 The problem is is figure out what that camera sees and how to access
@@ -97,7 +96,7 @@ representations for what should be in the camera view.
 The view process is imagined to be:
 
 * the observer is at a location and looking in a direction
-  (a view camera has a location and a direction);
+  (the view camera has a location and a direction);
 * the world is queried as to what can be seen from here in that direction;
 * the response to this query is multiple handles to various information and
   3D space servers that will handle portions of the 3D space being viewed.
@@ -110,24 +109,24 @@ The view process is imagined to be:
   adjusted and, potentially, additional world queries are made to find more
   information and content servers to fill the viewed space.
 
-So, the idea is that a view consists of the combination of multiple spaces.
+So, a view consists of the combination of multiple spaces.
 For instance, looking down a street one would see multiple businesses
 and each of those businesses would have something they want to display
 for their 3D space that you see.
 Similarity, for a virtual world, one would look out into a vista that
 consists of the local village as well as the mountains in the distance.
 
-This introduces the idea of a service
-that holds information about all the content servers for filling 
+This introduces the idea of an index service
+that holds information about all the space servers for filling 
 the world space.
-All the content servers register with this "location service"
+All the space servers register with this "location service"
 and the location service is queried by viewers to get the handlers
 for all the space being viewed.
 Think of it as the view being split into 3D
 areas each of which has a different server supplying the objects to
 display in that area.
 
-So, for a virtual world, a query for a view might return a server who
+In a virtual world, for instance, a query for a view might return a server who
 can present a detailed display of the local village and another server
 who will present a distant view of the mountains surrounding the village.
 The query a viewer makes includes the distance and pixel size needed by
@@ -169,8 +168,8 @@ The UI is just another service and thus can be replaced if needed.
 
 Basil connects to the multiple space services and gets objects to display
 in the viewed 3D space.
-The interface between the space servers and Basil needs to be a standard
-interface that allows the space servers to properly display its content.
+The interface between the space servers and Basil is a standard
+API that allows the space servers to properly display its content.
 The current state-of-the-art is represented in the multiple game
 engines in the world.  
 So, in the most abstract sense, Basil is *just* a common interface to most of
@@ -217,7 +216,7 @@ The [Herbal System] attempts to solve this by using a
 known coordinate system that all applications can fit into.
 That coordinate system is [WGS 1984] which is the world coordinate
 system used by the GPS system.
-This supplies an <X,Y,Z> coordinate system for the planet earth.
+This supplies an <X,Y,Z> coordinate system for the planet Earth.
 This puts all virtual world and augmented reality application into
 the real world.
 All measurements are in meters.
