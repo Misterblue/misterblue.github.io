@@ -1,14 +1,38 @@
 # Sidebar list of interesting links
 # 'label' is displayed text in the 'a' anchor.
 # 'hoverText" is the 'alt' and, of course, 'url' is the target
+# Note: the ">-" is a YAML kludge to escape text without a newline end char
+
+- name: Justin Scarred
+  label: >-
+      vlog: Justin Scarred
+  hoverText: >-
+    Justin Scarred: Disney and life. The R stands for Adventure
+  url: https://www.youtube.com/user/justinscarred 
+
+- name: The Daily Woo
+  label: >-
+    vlog: The Daily Woo
+  hoverText: >-
+    Adam The Woo: daily vlog traveling around the US
+  url: https://www.youtube.com/user/TheDailyWoo
+
+- name: Casey Neistat
+  label: >-
+    vlog: Casey Neistat
+  hoverText: >-
+    Casey Neistat: New York City video producer and adventurer
+  url: https://www.youtube.com/user/caseyneistat
 
 - name: OpenSimulator
-  label: OpenSimulator
+  label: >-
+    site: OpenSimulator
   hoverText: Virtual world simulator similar to SecondLife(r)
   url: http://opensimulator.org/
 
 - name: Wyvern
-  label: Wyvern Running
+  label: >-
+    site: Wyvern Running
   hoverText: A store for your running needs
   url: http://wyvernrunning.com/
 
