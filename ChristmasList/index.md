@@ -8,6 +8,8 @@ title: Robert's Christmas list -- 2016
 
 Any kindle book from my Amazon wish lists.
 
+* [XKCD Volume 0]
+* What If?: [Serious Scientific Answers to Absurd Hypothetical Questions]
 * [History]
 * [Science Fiction]
 * [Non-Fiction]
@@ -25,6 +27,9 @@ Any kindle book from my Amazon wish lists.
 * Dining gift cards (for dinners out at interesting restaurants)
 * I like sweet liquors like B&B or Drambuie.
 
+
+[XKCD Volume 0]: https://www.amazon.com/xkcd-0-Randall-Munroe/dp/0615314465/
+[Serious Scientific Answers to Absurd Hypothetical Questions]: https://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
 [History]: http://www.amazon.com/gp/registry/wishlist/3U62EILWNWA0N/
 [Science Fiction]: http://www.amazon.com/gp/registry/wishlist/18I0UWU7837XL/
 [Fiction]: http://www.amazon.com/gp/registry/wishlist/X0774K777WYB/
