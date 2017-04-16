@@ -6,6 +6,7 @@ comments: true
 # Lessons Learned Coding Flatbuffers in Javascript
 
 This page is the output of wrestling with [Flatbuffers] in Javascript.
+Long winded but an attempt to describe how [Flatbuffers] need to be used with Javascript.
 The information was correct when written (April 2017).
 
 ## TL;DR
@@ -44,9 +45,9 @@ the primary target) and then staring at the generated code.
 
 Inspecting the library and the generated code
 (I love open source),
-I realized something that is not very well explained in the documentation.
-That realization was that the record that will eventually be sent is being built
-while the structs and  tables are being constructed.
+I realized something that is not very well explained in the documentation --
+the record that will eventually be sent is being built
+while the structs and  tables are being constructed (with the 'start', 'add', and 'end' methods).
 The fact that all the tables have an object-oriented type of design
 mislead me into thinking that the building of each table is independent.
 So, my first solution created a new `flatbuffers.Buffer()` for each table
@@ -109,15 +110,16 @@ frog.message.addMsg(builder, builtItem);
 var builtMsg = frog.message.endmessage(builder);
 ```
 
-This didn't work and the reason is that what is really happening with the
-'add' operations is placing offsets and data into the output message in the `builder`.
+This didn't work because what is really happening with the
+'add' operations is the placement of offsets and data into the output
+message in the `builder`.
 That is,
 for performance reasons and to eliminate copies and transforms, the message
 is constructed as the tables are built.
 The thing I didn't get from the examples on the web site was that there needs
 to be only one `flatbuffers.Builder` for each message sent and it must be used
 to build all the structs and tables that will be in that message.
-This fact is hidden in comments about building tables non-recursively
+This fact is hidden in discussions about building tables non-recursively
 and building up vectors before building the base table.
 
 So, the solution is to create one `flatbuffers.Builder` per message and pass that
@@ -126,7 +128,7 @@ around to all the routines that create the message contents. For instance:
 ```javascript
 var builder = new flatbuffers.Builder();
 
-// Create the first table (which get added to the buffer in the Builder)
+// Create the first table (which gets put into the buffer in the Builder)
 frog.coord.startcoord(builder);
 frog.coord.addX(builder, 23);
 frog.coord.addY(builder, 44);
@@ -134,10 +136,11 @@ var builtCoord = frog.coord.endcoord(builder);
 
 // Create another table using the same Builder)
 frog.item.startitem(builder)
-frog.item.addposition(builder.builtCoord);
-frog.item.addname(builder.createString('froggishItem'));
+frog.item.addposition(builder, builtCoord);
+frog.item.addname(builder, builder.createString('froggishItem'));
 var builtItem = frog.item.enditem(builder);
 
+// Another table for the flow information
 frog.messageSequence.startmessageSequence(builder)
 frog.messageSequence.addseq(builder, globalMessageSequenceNumber++);
 frog.messageSequence.addtimeSent(builder, Date.now());
@@ -157,7 +160,7 @@ builder.finish(builtMsg);
 write(builder.asInt8Array());
 ```
 
-I came to visualize this as the creation of the `flatbuffers.Builder()` is
+The way I now think about it is that the creation of the `flatbuffers.Builder()` is
 allocating the buffer that the output message will be constructed into.
 All the 'start', 'end', and 'add' operations are storing the information
 about that table into  the `Builder`'s buffer. The final `finish` call
@@ -184,7 +187,7 @@ in the generated Javascript code:
 
 If the target language is C++, the extra variable for the type is named `msg_type` but,
 for Javascript, the name is `msgType`. The code must set the type when filling
-the union variable.
+the union variable (see above).
 
 On the receiving side, the union can be extracted thusly:
 
@@ -209,9 +212,11 @@ if (receivedFb.msgType() != undefined) {
             break;
         case frog.msgMsg.item:
             var itemTable = receivedFb.msg(new frog.item());
+            console.out('Received item named ' + itemTable.name());
             break;
         case frog.msgMsg.animation:
             var animationTable = receivedFb.msg(new frog.animation());
+            console.out('Received animation from file ' + animationTable.animationFile());
             break;
     }
 }
@@ -223,9 +228,6 @@ table passed pointing into the union field. As shown, the extra type variable te
 the receiver what type is in the union.
 
 There you go, a very long winded explanation of Javascript and [Flatbuffers].
-As mentioned above, any discussion is associated with the
-[blog post] about this publication.
-
 
 [Flatbuffers]: https://google.github.io/flatbuffers/
 [Basil]: https://github.com/Misterblue/basil
