@@ -11,4 +11,9 @@
     </div>
 </div>
 
+{% if page.comments && site.disqus != '' %}
+    {% include disqus-comments.html %}
+{% endif %}
+
+
 {% include footer.html %}
