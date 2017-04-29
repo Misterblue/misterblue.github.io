@@ -61,6 +61,9 @@
                         <p class="author">
                             <a href="{{ pageabsurl }}{{ disqusTag }}"
                                 data-disqus-identifier="{{ thepost.url | slugify }}">
+                                <span class="disqus-comment-count"
+                                    data-disqus-identifier="{{ thepost.url | slugify }}">
+                                    </span>
                                     Comments
                             </a>
                         </p>
