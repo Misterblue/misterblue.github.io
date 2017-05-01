@@ -25,57 +25,7 @@
         <div class="post-content">
             {{ thecontent }}
 
-            {% if ownpage == "yes" %}
-                {% if thepost.static-comments %}
-                    <hr>
-                    <h3>Comments:</h3>
-                    {% for comment in thepost.static-comments %}
-                        <div class="mb-oldcomment">
-                            <span class="author">{{ comment.author }}</span>
-                            ( <span class="date">{{ comment.date }}</span> ):
-                            {{ comment.content }}
-                        </div>
-                    {% endfor %}
-                {% else %}
-                    {% if thepost.comments %}
-                        {% if site.disqus != '' %}
-                            <div id="disqus_thread">
-                                <noscript>Please enable JavaScript to view the
-                                    <a href="http://disqus.com/?ref_noscript">
-                                        comments powered by Disqus.</a>
-                                </noscript>
-                                <a href="http://disqus.com" class="dsq-brlink">
-                                    comments powered by 
-                                    <span class="logo-disqus">Disqus</span>
-                                </a>
-                            </div>
-                        {% elsif site.isso != '' %}
-                            <section id="isso-thread"></section>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-
-            {% else %}
-                {% if thepost.comments %}
-                    {% if site.disqus != '' %}
-                        <p class="author">
-                            <a href="{{ pageabsurl }}{{ disqusTag }}"
-                                data-disqus-identifier="{{ thepost.url | slugify }}">
-                                <span class="disqus-comment-count"
-                                    data-disqus-identifier="{{ thepost.url | slugify }}">
-                                    </span>
-                                    Comments
-                            </a>
-                        </p>
-                    {% elsif site.isso != '' %}
-                        <p class="author">
-                            <a href="{{ pageabsurl }}{{ site.isso_suffix }}#isso-thread">
-                                Comments
-                            </a>
-                        </p>
-                    {% endif %}
-                {% endif %}
-            {% endif %}
+            {% include comments.html thepost=thepost ownpage=ownpage %}
 
             <div class="mb-content-footer">
                 {{ thepost.author.display_name }}, {{ thepost.date }}

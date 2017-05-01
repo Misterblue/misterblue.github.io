@@ -24,8 +24,6 @@
     </div>
 </div>
 
-{% if site.disqus != '' %}
-    {% include disqus-comments.html %}
-{% endif %}
+{% include comments-script.html thesite=site thepage=page %}
 
 {% include footer.html %}

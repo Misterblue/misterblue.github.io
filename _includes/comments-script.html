@@ -1,0 +1,39 @@
+{% comment %}
+    Include this at the end of all pages that might have comments on them.
+    This includes  the proper page scripts for adding comments to the page.
+    If the page is not enabled for comments, nothing is put on the page.
+
+    The parameters:
+        thesite: the control structure for the site
+        thepage: the control structure for the page
+{% endcomment %}
+{% assign thesite = include.thesite %}
+{% assign thepage = include.thepage %}
+
+{% if thesite.comments and thepage.comments %}
+    {% assign pageabsurl = thepage.url | prepend:thesite.baseurl | prepend:thesite.url %}
+    {% if thesite.disqus != '' %}
+      <script type="text/javascript">
+        var disqus_shortname = '{{ thesite.disqus }}';
+
+        var disqus_config = function () {
+            thepage.url = '{{ thepage.url | prepend:thesite.baseurl | prepend:thesite.url }}';
+            thepage.identifier = '{{ thepage.url | slugify }}';
+        };
+
+       (function() {
+         var dsq = document.createElement('script');
+         dsq.type = 'text/javascript';
+         dsq.async = true;
+         dsq.setAttribute('data-timestamp', +new Date());
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.head || document.body).appendChild(dsq);
+        })();
+      </script>
+    {% endif %}
+
+    {% if thesite.isso != '' %}
+        <script data-isso="{{ thesite.isso }}" src="{{ thesite.baseurl }}/js/embed.min.js"></script>
+    {% endif %}
+
+{% endif %}

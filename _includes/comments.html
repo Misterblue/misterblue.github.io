@@ -1,0 +1,69 @@
+{% comment %}
+    This includes comments at the end of the post.
+    Used both with single blog posts and regular pages.
+    The parameters:
+        thepost: the control structure for the post (with date, url, ...)
+        thecontent: the content of the post (often post.content)
+        ownpage: either 'yes' or 'no' if this is displaying the article on its own page.
+            If on own page, comments are expanded otherwise they are summarized.
+{% endcomment %}
+{% assign thepost = include.thepost %}
+{% assign ownpage = include.ownpage %}
+
+{% assign pageabsurl = thepost.url | prepend:site.baseurl | prepend:site.url %}
+
+{% assign disqusTag = '' %}
+{% if site.disqus != '' %}
+    {% assign disqusTag = '#disqus_thread' %}
+{% endif %}
+
+{% if ownpage == "yes" %}
+    {% if thepost.static-comments %}
+        <hr>
+        <h3>Comments:</h3>
+        {% for comment in thepost.static-comments %}
+            <div class="mb-oldcomment">
+                <span class="author">{{ comment.author }}</span>
+                ( <span class="date">{{ comment.date }}</span> ):
+                {{ comment.content }}
+            </div>
+        {% endfor %}
+    {% else %}
+        {% if thepost.comments %}
+            {% if site.disqus != '' %}
+                <div id="disqus_thread">
+                    <noscript>Please enable JavaScript to view the
+                        <a href="http://disqus.com/?ref_noscript">
+                            comments powered by Disqus.</a>
+                    </noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">
+                        comments powered by 
+                        <span class="logo-disqus">Disqus</span>
+                    </a>
+                </div>
+            {% elsif site.isso != '' %}
+                <section id="isso-thread"></section>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% if thepost.comments %}
+        {% if site.disqus != '' %}
+            <p class="author">
+                <a href="{{ pageabsurl }}{{ disqusTag }}"
+                    data-disqus-identifier="{{ thepost.url | slugify }}">
+                    <span class="disqus-comment-count"
+                        data-disqus-identifier="{{ thepost.url | slugify }}">
+                        </span>
+                        Comments
+                </a>
+            </p>
+        {% elsif site.isso != '' %}
+            <p class="author">
+                <a href="{{ pageabsurl }}{{ site.isso_suffix }}#isso-thread">
+                    Comments
+                </a>
+            </p>
+        {% endif %}
+    {% endif %}
+{% endif %}

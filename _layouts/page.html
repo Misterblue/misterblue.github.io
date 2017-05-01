@@ -7,13 +7,11 @@
     <div class="row">
         <div class="col-md-9">
             {{ content }}
+            {% include comments.html thepost=page ownpage="yes" %}
         </div>
     </div>
 </div>
 
-{% if site.disqus != '' %}
-    {% include disqus-comments.html %}
-{% endif %}
-
+{% include comments-script.html thesite=site thepage=page %}
 
 {% include footer.html %}
