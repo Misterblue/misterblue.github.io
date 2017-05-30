@@ -42,7 +42,7 @@ is that the WebGL interface doesn't handle lots of draw operations well.
 I have been using the [Army Research Lab]'s [Atropia] region OAR files for testing
 as it includes meshes as well as many shopping scripted objects.
 
-The Atropia regions consists of nine 256x256 meter regions arranged in a 3 by 3 pattern.
+The Atropia regions consist of nine 256x256 meter regions arranged in a 3 by 3 pattern.
 This table summerizes the basic content of the regions.
 <table class="mb">
     <tr>
@@ -106,7 +106,7 @@ non-static. "Static" objects are those with no scripts and no physics. This shou
 buildings and plants in the scene. "non-static" objects are those that either have
 physics enables or have a script that is waiting for touch or collisions.
 
-This initial thought is that all static objects can be merged and have their
+The initial thought is that all static objects can be merged and have their
 meshes rearranged in any way while the non-static objects need to be kept as separatable objects.
 The next table shows a simple partitioning of the regions into these static and
 non-static objects.
@@ -266,7 +266,7 @@ errors;
 3D renderers will Z-order transparent meshes but do not depth order the individual triangles
 within a mesh;
 
-The above scene rebuild was mesh-centric. That is, the meshes were merged without thought
+The above scene rebuild is mesh-centric. That is, the meshes are merged without thought as
 to what they belonged to (other than static and non-static). Since these scenes have many
 duplicated meshes (the bushes scattered around the scenes), another approach would be to
 use mesh instancing to reduce draws. This technique will be explored next.
