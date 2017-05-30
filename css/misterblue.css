@@ -53,6 +53,23 @@ td.mb-bookDescription {
 .mb-bookComment {
 }
 
+table.mb {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: #f0f0e0;
+}
+
+table.mb tr th {
+    text-align: center;
+    width: 6em;
+}
+
+table.mb tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+
 #herbal-toc {
     float: right;
     border: 2px solid #c0c0c0;
