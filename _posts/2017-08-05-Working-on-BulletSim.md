@@ -12,7 +12,7 @@ author:
 author_login: Misterblue
 author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
-date: 2017=08-05 17:32:20
+date: 2017-08-05 17:32:20
 # categories: OpenSimulator, Basil, Fun and Weird, Programming, LookingGlass, Travel
 #      Thoughts, Life, Meta, Family, Photography
 categories:
