@@ -45,7 +45,7 @@ to BulletSim that are needed.
 There are three things that I want to address the next weeks:
 
 * Upgrade the underlying [Bullet physics engine] to version 2.86;
-* Fix the [missing] [collision] [problem];
+* Fix the [missing] collision [problem];
 * Raycasting is not done in the physics engine.
 
 The first job is getting re-setting up the build environment.
