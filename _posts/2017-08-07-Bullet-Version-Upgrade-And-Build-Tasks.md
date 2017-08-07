@@ -3,7 +3,7 @@ layout: post
 # 'status' is the main flag of where the post will appear.
 # status is 'draft' or 'publish'
 status: publish
-title: Working on BulletSim
+title: Bullet Version Upgrade and Build Tasks
 author:
   display_name: Misterblue
   login: Misterblue
@@ -12,7 +12,7 @@ author:
 author_login: Misterblue
 author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
-date: 2017-08-05 17:32:20
+date: 2017-08-07 15:51:20
 # categories: OpenSimulator, Basil, Fun and Weird, Programming, LookingGlass, Travel
 #      Thoughts, Life, Meta, Family, Photography
 categories:
@@ -36,28 +36,32 @@ comments: true
 # http://www.emoji-cheat-sheet.com/
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
-I've set aside time the next two weeks to work on [BulletSim].
-As some of you might know, I am the original author of the BulletSim physics
-engine in [OpenSimulator].
-While other projects have taken up most of my attention, there are some tweeks
-to BulletSim that are needed.
+Since the [Bullet physics engine] is distributed with [OpenSimulator] as a
+binary, I have to keep my library compatibility kind of old fashioned,
+That means I can't use the latest-and-greatest Visual Studio nor the
+latest-and-greatest version of Linux.
+I'm building the Linux versions on Ubuntu 14.04 as that has been good with
+various shared library compatibilities.
+For Windows, I'm using Visual Studio 2012.
 
-There are three things that I want to address the next weeks:
+I have to build for both 32 bit and 64 bit Linux systems. Does anyone still
+use 32 bit?
+
+The upgrade of the [Bullet physics engine] to v2.86 doesn't seem to have any
+problems and I will start the [OpenSimulator] development branch
+("BulletSim2017") later today. There shouldn't be any functional difference.
+
+After thinking about the work to be done and talking to people,
+the major task list is getting longer:
 
 * Upgrade the underlying [Bullet physics engine] to version 2.86;
 * Fix the [missing][mantis7132] [collision][mantis8010] [problem][mantis8011] ;
+* CPU performance improvements (people mention high CPU usage with physical objects);
+* generate convex shapes if PhysicsShapeType is set to CONVEX;
 * Raycasting is not done in the physics engine.
 
-The first job is getting re-setting up the build environment.
-I have to use an old version of Visual Studio and an old version
-of Linux so the compiled C++ code DLL's and SO's will work
-on older versions of the operating systems.
-
-When I start making source changes, I'll create an [OpenSimulator]
-branch for testing.
-
-Stay tuned.
-
+Once I'm happy with the upgrade, I'll create some test cases for collisions
+and CPU usages to track progress.
 
 [BulletSim]: http://opensimulator.org/wiki/BulletSim
 [OpenSimulator]: http://opensimulator.org/
@@ -65,3 +69,4 @@ Stay tuned.
 [mantis7132]: http://opensimulator.org/mantis/view.php?id=7132
 [mantis8010]: http://opensimulator.org/mantis/view.php?id=8010
 [mantis8011]: http://opensimulator.org/mantis/view.php?id=8011
+
