@@ -2,6 +2,7 @@
 # Remember to update categories/_categories and run _buildCategories.sh.
 
 display-categories:
+    - Robotics
     - VR
     - Basil
     - Meta
@@ -17,6 +18,9 @@ display-categories:
     - Photography
 
 categories:
+    Robotics:
+      label: Robotics
+      url: /categories/Robotics.html
     VR:
       label: VR
       url: /categories/VR.html
