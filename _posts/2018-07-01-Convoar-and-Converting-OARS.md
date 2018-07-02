@@ -37,26 +37,26 @@ comments: true
 # http://www.emoji-cheat-sheet.com/
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
-I've been spending a long time working on an [OAR file converter].
+I've been working on an [OAR file converter].
 For those of you not in the [OpenSimulator] community, an OAR file is a region
-archive format -- saving the contents of a region for loading in another region.
+archive format -- saving the contents of a region for loading into another region.
 So it contains all the meshes, textures, scripts, and assets that completely
 define a region's contents.
 
-[Convoar] reads an OAR file and outputs a GLTF scene and image files containing
+[Convoar] reads an OAR file and outputs a [GLTF] scene and image files containing
 most of the region information.
 Most specifically, textured mesh representation of all the objects described in the OAR file.
 
 Convoar is evolving.
-The current version reads an OAR file and outputs either an unoptimized GLTF scene
-file or a "material reorganized" GLTF scene.
-The output GLTF is not packed or binary so the output GLTF is a JSON .gltf file,
+The current version reads an OAR file and outputs either an unoptimized [GLTF] scene
+file or a "material reorganized" [GLTF] scene.
+The output [GLTF] is not packed or binary so the output [GLTF] is a JSON .gltf file,
 one or more .buf files (containing the vertex information),
 and an images directory with the texture files for the mesh materials.
 By default, the output textures are either JPG or PNG format depending if
 there is any transparency in the texture.
 
-The unoptimized GLTF conversion is a simple conversion of the OAR primitives
+The unoptimized [GLTF] conversion is a simple conversion of the OAR primitives
 which creates many, many meshes and is very inefficient for rendering but is
 good for editing (importing into Blender, for instance).
 
