@@ -38,7 +38,7 @@ comments: true
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
 <a href="https://misterblue.com/oars/">
-<img style="float:right;width:100px" src="images/20180717-convoared.jpg"/>
+<img style="float:right;width:200px;padding:10px" src="images/20180717-convoared.jpg"/>
 </a>
 I've updated [Convoar] to version 1.1 and started converting a collection of
 OARs.
