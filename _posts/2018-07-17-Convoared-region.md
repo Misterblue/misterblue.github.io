@@ -38,12 +38,14 @@ comments: true
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
 <a href="https://misterblue.com/oars/">
-<img style="float:right;width:200" src="images/20180717-convoared.jpg"/>
+<img style="float:right;width:100px" src="images/20180717-convoared.jpg"/>
 </a>
 I've updated [Convoar] to version 1.1 and started converting a collection of
 OARs.
 These sample OARs are available on a [Converted OARs] page at
-https://misterblue.com/oars/ .
+<a href="https://misterblue.com/oars/">
+https://misterblue.com/oars/
+</a>.
 This gives pointers to various optimized [GLTF] scene conversions,
 downloads of all the scene files (ZIP and TGZ),
 as well as a download of the original OAR file.
