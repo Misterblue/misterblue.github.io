@@ -3,6 +3,7 @@
 
 display-categories:
     - Robotics
+    - ROS2
     - VR
     - Basil
     - Meta
@@ -18,6 +19,9 @@ display-categories:
     - Photography
 
 categories:
+    ROS2:
+      label: ROS2
+      url: /categories/ROS2.html
     Robotics:
       label: Robotics
       url: /categories/Robotics.html
