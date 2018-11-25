@@ -18,6 +18,7 @@ Any kindle book from my Amazon wish lists.
 ## Misc
 
 * Dashcam for Toyota and Honda
+* [Wink 2 Smart Home Hub] (expensive but non-cloud based home control)
 * Different robotics hardware -- I want things rolling around the house
 * Over-ear gaming headphones (with mic) (not on-ear but the ones that cover the ear)
 * [Amazon gift cards] (for buying more books, etc)
@@ -32,6 +33,7 @@ Any kindle book from my Amazon wish lists.
 [Fiction]: http://www.amazon.com/gp/registry/wishlist/X0774K777WYB/
 [Non-Fiction]: http://www.amazon.com/gp/registry/wishlist/3RRPBD5NAHSJ9/
 [Amazon gift cards]: http://www.amazon.com/gift-cards 
+[Wink 2 Smart Home Hub]: https://www.amazon.com/gp/product/B01KW8WGZQ/
 
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
