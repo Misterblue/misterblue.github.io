@@ -9,14 +9,26 @@ title: "RaguOS: Design Discussion"
       <ol>
         <li><a href="#choice-of-region-modules">Choice of Region Modules</a></li>
       </ol>
-    <li><a href="#Loden">Loden</a></li>
+    <li><a href="#loden">Loden</a></li>
+      <ol>
+        <li><a href="#region-content-layers">Region Content Layers</a></li>
+          <ol>
+            <li><a href="#static">Static Layer</a></li>
+            <li><a href="#dynamic">Dynamic Layer</a></li>
+            <li><a href="#actors">Actors Layer</a></li>
+            <li><a href="#editing">Editing Layer</a></li>
+          </ol>
+        <li><a href="#division-hash">Division Hash</a></li>
+        <li><a href="#texture-simplification">Texture Simplificiation</a></li>
+        <li><a href="#asset-storage-and-access">Asset Storage and Access</a></li>
+        <li><a href="#region-description-assets">Region Description Assets</a></li>
+      </ol>
+    <li><a href="#raguos">RaguOS</a></li>
       <ol>
         <li><a href="#editing-mode">Editing Mode</a></li>
       </ol>
-    <li><a href="#RaguOS">RaguOS</a></li>
-      <ol>
-        <li><a href="#editing-mode">Editing Mode</a></li>
-      </ol>
+    <li><a href="#revision-history">Revision History</a></li>
+    <li><a href="#legal-stuff">Legal Stuff</a></li>
   </ol>
 </div>
 
@@ -63,16 +75,78 @@ the [Basil Viewer] by the [OpenSimulator] community.
 
 # Loden
 
-Description of Loden operation
+[Loden] [^2] converts an OpenSimulator's region's contents into formats useful to a Basil viewer
+([GLTF], JPEG, ...) organized into a hiearchical spacial structure of increasing displayable detail.
+This does not replace the OpenSimulator's asset store but is a displayable version
+of the region assets.
 
-Region content is separated into four different "layers" that are displayed on top of each other:
+[Loden] organizes the region assets into four different "layers". These are displayed together by a
+[Basil Viewer] to present a complete view of the region. Each of the layers is organized into a tree
+of spacial areas with increasing level-of-detail. The tree representation is modeled after the
+[CesiumJS] project's [3DTiles]. [3DTiles] defines bounding boxes of objects of some level-of-detail
+that also has "children" of sub-bounding boxes that define objects of increased detail. The process
+is for a viewer to start at the top of the tree and work down the tree to find the appropriate level-of-detail
+for the viewer resolution, view distance, and camera location.
 
-* Static
-* Dynamic
-* Actors
-* Editing
+To that end, it is envisioned that [Loden] will convert a region into a tree that includes a top
+level of the whole OpenSimulator region as one mesh (for distance viewing) and then sub-areas of the
+region containing ever increasing level-of-detail of the assets.
+
+The initial implementation will replace the whole region, single mesh with a single GLTF that describes
+the whole region's contents. The second level will be a quad division of the region. Initially, the
+divisions will be of equal size but future versions will split the region until there is an equal
+number of scene objects in each division.
+
+The quad divisions will each be increasing level-of-detail until the lowest level will have scene
+object versions that are visually nearly identical to the underlying [OpenSimulator] primitives.
+Depending on ease of implementation, each level may split into other quad divisions.
+
+## Region Content Layers
+
+As mentioned above, [Loden] separates the region scene objects into four classes that make up
+layers for the [Basil Viewer]. These layers are:
+
+* Static -- Primitive objects that are non-physical and do not contain scripts;
+* Dynamic -- Any object that is either physical (can move) or contains scripts (can move or modify itself);
+* Actors -- Avatars in the scene;
+* Editing -- Object in the process of being editted
+
+### Static Layer
+
+### Dynamic Layer
+
+### Actors Layer
+
+### Editing Layer
+
+
+((Description of the level-of-detail specification.))
+
+A tile's geometric error defines the selection metric for that tile. Its value is a nonnegative number that specifies the error, in meters, of the tile's simplified representation of its source geometry. The root tile, being the most simplified version of the source geometry, will have the greatest geometric error. Then each successive level of children will have a lower geometric error than its parent, with leaf tiles having a geometric error of or close to 0.
+
+## Division Hash
+
+((SHA256 hash of object characteristics and location of all objects in ?? order))
+
+## Texture Simplification
+
+((Textures reduced in resolution based on in-world size))
+
+((Texture types being JPEG (compression factor??) or PNG if texture contains transparancy))
+
+((Texture atlas??))
 
 ## Editing Mode
+
+## Asset Storage and Access
+
+((How assets are stored and how the HTTP server is set up to allow access to them))
+
+((Access control))
+
+## Region Description Assets
+
+((Description of the JSON files created for region root information))
 
 # RaguOS
 
@@ -80,14 +154,30 @@ Region content is separated into four different "layers" that are displayed on t
 
 Description of RaguOS operation
 
+# Revision History
+
+# Legal Stuff
+
+This document is covered by [Creative Commons Attribution-NonCommercial 4.0 International].
+
+Since every idea in  the world is covered by a patent somewhere, I make
+no claims as to the ownership or availability of any design or concept
+described above.
+
+
 
 [^1] LLLP: "Linden Lab Legacy Protocol". The combination of TCP and UDP communications used by
 all [OpenSimulator] grids and Third Party Viewers.
+
+[^2]: The "loden" name is a play on "LOD" or level-of-detail as to level-of-detail'en a region.
 
 [OpenSimulator]: http://opensimulator.org/
 [RaguOS]: https://github.com/Herbal3d/RaguOS
 [Loden]: https://github.com/Herbal3d/Loden
 [Dispatcher]: https://github.com/cmickeyb/dispatcher
+[GLTF]: https://www.khronos.org/gltf/
+[CesiumJS]: https://cesiumjs.org/
+[3DTiles]: https://github.com/AnalyticalGraphicsInc/3d-tiles
 [WGS 1984]: http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html
 [Herbal System]: http://herbal3d.org/
 [Basil Viewer]: http://basilviewer.org/
@@ -97,3 +187,5 @@ all [OpenSimulator] grids and Third Party Viewers.
 [Apache License]: http://opensource.org/licenses/Apache-2.0
 [Creative Commons Attribution-NonCommercial 4.0 International]: http://creativecommons.org/licenses/by-nc/4.0/
 
+<!-- vim: ts=2 sw=2 et ai
+-->
