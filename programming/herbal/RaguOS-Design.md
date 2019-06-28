@@ -18,6 +18,7 @@ title: "RaguOS: Design Discussion"
             <li><a href="#actors">Actors Layer</a></li>
             <li><a href="#editing">Editing Layer</a></li>
           </ol>
+        <li><a href="#level-of-detail-computation">Level of Detail Computation</a></li>
         <li><a href="#division-hash">Division Hash</a></li>
         <li><a href="#texture-simplification">Texture Simplificiation</a></li>
         <li><a href="#asset-storage-and-access">Asset Storage and Access</a></li>
@@ -91,15 +92,7 @@ for the viewer resolution, view distance, and camera location.
 To that end, it is envisioned that [Loden] will convert a region into a tree that includes a top
 level of the whole OpenSimulator region as one mesh (for distance viewing) and then sub-areas of the
 region containing ever increasing level-of-detail of the assets.
-
-The initial implementation will replace the whole region, single mesh with a single GLTF that describes
-the whole region's contents. The second level will be a quad division of the region. Initially, the
-divisions will be of equal size but future versions will split the region until there is an equal
-number of scene objects in each division.
-
-The quad divisions will each be increasing level-of-detail until the lowest level will have scene
-object versions that are visually nearly identical to the underlying [OpenSimulator] primitives.
-Depending on ease of implementation, each level may split into other quad divisions.
+The construction of the tree will depend on the type of scene objects.
 
 ## Region Content Layers
 
@@ -113,16 +106,29 @@ layers for the [Basil Viewer]. These layers are:
 
 ### Static Layer
 
+The initial implementation will replace the whole region, single mesh with a single GLTF that describes
+the whole region's contents. The second level will be a quad division of the region. Initially, the
+divisions will be of equal size but future versions will split the region until there is an equal
+number of scene objects in each division.
+
+The quad divisions will each be increasing level-of-detail until the lowest level will have scene
+object versions that are visually nearly identical to the underlying [OpenSimulator] primitives.
+Depending on ease of implementation, each level may split into other quad divisions.
+
+
 ### Dynamic Layer
 
 ### Actors Layer
 
 ### Editing Layer
 
+## Level of Detail Computation
+
+As stated in the [3DTiles] documentation:
+
+> A tile's geometric error defines the selection metric for that tile. Its value is a nonnegative number that specifies the error, in meters, of the tile's simplified representation of its source geometry. The root tile, being the most simplified version of the source geometry, will have the greatest geometric error. Then each successive level of children will have a lower geometric error than its parent, with leaf tiles having a geometric error of or close to 0.
 
 ((Description of the level-of-detail specification.))
-
-A tile's geometric error defines the selection metric for that tile. Its value is a nonnegative number that specifies the error, in meters, of the tile's simplified representation of its source geometry. The root tile, being the most simplified version of the source geometry, will have the greatest geometric error. Then each successive level of children will have a lower geometric error than its parent, with leaf tiles having a geometric error of or close to 0.
 
 ## Division Hash
 
