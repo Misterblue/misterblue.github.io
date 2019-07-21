@@ -115,6 +115,14 @@ The quad divisions will each be increasing level-of-detail until the lowest leve
 object versions that are visually nearly identical to the underlying [OpenSimulator] primitives.
 Depending on ease of implementation, each level may split into other quad divisions.
 
+Top level: region as one GLTF with reduced mesh detail and texture
+Top-1: region split into four sub-regions each as one GLTF
+Top-2: quads with linksets merged into one mesh with texture atlases
+Top-3: quads with meshes with reduced complexity and textures reduced to 100ppm
+Top-4: quads with meshes at full prim detail and textures full size
+
+Each level and quad will have a unique, content-based hash supplied with the GLTF file that is
+used to decide whether to build that level/quad after any content changes.
 
 ### Dynamic Layer
 
