@@ -75,30 +75,23 @@ it is supplied in an `Auth` and `AuthExpiration` value.
 
 Authorization expiration dates are [RFC3339] date strings.
 
+## JWT Information
 
 
 ## Legal Stuff
 
 This document is covered by [Creative Commons Attribution-NonCommercial 4.0 International].
 
-[^1]: see work in [Sirikata] for querying space servers by pixel size.
-[^2]: a term coined from [Sirikata]
 
-[JWT]: 
+[JWT]: https://jwt.io/
 [RFC3339]: https://tools.ietf.org/html/rfc3339
-
 [WGS 1984]: http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html
-[double]: https://en.wikipedia.org/wiki/Double-precision_floating-point_format
-[X11 Server]: https://en.wikipedia.org/wiki/X_Window_System
 [OpenSimulator]: http://opensimulator.org/
-[High Fidelity]: http://highfidelity.io/
-[Oculus]: http://www.oculus.com/
 [View Service]: http://loc-loc.net/
 [Herbal System]: http://herbal3d.org/
 [Basil Viewer]: http://basilviewer.org/
 [Pesto]: http://misterblue.github.io/pesto/
 [Ragu]: http://misterblue.github.io/ragu/
-[Sirikata]: http://sirikata.org/
 [BSD License]: http://opensource.org/licenses/BSD-3-Clause
 [MIT License]: http://opensource.org/licenses/MIT
 [Apache License]: http://opensource.org/licenses/Apache-2.0
