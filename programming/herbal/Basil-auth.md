@@ -58,8 +58,8 @@ The properties are coded as:
 {
     'SessionKey': '01234567890123456789',
     'SessionAuth': '98765432109876543210987654321',
-    'SessionAuthExpiration': 'date',
-    'Services': '[ { "Name": "ServiceName", "Url": "ServiceURL", "Auth": "989898", "AuthExpiration": "date" } ]'
+    'SessionAuthExpiration': '2020-07-12T12:13:14Z',
+    'Services': '[ { "Name": "ServiceName", "Url": "ServiceURL", "Auth": "989898", "AuthExpiration": "2020-07-12T12:13:14Z" } ]'
 }
 ```
 
@@ -75,6 +75,34 @@ it is supplied in an `Auth` and `AuthExpiration` value.
 
 Authorization expiration dates are UTC times coded as [RFC3339] date strings.
 
+## MakeConnection
+
+A Basil renderer will receive ```MakeConnecion()``` requests that command it to connect
+to another service.  The request includes the connection address, the service type, and
+the authorization keys to access that service.
+
+The properties sent in the ```MakeConnection()``` request will include at least:
+
+```javascript
+'Properties': {
+    'Service': 'SpaceServer',
+    'TransportURL': 'ServiceConnectionURL',
+    'ServiceAuth': '{ "Name": "ServiceName", "Url": "ServiceConnectionURL", "Auth": "7878787", "AuthExpiration": "2020-07-12T12:13:14Z" }'
+}
+```
+
+where ```ServiceAuth``` contains the authorization information that is returned by Basil in
+the requests to the service.
+Note that ```ServiceAuth``` is in the same JSON string format as ```Services``` in ```SpaceServer.OpenSession()```
+response.
+
+The handshake is:
+
+-- Basil receives a authorization token for the service in the ```MakeConnecion()``` request;
+-- Basil uses that authorization token in the ```SpaceServer.OpenSession()``` request;
+-- The ```SpaceServer.OpenSession()``` request response includes a ```SessionAuth``` which is
+    the authorization token that Basil will return to make future requests to that SpaceServer.
+
 ## JWT Information
 
 ((Description of the assertions coded into the JWTs))
@@ -82,6 +110,11 @@ Authorization expiration dates are UTC times coded as [RFC3339] date strings.
 ## Token Renewal
 
 ((Use of SpaceServer.RenewSession() request to renew access tokens.))
+
+The service description/authorization JSON string sent to Basil includes a name for that service.
+This name is a unique identifier for that service/authorization association. That name is
+used in the ```SpaceServer.RenewSession()``` request to get an updated authorization for the
+service.
 
 
 ## Legal Stuff
