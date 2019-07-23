@@ -66,16 +66,22 @@ The properties are coded as:
 where `SessionKey` is a replay of `SessionKey` from the invocation,
 `SessionAuth` is a new authorization token that Basil will return in future
 SpaceServer requests to authorize access,
-`SessinAuthExpiration` is the date when the `SessionAuth` token will expire.
+`SessionAuthExpiration` is the date when the `SessionAuth` token will expire.
 
 `Services` is a JSON encoded string containing an array of one or more services that Basil
 may need to access for this session. For each service, if an authorization token is needed,
 it is supplied in an `Auth` and `AuthExpiration` value.
 
 
-Authorization expiration dates are [RFC3339] date strings.
+Authorization expiration dates are UTC times coded as [RFC3339] date strings.
 
 ## JWT Information
+
+((Description of the assertions coded into the JWTs))
+
+## Token Renewal
+
+((Use of SpaceServer.RenewSession() request to renew access tokens.))
 
 
 ## Legal Stuff
