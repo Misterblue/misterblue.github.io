@@ -26,9 +26,9 @@ section which contains at least:
 
 ```javascript
 {
-    'auth': {
-        'SessionKey': '01234567890123456789',
-        'UserAuth': '012345678901234567890123456789'
+    "auth": {
+        "SessionKey": "01234567890123456789",
+        "UserAuth": "012345678901234567890123456789"
     }
 }
 ```
@@ -51,10 +51,11 @@ passed in the `SpaceServer.OpenConnection()` request will have the contents:
 
 ```javascript
 {
-    'accessProperties': {
-        'SessionKey': '01234567890123456789',
-        'UserAuth': '012345678901234567890123456789',
-        'ClientAuth': '012345678900123456789'
+    "accessProperties": {
+        "SessionKey": "01234567890123456789",
+        "UserAuth": "012345678901234567890123456789",
+        "ClientAuth": "012345678900123456789"
+        "ClientAuthExpiration": "2020-07-12T12:13:14Z"
     }
 }
 ```
@@ -70,10 +71,10 @@ The properties are coded as:
 
 ```javascript
 {
-    'SessionKey': '01234567890123456789',
-    'SessionAuth': '98765432109876543210987654321',
-    'SessionAuthExpiration': '2020-07-12T12:13:14Z',
-    'Services': '[ { "Name": "ServiceName", "Url": "ServiceURL", "Auth": "989898", "AuthExpiration": "2020-07-12T12:13:14Z" } ]'
+    "SessionKey": "01234567890123456789",
+    "SessionAuth": "98765432109876543210987654321",
+    "SessionAuthExpiration": "2020-07-12T12:13:14Z",
+    "Services": "[ { "Name": "ServiceName", "Url": "ServiceURL", "Auth": "989898", "AuthExpiration": "2020-07-12T12:13:14Z" } ]"
 }
 ```
 
@@ -98,10 +99,10 @@ the authorization keys to access that service.
 The properties sent in the `MakeConnection()` request will include at least:
 
 ```javascript
-'Properties': {
-    'Service': 'SpaceServer',
-    'TransportURL': 'ServiceConnectionURL',
-    'ServiceAuth': '{ "Name": "ServiceName", "Url": "ServiceConnectionURL", "Auth": "7878787", "AuthExpiration": "2020-07-12T12:13:14Z" }'
+"Properties": {
+    "Service": "SpaceServer",
+    "TransportURL": "ServiceConnectionURL",
+    "ServiceAuth": "{ "Name": "ServiceName", "Url": "ServiceConnectionURL", "Auth": "7878787", "AuthExpiration": "2020-07-12T12:13:14Z" }"
 }
 ```
 
@@ -115,6 +116,22 @@ The handshake is:
 - Basil receives a authorization token for the service in the `MakeConnecion()` request;
 - Basil uses that authorization token in the `SpaceServer.OpenSession()` request;
 - The `SpaceServer.OpenSession()` request response includes a `SessionAuth` which is the authorization token that Basil will return to make future requests to that SpaceServer.
+
+Since Basil will be talking to another service after this, the response to `MakeConnection()`
+does not include any useful information other than an Exception of the connection is not allowed.
+
+## Server Request Authorization
+
+When accessing a server (BasilServer or SpaceServer), the request includes an 'auth'
+field which includes at least:
+
+```javascript
+"accessProperties": {
+    "Auth": "authorizationKey"
+}
+```
+
+This provides the authorization key for the request to the server.
 
 ## JWT Information
 
@@ -136,6 +153,8 @@ This document is covered by [Creative Commons Attribution-NonCommercial 4.0 Inte
 
 
 [JWT]: https://jwt.io/
+[JWT RFC]: https://tools.ietf.org/html/rfc7519
+[RFC7519]: https://tools.ietf.org/html/rfc7519
 [RFC3339]: https://tools.ietf.org/html/rfc3339
 [WGS 1984]: http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html
 [OpenSimulator]: http://opensimulator.org/
