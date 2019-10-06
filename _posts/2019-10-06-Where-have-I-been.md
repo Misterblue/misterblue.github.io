@@ -87,7 +87,7 @@ I expect to get back to [ROS2], [Docker] deployment of node logic, and
 playing with things using [transformer neural networks]
 to build
 [model predictive controllers].
-Could be fun.
+Will be fun.
 
 [ROS2]: https://index.ros.org/doc/ros2/
 [presentation]: https://drive.google.com/open?id=1gY9ByfrH92V28EUl5SoEEkMiymYqme7H
@@ -95,13 +95,14 @@ Could be fun.
 [Basil]: https://github.com/Herbal3d/basil
 [OpenSimulator]: https://opensimulator.org/
 [Loden]: https://github.com/Herbal3d/Loden
+[GLTF]: https://www.khronos.org/gltf/
 [RaguOS]: https://github.com/Herbal3d/RaguOS
 [Herbal3d]: https://herbal3d.org/
 [OSAuth]: https://github.com/Herbal3d/OSAuthModule
 [JWT tokens]: https://jwt.io/
+[Docker]: https://www.docker.com/
 [Sirikata project]: http://sing.stanford.edu/pubs/sirikata-atc12.pdf
 [automatic LOD generation of scenes]: https://hal.inria.fr/hal-01113078/file/manuscript.pdf
 [build and deploy OpenSimulator as Docker containers]: https://github.com/Misterblue/opensim-docker
 [model predictive controllers]: https://en.wikipedia.org/wiki/Model_predictive_control
 [transformer neural networks]: https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
-
