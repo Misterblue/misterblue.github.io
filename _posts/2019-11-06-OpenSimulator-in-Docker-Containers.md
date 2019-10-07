@@ -43,7 +43,7 @@ The [Github] repository [https://github.com/Misterblue/opensim-docker]
 contains instructions and files for building and deploying [OpenSimulator]
 using `docker-compose`.
 
-The hardest part of treaking [OpenSimulator] configuration because there are
+The hardest part was the tweaking of [OpenSimulator] configuration because there are
 so many files that need changing and I wanted to have both packaged configurations
 and the ability to completely replace the simulator's configuration without changing
 the Docker image.
@@ -54,7 +54,7 @@ copies in `bin/config`. This allows pre-packaged configurations to be included
 in the images (set with environment variable `CONFIG_NAME`) or to completely replace
 the configuration by mounting over the `bin/config` directory.
 
-Happy Docker'ing.
+Happy Virtual World'ing.
 
 [OpenSimulator]: https://opensimulator.org/
 [Docker]: https://www.docker.com/
