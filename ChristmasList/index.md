@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Robert's Christmas list -- 2018
+title: Robert's Christmas list -- 2019
 ---
-# Robert's Christmas List -- 2018
+# Robert's Christmas List -- 2019
 
 ## Books
 
@@ -17,13 +17,12 @@ Any kindle book from my Amazon wish lists.
 
 ## Misc
 
-* Dashcam for Toyota and Honda
-* [Wink 2 Smart Home Hub] (expensive but non-cloud based home control)
+* Work gloves (like [Stanley Work Gloves] )
+* Tall monitor stand (the [WALI] version has both desk and grommet mounts)
+* Dashcam (multiple camera like [APEMAN Dual Dash Cam])
 * Different robotics hardware -- I want things rolling around the house
-* Over-ear gaming headphones (with mic) (not on-ear but the ones that cover the ear)
 * [Amazon gift cards] (for buying more books, etc)
 * Dining gift cards (for dinners out at interesting restaurants)
-* I like sweet liquors like B&B or Drambuie.
 * I like sweets in general
 
 [XKCD Volume 0]: https://www.amazon.com/xkcd-0-Randall-Munroe/dp/0615314465/
@@ -33,7 +32,9 @@ Any kindle book from my Amazon wish lists.
 [Fiction]: http://www.amazon.com/gp/registry/wishlist/X0774K777WYB/
 [Non-Fiction]: http://www.amazon.com/gp/registry/wishlist/3RRPBD5NAHSJ9/
 [Amazon gift cards]: http://www.amazon.com/gift-cards 
-[Wink 2 Smart Home Hub]: https://www.amazon.com/gp/product/B01KW8WGZQ/
+[Stanley Work Gloves]: https://www.amazon.com/Stanley-Gloves-Synthetic-Leather-Comfort/dp/B013LWQX86/
+[WALI]: https://www.amazon.com/dp/B072N1MFJK/
+[APEMAN Dual Dash Cam]: https://www.amazon.com/APEMAN-Driving-Recorder-G-Sensor-Recording/dp/B07GRV85NP/
 
 <!-- vim: shiftwidth=2 tabstop=2 autoindent expandtab
 -->
