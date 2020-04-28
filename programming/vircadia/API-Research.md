@@ -3,6 +3,7 @@ layout: page
 style: vircadia
 title: "Project Apollo API Research"
 ---
+<!--
 <div id="herbal-toc">
   <ol>
     <li><a href="#raguos-module-based-spaceserver-frontend-for-opensimulator">Introduction</a></li>
@@ -32,6 +33,7 @@ title: "Project Apollo API Research"
     <li><a href="#legal-stuff">Legal Stuff</a></li>
   </ol>
 </div>
+-->
 
 # Vircadia/Project Apollo API Research
 
