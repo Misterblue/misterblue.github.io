@@ -110,6 +110,10 @@ api/v1/transactions
                     'transaction.amount'
         does one request for each "pending assignment credit"
 
+/api/v1/domains/{id}
+    ./scripts/tutorials/getDomainMetadata.js
+        'domain' has a lot of info in it (metadata)
+
 /api/v1/domains/{id}/ice_server_address
     domain-server/src/DomainServer.cpp
         PUT to update ICE server address
@@ -121,6 +125,75 @@ api/v1/transactions
                 (there is an extra toJson() for unknown reasons)
 
 /api/v1/user/places/{placeID}
+    ./scripts/tutorials/getDomainMetadata.js
+        'place.domain.id'
+
+
+/api/v1/commerce/available_updates?per_page=10
+    scripts/system/commerce/wallet.js
+
+/api/v1/commerce/history?page_page=10
+    scripts/system/commerce/wallet.js
+
+/api/v1/user/connection_request
+    scripts/system/makeUserConnection.js:
+        DELETE to endHandshake()
+        POST
+            { 'user_connection_request': {
+                    'node_id': MyAvatar.sessionUUID,
+                    'proposed_node_id': id
+                }
+            }
+        GET
+            { connection: {
+                'username': username,
+                'new_connection': booleanTrueIfNewConnectionOtherwiseAlreadyConnected
+                }
+            }
+
+/api/v1/users/{accountName}/location
+    scripts/system/makeUserConnection.js:
+        'location.node_id' expecting it to be equal to 'MyAvatar.sessionUUID'
+
+/api/v1/user_stories/{story_id}
+    scripts/system/snapshot.js
+        GET
+            {
+                'user_story': {
+                    'path': storyPath,
+                    'place_name': storyPlaceName,
+                    'thumbnail_url': storyThumbnailUrl,
+                    'details': {
+                        'sharable_url': storySharableUrl,
+                        'image_url': storyImageUrl
+                    }
+                }
+            }
+
+/api/v1/user_stories
+    scripts/system/snapshot.js
+        POST
+            { 'user_story': {
+                'audience: 'for_connections',   // part of "BlastToConnections"
+                'action': 'announcement',
+                'path': storyPath,
+                'place_name': storyPlaceName,
+                'thumbnail_url': storyThumbnailUrl
+                // There is comment that "for historical reasons" the server doesn't
+                //    take nested JSON objects so the 'details' contents are stringified
+                'details': {
+                    'sharable_url': storySharableUrl,
+                    'image_url': storyImageUrl
+                    }
+                }
+            }
+
+
+/api/v1/user_stories?include_actions=announcement&restriction=open,hifi
+                &require_online=true&protocol={protocolSignature}&per_page=10
+    scripts/system/tablet-goto.js
+        GET
+
 </pre>
 
 ## Legal stuff
