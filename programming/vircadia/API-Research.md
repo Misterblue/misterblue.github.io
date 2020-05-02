@@ -93,6 +93,9 @@ It will be a learning experience.
                 'api_key':  suppliedIfTemporaryDomain
                 'heart_beat': numberOfUsers??
             }
+    libraries/networking/src/AddressManager.cpp
+
+/api/v1/domains/{metaverse.id}/public_key
 
 METAVERSE_URL/api/metaverse_info
     domain-server/resources/web/js/shared.js
@@ -111,7 +114,7 @@ api/v1/transactions
         does one request for each "pending assignment credit"
 
 /api/v1/domains/{id}
-    ./scripts/tutorials/getDomainMetadata.js
+    scripts/tutorials/getDomainMetadata.js
         'domain' has a lot of info in it (metadata)
 
 /api/v1/domains/{id}/ice_server_address
@@ -125,15 +128,95 @@ api/v1/transactions
                 (there is an extra toJson() for unknown reasons)
 
 /api/v1/user/places/{placeID}
-    ./scripts/tutorials/getDomainMetadata.js
+/api/v1/user/places/{placeName}
+    scripts/tutorials/getDomainMetadata.js
         'place.domain.id'
+    scripts/system/interstitialPage.js
+        GET
+            { 'place': {
+                'description': text
+                }
+            }
+    libraries/networking/src/AddressManager.h
+
+/api/v1/user/profile
+    libraries/networking/src/AccountManager.cpp
+        adds 'Authorization:' header token
+        GET
+            {
+                'user': {
+                    'username': name,
+                    'xmpp_password': pwString,
+                    'discourse_api_key': key,
+                    'wallet_id': id
+
+                }
+            }
+
+/api/v1/user/locker
+    libraries/networking/src/AccountManager.cpp
+        adds 'Authorization:' header token
+        GET 
+            {
+                'lastChangeTimestamp':
+                'homeLocation':
+            }
+
+/api/v1/user/public_key
+    libraries/networking/src/AccountManager.cpp
+    PUT
+        header: 'form-data; name="public_key"; filename="public_key"'
+        header: 'form-data; name="api_key"'
+    Uses this URL or one below depending if 'domainID' is null or not
+/api/v1/domains/{domainID}/public_key
+    libraries/networking/src/AccountManager.cpp
+    PUT
+
 
 
 /api/v1/commerce/available_updates?per_page=10
     scripts/system/commerce/wallet.js
 
-/api/v1/commerce/history?page_page=10
+/api/v1/commerce/history?per_page=10
     scripts/system/commerce/wallet.js
+
+/api/v1/commerce/history?since=sinceLastPollSeconds
+                        &page=1
+                        &per_page=1000 (with note to say gotta get them all)
+    server-console/src/modules/hf-notifications.js
+        does GET polling to generate notifications
+
+/api/v1/commerce/available_updates?since=sinceLastPollSeconds
+                        &page=1
+                        &per_page=1000 (with note to say gotta get them all)
+    server-console/src/modules/hf-notifications.js
+        does GET polling to generate notifications
+        does second fetch without the 'since' but adds
+                'auth': 'bearer': token to request.get()
+
+/api/v1/commerce/proof_of_purchase_status/location
+    libraries/entities/src/EntityTree.cpp
+        PUT? {  // part of certificate "validation"
+            'certificate_id': certificate
+        }
+
+/api/v1/commerce/proof_of_purchase_status/transfer
+    libraries/entities/src/EntityTree.cpp
+        PUT? {  // part of certificate "validation"
+            'certificate_id': certificate
+        }
+        response: {
+            'invalid_reason': invalidIfThisIsNonEmpty,
+            'transfer_status': checkedForStringFailed,
+            'transfer_recipient_key': key
+        }
+
+/api/v1/commerce/marketplace_key
+    libraries/entities/src/EntityItem.cpp
+        GET
+            {
+                'public_key': marketplacePublicKey
+        
 
 /api/v1/user/connection_request
     scripts/system/makeUserConnection.js:
@@ -151,9 +234,103 @@ api/v1/transactions
                 }
             }
 
+/api/v1/user/connections/{connectionUserName}
+    scripts/system/pal.js
+        DELETE to "removeConnection"
+
+/api/v1/user/channel_user?email=email
+                    &username=username
+                    &password=pw
+    launchers/qt/src/SignupRequest.cpp
+        adds ContentType: application/x-www-form-urlencoded
+        PUT
+            {
+                'error': 'no_such_email'
+                        'user_profile_already_completed'
+                        'bad_username'
+                        'existing_username'
+                        'bad_password'
+            }
+            
+
+
 /api/v1/users/{accountName}/location
     scripts/system/makeUserConnection.js:
         'location.node_id' expecting it to be equal to 'MyAvatar.sessionUUID'
+    libraries/networking/src/AddressManager.cpp
+
+/api/v1/users?status=online
+https://metaverse.highfidelity.com/api/v1/users?status=online
+https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
+    scripts/system/html/users.html
+        GET
+            { 'users': [
+                    {
+                        'username': userName,
+                        'location': {
+                            'root': {
+                                'name': locationName
+                            }
+                        }
+                    },
+                    ...
+                ]
+            }
+
+/api/v1/users?per_page=400&
+/api/v1/users?filter=connections
+/api/v1/users?filter=connections
+                &status=online
+                &page=1
+                &per_page=MAX_NOTIFICATION_ITEMS
+/api/v1/users?search=specificUserName
+    scripts/system/libraries/connectionUtils.js
+        part of 'getAvailableConnections()'
+        GET
+            { 'users': [
+                    {
+                        'username': userName,
+                        'connection': string,
+                        'images': {
+                            'thumbnail': url
+                        },
+                        'location': {
+                            'node_id': usedAsSessionId,
+                            'root': {
+                                'name': locationName
+                            },
+                            'domain': {     // seems to expect either 'root' or 'domain'
+                                'name': locationName
+                            }
+                        }
+                    },
+                    ...
+                ]
+            }
+    scripts/system/pal.js
+    server-console/src/modules/hf-notifications.js
+        adds 'auth', 'bearer': token to JavaScript request.get()
+        does polling to generate notifications about new users
+        GET
+            { 'users': [
+                {
+                    'username': userName,
+                ]
+            }
+
+
+
+/api/v1/user/friends
+    scripts/system/pal.js
+        POST    // to "addFriend"
+            {
+                'username': friendUserName
+            }
+
+/api/v1/user/friends/{friendUserName}
+    scripts/system/pal.js
+        DELETE to "removeFriend"
+
 
 /api/v1/user_stories/{story_id}
     scripts/system/snapshot.js
@@ -189,10 +366,65 @@ api/v1/transactions
             }
 
 
-/api/v1/user_stories?include_actions=announcement&restriction=open,hifi
+/api/v1/user_stories?include_actions=announcement
+                    &restriction=open,hifi
                 &require_online=true&protocol={protocolSignature}&per_page=10
     scripts/system/tablet-goto.js
         GET
+
+/api/v1/user_stories?since=sinceSeconds
+                    &include_actions=announcement
+                    &restriction=open,hifi
+                    &require_online=true
+                    &per_page=MAX_NOTIFICATION_ITEMS
+    server-console/src/modules/hf-notifications.js
+        GET
+            does above GET then immediately does another
+            /api/v1/user_stories?now="new Date().toISOString()"
+                                &include_actions=announcement
+                                &restriction=open,hifi
+                                &require_online=true
+                                &per_page=MAX_NOTIFICATION_ITEMS
+            adds 'auth'=token to JavaScript request()
+            { 'user_stories': [
+                { 'place_name': storyPlaceName,
+                    ...
+                }
+            ]
+            }
+            
+
+
+/api/v1/user_activities
+    libraries/networking/src/UserActivityLogger.h
+        POST
+            'form-data; name="action_name"' actionString
+            'form-data; name="elapsed_ms"'  _timer.elapsed()
+            'form-data; name="action_details"' jsonString
+        actions:
+            launch
+                version
+                previousSessionCrashed
+                previousSessinRuntime
+            insufficient_gl
+                glData
+            changed_display_name
+                display_name
+            changed_model
+                type_of_model
+                model_url
+            changed_domain
+                domain_url
+            connected_devices
+                type_of_device
+                device_name
+            landed_script
+                script_name
+            went_to
+                trigger
+                    UserINput, Back, Forward, StartupFromSettings, Suggestions
+                destination_type
+                destination_name
 
 </pre>
 
