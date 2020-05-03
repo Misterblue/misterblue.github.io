@@ -96,6 +96,13 @@ It will be a learning experience.
     libraries/networking/src/AddressManager.cpp
 
 /api/v1/domains/{metaverse.id}/public_key
+    ice-server/src/IceServer.cpp
+        adds 'FollowRedirectionsAttibute' to 'true'
+        adds 'user' with domainID ("publicKeyRequest.setAtribute(QNeweorRequest::User, domainId)")
+        GET
+            {
+                'public_key': fromBase64(dataObject[PUBLIC_KEY_KEY].toString().toUtf8())
+            }
 
 METAVERSE_URL/api/metaverse_info
     domain-server/resources/web/js/shared.js
@@ -158,9 +165,15 @@ api/v1/transactions
         adds 'Authorization:' header token
         GET 
             {
-                'lastChangeTimestamp':
-                'homeLocation':
+                'home_location':
             }
+    launchers/qt/src/SignupRequest.cpp
+        adds "Authorization:" header either "Bearer {token}"
+        GET 
+            {
+                'home_location':
+            }
+
 
 /api/v1/user/public_key
     libraries/networking/src/AccountManager.cpp
@@ -173,6 +186,51 @@ api/v1/transactions
     PUT
 
 
+
+/api/v1/commerce/transaction
+    interface/src/commerce/Ledger.cpp
+        PUT    // to do a 'buy' operation
+            {
+                'signature': signedString
+            the thing signed with the wallet key is JSON:
+                {
+                    'hfc_key':
+                    'cost':
+                    'asset_id':
+                    'inventory_key':
+                }
+            }
+        PUT    // to do a 'receiveAt'
+            {
+                'signature': signedString
+            the thing signed with the wallet key is JSON:
+                {
+                    'public_key': hfc_key,
+                    'locker':
+                }
+            }
+        // inventory answers {status: 'success', data: {assets: [{id: "guid", title: "name", preview: "url"}....]}}
+        // balance answers {status: 'success', data: {balance: integer}}
+        // buy and receive_at answer {status: 'success'}
+        // account synthesizes a result {status: 'success', data: {keyStatus: "preexisting"|"conflicting"|"ok"}}
+
+/api/v1/commerce/inventory?
+                edition_filter=
+                &type_filter=
+                &title_filter=
+                &page=
+                &per_page=
+                &public_keys=whatsInCachedPublicKeys
+    interface/src/commerce/Ledger.cpp
+        POST
+        // inventory answers {status: 'success', data: {assets:
+                [{id: "guid", title: "name", version: "ver", valid: bool, preview: "url"}....]
+                }}
+
+/api/v1/commerce/balance?public_keys=whatsInCachedPublicKeys
+    interface/src/commerce/Ledger.cpp
+        POST
+        // balance answers {status: 'success', data: {balance: integer}}
 
 /api/v1/commerce/available_updates?per_page=10
     scripts/system/commerce/wallet.js
@@ -210,12 +268,99 @@ api/v1/transactions
             'transfer_status': checkedForStringFailed,
             'transfer_recipient_key': key
         }
+    assignment-client/src/avatars/MixerAvatar.cpp
+        sets "FollowRedirectAttribute' to 'true'
+        PUT
+            'certificate_id': certificate
+        response:
+            'message':
+    interface/src/ui/overlays/ContextOverlayInterface.cpp
+        inside routine named "requestOwnershipVerification"
+        PUT
+            'certificate_id': certificate
+            there's a whole bunch of crazy logic here about verifying certs
 
 /api/v1/commerce/marketplace_key
     libraries/entities/src/EntityItem.cpp
         GET
             {
                 'public_key': marketplacePublicKey
+
+/api/v1/marketplace/items/
+    interface/resources/qml/hifi/commerce/checkout/Checkout.qml
+        GET
+            {
+                'title': itemName,
+                'cost': itemPrice,
+                'creator': itemAuthor,
+                'item_type': itemType,
+                'availability': availability,
+                'updated_item_id': updated_item_id,
+                'review_url': used if item_type is 'unknown' or not set
+                    // set into 'itemHref'
+                'thumbnail_url': itemPreviewImage
+            }
+
+/api/v1/marketplace/items?
+                q=
+                &view=
+                category=
+                adminFilter=
+                adminFilterCost=
+                sort=
+                sort_dir=
+                isFree=true         // if only wanting free items
+                page=
+                perPage=
+    interface/src/commerce/QmlMarketplace.cpp
+
+/api/v1/marketplace/items/{marketId}
+/api/v1/marketplace/items/{marketId}/like   // to get things like this item
+    interface/resources/qml/hifi/AvatarApp.qml
+        GET
+            {
+                'title': itemName,
+            }
+    interface/src/avatar/MarketplaceItemUploader.cpp
+        POST (if creating an avatar, otherwise PUT)
+            {
+                'marketplace_item': {
+                    'title': title,
+                    'description': desc // if creating
+                    'root_file_key': rootFilename,
+                    'category_ids': [
+                        ids
+                    ],
+                    'license': 0,
+                    'files': _fileData.toBase64
+                }
+            }
+            // the above is turned into an escaped string of JSON and posted
+            response:
+            {
+                'status': 'success',
+                'data': {
+                    'marketplace_id': marketplaceId
+                    'version': itemVersion
+                }
+            }
+
+
+/api/v1/marketplace/categories
+    interface/src/commerce/QmlMarketplace.cpp
+    interface/src/avatar/MarketplaceItemUploader.cpp
+        GET
+            {
+                'status': 'success',
+                'data': {
+                    'categories': [
+                        {
+                            'name': categoryName (could be "Avatars")
+                        }
+                    ]
+                }
+            }
+
         
 
 /api/v1/user/connection_request
@@ -237,6 +382,20 @@ api/v1/transactions
 /api/v1/user/connections/{connectionUserName}
     scripts/system/pal.js
         DELETE to "removeConnection"
+    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
+        DELETE  // part of routine called 'removeConnection'
+
+/api/v1/user/location
+    interface/src/DiscoverabilityManager.cpp
+        PUT (includes AccessManager auth)
+        DELETE  // to remove location
+
+/api/v1/user/heartbeat
+    interface/src/DiscoverabilityManager.cpp
+        PUT (includes AccessManager auth)
+            {
+                'session_id_key':
+            }
 
 /api/v1/user/channel_user?email=email
                     &username=username
@@ -252,13 +411,19 @@ api/v1/transactions
                         'bad_password'
             }
             
-
-
 /api/v1/users/{accountName}/location
     scripts/system/makeUserConnection.js:
         'location.node_id' expecting it to be equal to 'MyAvatar.sessionUUID'
     libraries/networking/src/AddressManager.cpp
 
+
+/api/v1/users?per_page=400&
+/api/v1/users?filter=connections
+/api/v1/users?filter=connections
+                &status=online
+                &page=1
+                &per_page=MAX_NOTIFICATION_ITEMS
+/api/v1/users?search=specificUserName
 /api/v1/users?status=online
 https://metaverse.highfidelity.com/api/v1/users?status=online
 https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
@@ -276,14 +441,6 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
                     ...
                 ]
             }
-
-/api/v1/users?per_page=400&
-/api/v1/users?filter=connections
-/api/v1/users?filter=connections
-                &status=online
-                &page=1
-                &per_page=MAX_NOTIFICATION_ITEMS
-/api/v1/users?search=specificUserName
     scripts/system/libraries/connectionUtils.js
         part of 'getAvailableConnections()'
         GET
@@ -315,10 +472,39 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
             { 'users': [
                 {
                     'username': userName,
+                }
+            ]
+            }
+    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
+        GET // function called 'getUsers'
+            {
+                'status': 'success',
+                'current_page':
+                'total_pages':
+                'per_page':
+                'total_entries':
+                'users': [
+                    {
+                        'username': string,
+                        'online': boolean,
+                        'connection': string,
+                        'images': {
+                            'hero': string,
+                            'thumbnail': string,
+                            'tiny': string
+                        },
+                        'location': {
+                            'root': {
+                                'name': string
+                            },
+                            'domain': {
+                                'name': string
+                            }
+                        }
+                    }
                 ]
             }
-
-
+    interface/resources/qml/hifi/commerce/common/sendAsset/SendAsset.qml
 
 /api/v1/user/friends
     scripts/system/pal.js
@@ -326,10 +512,15 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
             {
                 'username': friendUserName
             }
+    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
+        POST    // part of routine 'addFriend'
+            body as above
 
 /api/v1/user/friends/{friendUserName}
     scripts/system/pal.js
         DELETE to "removeFriend"
+    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
+        DELETE  // part of routine 'removeFriend'
 
 
 /api/v1/user_stories/{story_id}
@@ -364,6 +555,34 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
                     }
                 }
             }
+    interface/src/ui/SnapshotUploader.cpp
+        POST    // for uploading a snapshot
+            {
+                'user_story': {
+                    'details': {    // contents turned to JSON so single level JSON struct
+                        'image_url': url,
+                        'sharable_url': shareableURL // if defined
+                        'snapshot_id': snapshotId,
+                        'original_image_file_name': filename
+                    }
+                    'thumbnail_url':
+                    'place_name':
+                    'path':
+                    'action': 'snapshot',   // for uploading snapshot
+                    'audience': 'for_url'
+                }
+            }
+
+/api/v1/user_stories?include_actions=concurrency    // actions for places
+                    &include_actions=concurrency,announcements,snapshot    // actions for full search
+                    &restriction=open   // if logged in, "restriction=open,hifi"
+                    &require_online=true
+                    &protocol=??        // "encodeURIComponent(Window.protocolSignature())"
+                    &tags=??
+                    &page=pageNumber
+                    &standalone_optimized=true  // if the platform is standalone
+    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/UserStoryDomainProvider.java
+    interface/resources/qml/hifi/Feed.qml
 
 
 /api/v1/user_stories?include_actions=announcement
@@ -426,6 +645,16 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
                 destination_type
                 destination_name
 
+/api/v1/snapshots
+    interface/src/ui/Snapshot.cpp
+        POST    // to upload snapshot
+            Header 'ContentType:' set to type of image (gif or jpeg)
+            'form-data;name=image;filename=theFilename'
+
+
+https://poly.googleapis.com/v1/assets?
+https://poly.googleapis.com/v1/assets/model?
+    interface/src/scripting/GooglePolyScriptingInterface.cpp
 </pre>
 
 ## Legal stuff

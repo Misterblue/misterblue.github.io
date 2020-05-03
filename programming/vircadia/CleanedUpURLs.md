@@ -45,7 +45,6 @@ As of 20200426.
 ./scripts/system/libraries/connectionUtils.js:
         url = METAVERSE_BASE + '/api/v1/users?per_page=400&'
         url = METAVERSE_BASE + '/api/v1/users?filter=connections'
-=====================================
 ./scripts/system/html/users.html:
         var METAVERSE_API_URL = "https://metaverse.highfidelity.com/api/v1/users?status=online";
 
@@ -157,6 +156,7 @@ As of 20200426.
 ./interface/src/ui/SnapshotUploader.cpp:
         const QString STORY_UPLOAD_URL = "/api/v1/user_stories";
 
+=====================================
 ./interface/src/ui/LoginDialog.cpp:
         const QString LINK_OCULUS_PATH = "api/v1/user/oculus/link";
         const QString CREATE_ACCOUNT_FROM_OCULUS_PATH = "api/v1/user/oculus/create";
