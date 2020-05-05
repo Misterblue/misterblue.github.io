@@ -156,7 +156,6 @@ As of 20200426.
 ./interface/src/ui/SnapshotUploader.cpp:
         const QString STORY_UPLOAD_URL = "/api/v1/user_stories";
 
-=====================================
 ./interface/src/ui/LoginDialog.cpp:
         const QString LINK_OCULUS_PATH = "api/v1/user/oculus/link";
         const QString CREATE_ACCOUNT_FROM_OCULUS_PATH = "api/v1/user/oculus/create";
@@ -169,6 +168,25 @@ As of 20200426.
 ./script-archive/lobby.js:
         req.open("GET", "https://metaverse.highfidelity.com/api/v1/places?limit=21", false);
 
+./domain-server/src/DomainServerSettingsManager.h:
+        // these are used to locally cache the result of calling "api/v1/groups/.../is_member/..." on metaverse's api
+        // remember the responses to api/v1/groups/%1/ranks
+
+./domain-server/src/DomainServerSettingsManager.cpp:
+        const QString GET_GROUP_ID_PATH = "api/v1/groups/names/%1";
+        const QString GET_GROUP_RANKS_PATH = "api/v1/groups/%1/ranks";
+
+./domain-server/src/DomainGatekeeper.cpp:
+        const QString USER_PUBLIC_KEY_PATH = "api/v1/users/%1/public_key";
+        const QString PUBLIC_KEY_URL_REGEX_STRING = "api\\/v1\\/users\\/([A-Za-z0-9_\\.]+)\\/public_key";
+        const QString GET_IS_GROUP_MEMBER_PATH = "api/v1/groups/members/%2";
+        const QString GROUP_MEMBERSHIPS_URL_REGEX_STRING = "api\\/v1\\/groups\\/members\\/([A-Za-z0-9_\\.]+)";
+        const QString GET_FRIENDS_LIST_PATH = "api/v1/user/friends";
+
+./domain-server/src/DomainMetadata.cpp:
+        static const QString DOMAIN_UPDATE = "/api/v1/domains/%1";
+
+=====================================
 ./domain-server/src/DomainServer.cpp:
         accountManager->sendRequest("/api/v1/domains/temporary", AccountManagerAuth::None,
         accountManager->sendRequest("api/v1/transactions",
@@ -181,24 +199,6 @@ As of 20200426.
         return forwardMetaverseAPIRequest(connection, "/api/v1/domains/" + domainID, "domain",
         QUrl url { MetaverseAPI::getCurrentMetaverseServerURL().toString() + "/api/v1/places/" + place_id };
         profileURL.setPath("/api/v1/user/profile");
-
-./domain-server/src/DomainServerSettingsManager.h:
-        // these are used to locally cache the result of calling "api/v1/groups/.../is_member/..." on metaverse's api
-        // remember the responses to api/v1/groups/%1/ranks
-
-./domain-server/src/DomainGatekeeper.cpp:
-        const QString USER_PUBLIC_KEY_PATH = "api/v1/users/%1/public_key";
-        const QString PUBLIC_KEY_URL_REGEX_STRING = "api\\/v1\\/users\\/([A-Za-z0-9_\\.]+)\\/public_key";
-        const QString GET_IS_GROUP_MEMBER_PATH = "api/v1/groups/members/%2";
-        const QString GROUP_MEMBERSHIPS_URL_REGEX_STRING = "api\\/v1\\/groups\\/members\\/([A-Za-z0-9_\\.]+)";
-        const QString GET_FRIENDS_LIST_PATH = "api/v1/user/friends";
-
-./domain-server/src/DomainMetadata.cpp:
-        static const QString DOMAIN_UPDATE = "/api/v1/domains/%1";
-
-./domain-server/src/DomainServerSettingsManager.cpp:
-        const QString GET_GROUP_ID_PATH = "api/v1/groups/names/%1";
-        const QString GET_GROUP_RANKS_PATH = "api/v1/groups/%1/ranks";
 
         
 ```

@@ -94,6 +94,18 @@ It will be a learning experience.
                 'heart_beat': numberOfUsers??
             }
     libraries/networking/src/AddressManager.cpp
+    domain-server/src/DomainMetadata.cpp
+        PUT
+            {
+                'domain': JSONstringOfDescriptors
+                from comment in this file:
+                    { "description": String, // capped description
+                      "capacity": Number,
+                      "restriction": String, // enum of either open, hifi, or acl
+                      "maturity": String, // enum corresponding to ESRB ratings
+                      "hosts": [ String ], // capped list of usernames
+                      "tags": [ String ], // capped list of tags
+                    }
 
 /api/v1/domains/{metaverse.id}/public_key
     ice-server/src/IceServer.cpp
@@ -133,6 +145,13 @@ api/v1/transactions
             }
             'domain': "aboveInfoAsJSONString"
                 (there is an extra toJson() for unknown reasons)
+
+/api/v1/user/places&limit=21
+    script-archive/lobby.js
+        GET
+            expects JSON to display lobby previews
+                data.places[N].previews.lobby to give a picture/texture
+            
 
 /api/v1/user/places/{placeID}
 /api/v1/user/places/{placeName}
@@ -177,245 +196,20 @@ api/v1/transactions
 
 /api/v1/user/public_key
     libraries/networking/src/AccountManager.cpp
-    PUT
-        header: 'form-data; name="public_key"; filename="public_key"'
-        header: 'form-data; name="api_key"'
-    Uses this URL or one below depending if 'domainID' is null or not
-/api/v1/domains/{domainID}/public_key
-    libraries/networking/src/AccountManager.cpp
-    PUT
-
-
-
-/api/v1/commerce/transaction
-    interface/src/commerce/Ledger.cpp
-        PUT    // to do a 'buy' operation
-            {
-                'signature': signedString
-            the thing signed with the wallet key is JSON:
-                {
-                    'hfc_key':
-                    'cost':
-                    'asset_id':
-                    'inventory_key':
-                }
-            }
-        PUT    // to do a 'receiveAt'
-            {
-                'signature': signedString
-            the thing signed with the wallet key is JSON:
-                {
-                    'public_key': hfc_key,
-                    'locker':
-                }
-            }
-        // inventory answers {status: 'success', data: {assets: [{id: "guid", title: "name", preview: "url"}....]}}
-        // balance answers {status: 'success', data: {balance: integer}}
-        // buy and receive_at answer {status: 'success'}
-        // account synthesizes a result {status: 'success', data: {keyStatus: "preexisting"|"conflicting"|"ok"}}
-
-/api/v1/commerce/inventory?
-                edition_filter=
-                &type_filter=
-                &title_filter=
-                &page=
-                &per_page=
-                &public_keys=whatsInCachedPublicKeys
-    interface/src/commerce/Ledger.cpp
-        POST
-        // inventory answers {status: 'success', data: {assets:
-                [{id: "guid", title: "name", version: "ver", valid: bool, preview: "url"}....]
-                }}
-
-/api/v1/commerce/balance?public_keys=whatsInCachedPublicKeys
-    interface/src/commerce/Ledger.cpp
-        POST
-        // balance answers {status: 'success', data: {balance: integer}}
-
-/api/v1/commerce/available_updates?per_page=10
-    scripts/system/commerce/wallet.js
-
-/api/v1/commerce/history?per_page=10
-    scripts/system/commerce/wallet.js
-
-/api/v1/commerce/history?since=sinceLastPollSeconds
-                        &page=1
-                        &per_page=1000 (with note to say gotta get them all)
-    server-console/src/modules/hf-notifications.js
-        does GET polling to generate notifications
-
-/api/v1/commerce/available_updates?since=sinceLastPollSeconds
-                        &page=1
-                        &per_page=1000 (with note to say gotta get them all)
-    server-console/src/modules/hf-notifications.js
-        does GET polling to generate notifications
-        does second fetch without the 'since' but adds
-                'auth': 'bearer': token to request.get()
-
-/api/v1/commerce/proof_of_purchase_status/location
-    libraries/entities/src/EntityTree.cpp
-        PUT? {  // part of certificate "validation"
-            'certificate_id': certificate
-        }
-
-/api/v1/commerce/proof_of_purchase_status/transfer
-    libraries/entities/src/EntityTree.cpp
-        PUT? {  // part of certificate "validation"
-            'certificate_id': certificate
-        }
-        response: {
-            'invalid_reason': invalidIfThisIsNonEmpty,
-            'transfer_status': checkedForStringFailed,
-            'transfer_recipient_key': key
-        }
-    assignment-client/src/avatars/MixerAvatar.cpp
-        sets "FollowRedirectAttribute' to 'true'
         PUT
-            'certificate_id': certificate
-        response:
-            'message':
-    interface/src/ui/overlays/ContextOverlayInterface.cpp
-        inside routine named "requestOwnershipVerification"
-        PUT
-            'certificate_id': certificate
-            there's a whole bunch of crazy logic here about verifying certs
+            header: 'form-data; name="public_key"; filename="public_key"'
+            header: 'form-data; name="api_key"'
+        Uses this URL or one below depending if 'domainID' is null or not
 
-/api/v1/commerce/marketplace_key
-    libraries/entities/src/EntityItem.cpp
+/api/v1/users/{username}/public_key
+    domain-server/src/DomainGatekeeper.cpp
         GET
             {
-                'public_key': marketplacePublicKey
-
-/api/v1/marketplace/items/
-    interface/resources/qml/hifi/commerce/checkout/Checkout.qml
-        GET
-            {
-                'title': itemName,
-                'cost': itemPrice,
-                'creator': itemAuthor,
-                'item_type': itemType,
-                'availability': availability,
-                'updated_item_id': updated_item_id,
-                'review_url': used if item_type is 'unknown' or not set
-                    // set into 'itemHref'
-                'thumbnail_url': itemPreviewImage
-            }
-
-/api/v1/marketplace/items?
-                q=
-                &view=
-                category=
-                adminFilter=
-                adminFilterCost=
-                sort=
-                sort_dir=
-                isFree=true         // if only wanting free items
-                page=
-                perPage=
-    interface/src/commerce/QmlMarketplace.cpp
-
-/api/v1/marketplace/items/{marketId}
-/api/v1/marketplace/items/{marketId}/like   // to get things like this item
-    interface/resources/qml/hifi/AvatarApp.qml
-        GET
-            {
-                'title': itemName,
-            }
-    interface/src/avatar/MarketplaceItemUploader.cpp
-        POST (if creating an avatar, otherwise PUT)
-            {
-                'marketplace_item': {
-                    'title': title,
-                    'description': desc // if creating
-                    'root_file_key': rootFilename,
-                    'category_ids': [
-                        ids
-                    ],
-                    'license': 0,
-                    'files': _fileData.toBase64
-                }
-            }
-            // the above is turned into an escaped string of JSON and posted
-            response:
-            {
-                'status': 'success',
                 'data': {
-                    'marketplace_id': marketplaceId
-                    'version': itemVersion
-                }
+                    'public_key': publicKeyInBase64
+                },
+                'status': 'success'
             }
-
-
-/api/v1/marketplace/categories
-    interface/src/commerce/QmlMarketplace.cpp
-    interface/src/avatar/MarketplaceItemUploader.cpp
-        GET
-            {
-                'status': 'success',
-                'data': {
-                    'categories': [
-                        {
-                            'name': categoryName (could be "Avatars")
-                        }
-                    ]
-                }
-            }
-
-        
-
-/api/v1/user/connection_request
-    scripts/system/makeUserConnection.js:
-        DELETE to endHandshake()
-        POST
-            { 'user_connection_request': {
-                    'node_id': MyAvatar.sessionUUID,
-                    'proposed_node_id': id
-                }
-            }
-        GET
-            { connection: {
-                'username': username,
-                'new_connection': booleanTrueIfNewConnectionOtherwiseAlreadyConnected
-                }
-            }
-
-/api/v1/user/connections/{connectionUserName}
-    scripts/system/pal.js
-        DELETE to "removeConnection"
-    android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
-        DELETE  // part of routine called 'removeConnection'
-
-/api/v1/user/location
-    interface/src/DiscoverabilityManager.cpp
-        PUT (includes AccessManager auth)
-        DELETE  // to remove location
-
-/api/v1/user/heartbeat
-    interface/src/DiscoverabilityManager.cpp
-        PUT (includes AccessManager auth)
-            {
-                'session_id_key':
-            }
-
-/api/v1/user/channel_user?email=email
-                    &username=username
-                    &password=pw
-    launchers/qt/src/SignupRequest.cpp
-        adds ContentType: application/x-www-form-urlencoded
-        PUT
-            {
-                'error': 'no_such_email'
-                        'user_profile_already_completed'
-                        'bad_username'
-                        'existing_username'
-                        'bad_password'
-            }
-            
-/api/v1/users/{accountName}/location
-    scripts/system/makeUserConnection.js:
-        'location.node_id' expecting it to be equal to 'MyAvatar.sessionUUID'
-    libraries/networking/src/AddressManager.cpp
-
 
 /api/v1/users?per_page=400&
 /api/v1/users?filter=connections
@@ -515,6 +309,24 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
     android/apps/interface/src/main/java/io/highfidelity/hifiinterface/provider/EndpointUsersProvider.java
         POST    // part of routine 'addFriend'
             body as above
+    domain-server/src/DomainGatekeeper.cpp
+        GET
+            {
+                status: "success",
+                data: {
+                    friends: [
+                        "chris",
+                        "freidrica",
+                        "G",
+                        "huffman",
+                        "leo",
+                        "philip",
+                        "ryan",
+                        "sam",
+                        "ZappoMan"
+                    ]
+                }
+            }
 
 /api/v1/user/friends/{friendUserName}
     scripts/system/pal.js
@@ -651,6 +463,97 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
             Header 'ContentType:' set to type of image (gif or jpeg)
             'form-data;name=image;filename=theFilename'
 
+/api/v1/groups/.../is_member/...
+    domain-server/src/DomainServerSettingsManager.h
+        from comment in above file
+    
+/api/v1/groups/members/{userName}
+    domain-server/src/DomainGatekeeper.cpp
+        GET
+            {
+                "data":{
+                    "username":"sethalves",
+                    "groups":{
+                        "fd55479a-265d-4990-854e-3d04214ad1b0":{
+                            "name":"Blerg Blah",
+                            "rank":{
+                                "name":"admin",
+                                "order":1
+                            }
+                        }
+                    }
+                },
+                "status":"success"
+            }
+`
+/api/v1/groups/names/{groupName}
+    domain-server/src/DomainServerSettingsManager.cpp
+        GET
+            {   // from comment in the source code
+                "data":{
+                    "groups":[{
+                        "description":null,
+                        "id":"fd55479a-265d-4990-854e-3d04214ad1b0",
+                        "is_list":false,
+                        "membership":{
+                            "permissions":{
+                                "custom_1=":false,
+                                "custom_2=":false,
+                                "custom_3=":false,
+                                "custom_4=":false,
+                                "del_group=":true,
+                                "invite_member=":true,
+                                "kick_member=":true,
+                                "list_members=":true,
+                                "mv_group=":true,
+                                "query_members=":true,
+                                "rank_member=":true
+                            },
+                            "rank":{
+                                "name=":"owner",
+                                "order=":0
+                            }
+                        },
+                        "name":"Blerg Blah"
+                    }]
+                },
+                "status":"success"
+            }
+
+/api/v1/groups/{groupID}/ranks
+    domain-server/src/DomainServerSettingsManager.cpp
+        GET
+
+            {
+                "data":{
+                    "groups":{
+                        "d3500f49-0655-4b1b-9846-ff8dd1b03351":{
+                            "members_count":1,
+                            "ranks":[
+                                {
+                                    "id":"7979b774-e7f8-436c-9df1-912f1019f32f",
+                                    "members_count":1,
+                                    "name":"owner",
+                                    "order":0,
+                                    "permissions":{
+                                        "custom_1":false,
+                                        "custom_2":false,
+                                        "custom_3":false,
+                                        "custom_4":false,
+                                        "edit_group":true,
+                                        "edit_member":true,
+                                        "edit_rank":true,
+                                        "list_members":true,
+                                        "list_permissions":true,
+                                        "list_ranks":true,
+                                        "query_member":true
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },"status":"success"
+            }
 
 https://poly.googleapis.com/v1/assets?
 https://poly.googleapis.com/v1/assets/model?
