@@ -3,38 +3,6 @@ layout: page
 style: vircadia
 title: "Project Apollo API Research"
 ---
-<!--
-<div id="herbal-toc">
-  <ol>
-    <li><a href="#raguos-module-based-spaceserver-frontend-for-opensimulator">Introduction</a></li>
-      <ol>
-        <li><a href="#choice-of-region-modules">Choice of Region Modules</a></li>
-      </ol>
-    <li><a href="#loden">Loden</a></li>
-      <ol>
-        <li><a href="#region-content-layers">Region Content Layers</a></li>
-          <ol>
-            <li><a href="#static">Static Layer</a></li>
-            <li><a href="#dynamic">Dynamic Layer</a></li>
-            <li><a href="#actors">Actors Layer</a></li>
-            <li><a href="#editing">Editing Layer</a></li>
-          </ol>
-        <li><a href="#level-of-detail-computation">Level of Detail Computation</a></li>
-        <li><a href="#division-hash">Division Hash</a></li>
-        <li><a href="#texture-simplification">Texture Simplificiation</a></li>
-        <li><a href="#asset-storage-and-access">Asset Storage and Access</a></li>
-        <li><a href="#region-description-assets">Region Description Assets</a></li>
-      </ol>
-    <li><a href="#raguos">RaguOS</a></li>
-      <ol>
-        <li><a href="#editing-mode">Editing Mode</a></li>
-      </ol>
-    <li><a href="#revision-history">Revision History</a></li>
-    <li><a href="#legal-stuff">Legal Stuff</a></li>
-  </ol>
-</div>
--->
-
 # Vircadia/Project Apollo API Research
 
 The [Vircadia] project needs a server infrastructure.
@@ -116,21 +84,11 @@ It will be a learning experience.
                 'public_key': fromBase64(dataObject[PUBLIC_KEY_KEY].toString().toUtf8())
             }
 
-METAVERSE_URL/api/metaverse_info
-    domain-server/resources/web/js/shared.js
-        GET in function getMetaverseUrl() returns 'metaverse_url'
-
 METAVERSE_URL/api/v1/domains/temporary
     domain-server/resources/web/js/shared.js
         GET expects 'domain.id'
     domain-server/src/DomainServer.cpp
         expects 'domain.id', 'domain.name', 'domain.api_key'
-
-api/v1/transactions
-    domain-server/src/DomainServer.cpp
-        GET expects 'transaction.id' (UUID), 'transaction.destination_wallet_id',
-                    'transaction.amount'
-        does one request for each "pending assignment credit"
 
 /api/v1/domains/{id}
     scripts/tutorials/getDomainMetadata.js
@@ -145,6 +103,16 @@ api/v1/transactions
             }
             'domain': "aboveInfoAsJSONString"
                 (there is an extra toJson() for unknown reasons)
+
+api/v1/transactions
+    domain-server/src/DomainServer.cpp
+        GET expects 'transaction.id' (UUID), 'transaction.destination_wallet_id',
+                    'transaction.amount'
+        does one request for each "pending assignment credit"
+
+METAVERSE_URL/api/metaverse_info
+    domain-server/resources/web/js/shared.js
+        GET in function getMetaverseUrl() returns 'metaverse_url'
 
 /api/v1/user/places&limit=21
     script-archive/lobby.js
@@ -178,6 +146,9 @@ api/v1/transactions
 
                 }
             }
+
+/api/v1/user/profile?access_token=accessToken
+    domain-server/src/DomainServer.cpp
 
 /api/v1/user/locker
     libraries/networking/src/AccountManager.cpp
@@ -554,6 +525,50 @@ https://metaverse.highfidelity.com/api/v1/users?status=online&filter=friends
                     }
                 },"status":"success"
             }
+
+domain-server/src/DomainServer.cpp
+    passes through
+        /api/v1/domains
+        /api/v1/domains/{domainID}
+        /api/v1/user/places
+
+
+/api/v1/marketplace/
+    ./interface/src/commerce/QmlMarketplace.cpp:
+/api/v1/marketplace?category=head+%26+body&limit=21", false);
+    ./script-archive/avatarSelector.js:
+/api/v1/marketplace/items/
+    ./interface/resources/qml/hifi/commerce/checkout/Checkout.qml:
+/api/v1/marketplace/items/{marketId}
+    ./interface/resources/qml/hifi/AvatarApp.qml:
+/api/v1/marketplace/categories
+    ./interface/src/avatar/MarketplaceItemUploader.cpp:
+/api/v1/marketplace/items
+    ./interface/src/avatar/MarketplaceItemUploader.cpp:
+/api/v1/commerce/inventory
+    ./interface/src/avatar/MarketplaceItemUploader.cpp:
+
+/api/v1/commerce/
+    ./interface/src/commerce/Ledger.cpp:
+/api/v1/commerce/inventory
+    ./interface/src/avatar/MarketplaceItemUploader.cpp:
+/api/v1/commerce/available_updates?per_page=10
+    ./scripts/system/commerce/wallet.js:
+/api/v1/commerce/history?per_page=10
+    ./scripts/system/commerce/wallet.js:
+/api/v1/commerce/marketplace_key
+    ./libraries/entities/src/EntityItem.cpp:
+/api/v1/commerce/proof_of_purchase_status/location
+    ./libraries/entities/src/EntityTree.cpp:
+/api/v1/commerce/proof_of_purchase_status/transfer
+    ./libraries/entities/src/EntityTree.cpp:
+    ./assignment-client/src/avatars/MixerAvatar.cpp:
+    ./interface/src/ui/overlays/ContextOverlayInterface.cpp:
+/api/v1/commerce/history
+    ./server-console/src/modules/hf-notifications.js:
+/api/v1/commerce/available_updates
+    ./server-console/src/modules/hf-notifications.js:
+
 
 https://poly.googleapis.com/v1/assets?
 https://poly.googleapis.com/v1/assets/model?
