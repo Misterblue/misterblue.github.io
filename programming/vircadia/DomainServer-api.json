@@ -3,7 +3,7 @@
     "info": {
         "version": "1.0.1",
         "title": "Vircadia Domain Server API",
-        "description": "Definition of the Domain Server API. The Interface communicates with the Domain server for all interactions with the virtual world.",
+        "description": "Definition of the Domain Server API. The Interface communicates with the Domain server for all interactions with the virtual world. This is a very early version of the definition. Missing: authentication, ??",
         "license": {
             "name": "Apache 2.0",
             "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
@@ -12,9 +12,7 @@
     "paths": {
         "/api/metaverse_info": {
             "get": {
-                "tags": [
-                    "info"
-                ],
+                "tags": [ "info" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -33,9 +31,7 @@
 
         "/api/v1/domains/{metaverseID}": {
             "get": {
-                "tags": [
-                    "domains"
-                ],
+                "tags": [ "domains" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -57,13 +53,71 @@
                         }
                     }
                 }
+            },
+            "put": {
+                "description": "Send heartbeat to Metaverse. Not included is PUT used for DomainMetadata (see 'domain-server/src/DomainMetadata.cpp')",
+                "tags": [ "domains" ],
+                "consumes": [ "application/json", "text/json" ],
+                "produces": [ "application/json", "text/json" ],
+                "parameters": [
+                    {
+                        "name": "metaverseID",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "heartbeat",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "version": {
+                                    "description": "BuildInfo::VERSION",
+                                    "type": "string"
+                                },
+                                "protocol": {
+                                    "description": "protocolVersionSignatureBase64()",
+                                    "type": "string"
+                                },
+                                "network_address": {
+                                    "type": "string"
+                                },
+                                "automatic_networking": {
+                                    "type": "string"
+                                },
+                                "restricted": {
+                                    "description": "domain is 'restricted' if anonymous connections are disallowed",
+                                    "type": "boolean"
+                                },
+                                "api_key": {
+                                    "description": "api token if temporary domain",
+                                    "type": "string"
+                                },
+                                "heart_beat": {
+                                    "description": "DomainMetadata::USERS",
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "allOf": [
+                                "$ref": "#/definitions/SuccessError"
+                            ]
+                        }
+                    }
+                }
             }
         },
         "/api/domains/{metaverseID}": {
             "get": {
-                "tags": [
-                    "domains"
-                ],
+                "description": "Fetch domain information. Doesn't have '/v1/'. Is this a bug? See 'domain-server/resources/web/js/shared.js'",
+                "tags": [ "domains" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -89,9 +143,8 @@
         },
         "/api/v1/domains/{metaverseID}/public_key": {
             "get": {
-                "tags": [
-                    "domains"
-                ],
+                "description": "Get domain public key for user. Somehow sets 'user' into request",
+                "tags": [ "domains" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -117,9 +170,8 @@
         },
         "/api/v1/domains/temporary": {
             "get": {
-                "tags": [
-                    "domains"
-                ],
+                "description": "Get domain info for temporary domain",
+                "tags": [ "domains" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -138,9 +190,7 @@
 
         "/api/v1/groups/members/{username}": {
             "get": {
-                "tags": [
-                    "groups"
-                ],
+                "tags": [ "groups" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -166,9 +216,7 @@
         },
         "/api/v1/groups/names/{groupname}": {
             "get": {
-                "tags": [
-                    "groups"
-                ],
+                "tags": [ "groups" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -194,9 +242,7 @@
         },
         "/api/v1/groups/{groupID}/ranks": {
             "get": {
-                "tags": [
-                    "groups"
-                ],
+                "tags": [ "groups" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -223,9 +269,7 @@
 
         "/api/v1/users": {
             "get": {
-                "tags": [
-                    "users"
-                ],
+                "tags": [ "users" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -243,9 +287,7 @@
         },
         "/api/v1/users/{username}/public_key": {
             "get": {
-                "tags": [
-                    "users"
-                ],
+                "tags": [ "users" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -271,9 +313,7 @@
         },
         "/api/v1/user/profile": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -291,9 +331,7 @@
         },
         "/api/v1/user/locker": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -311,9 +349,7 @@
         },
         "/api/v1/user/public_key": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -331,9 +367,7 @@
         },
         "/api/v1/user/friends": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -351,9 +385,7 @@
         },
         "/api/v1/user/friends/{friendusername}": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -379,9 +411,7 @@
         },
         "/api/v1/user/places": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -399,9 +429,7 @@
         },
         "/api/v1/user/places/{placeID}": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -428,9 +456,7 @@
 
         "/api/v1/user_stories": {
             "get": {
-                "tags": [
-                    "user",
-                    "stories"
+                "tags": [ "user", "stories"
                 ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
@@ -449,9 +475,7 @@
         },
         "/api/v1/user_stories/{storyID}": {
             "get": {
-                "tags": [
-                    "user",
-                    "stories"
+                "tags": [ "user", "stories"
                 ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
@@ -478,9 +502,7 @@
         },
         "/api/v1/user_activities": {
             "get": {
-                "tags": [
-                    "user"
-                ],
+                "tags": [ "user" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -499,9 +521,7 @@
 
         "/api/v1/snapshots": {
             "get": {
-                "tags": [
-                    "snapshots"
-                ],
+                "tags": [ "snapshots" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -519,9 +539,7 @@
         },
         "/api/v1/transactions": {
             "get": {
-                "tags": [
-                    "transactions"
-                ],
+                "tags": [ "transactions" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -539,9 +557,7 @@
         },
         "/api/v1/marketplace/": {
             "get": {
-                "tags": [
-                    "marketplace"
-                ],
+                "tags": [ "marketplace" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -573,9 +589,7 @@
         },
         "/api/v1/marketplace/items": {
             "get": {
-                "tags": [
-                    "marketplace"
-                ],
+                "tags": [ "marketplace" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -593,9 +607,7 @@
         },
         "/api/v1/marketplace/items/{marketID}": {
             "get": {
-                "tags": [
-                    "marketplace"
-                ],
+                "tags": [ "marketplace" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -621,9 +633,7 @@
         },
         "/api/v1/marketplace/categories": {
             "get": {
-                "tags": [
-                    "marketplace"
-                ],
+                "tags": [ "marketplace" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -642,9 +652,7 @@
 
         "/api/v1/commerce/": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -662,9 +670,7 @@
         },
         "/api/v1/commerce/inventory": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -682,9 +688,7 @@
         },
         "/api/v1/commerce/available_updates": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -705,9 +709,7 @@
         },
         "/api/v1/commerce/history": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "parameters": [
@@ -728,9 +730,7 @@
         },
         "/api/v1/commerce/marketplace_key": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -748,9 +748,7 @@
         },
         "/api/v1/commerce/proof_of_purchase_status/location": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -768,9 +766,7 @@
         },
         "/api/v1/commerce/proof_of_purchase_status/transfer": {
             "get": {
-                "tags": [
-                    "commerce"
-                ],
+                "tags": [ "commerce" ],
                 "consumes": [],
                 "produces": [ "application/json", "text/json" ],
                 "responses": {
@@ -792,7 +788,8 @@
             "type": "object",
             "properties": {
                 "status": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": [ "success", "fail" ]
                 }
             }
         },
@@ -816,7 +813,7 @@
                     "type": "object",
                     "properties": {
                         "domain": {
-                            "type": "string"
+                            "$ref": "#/definitions/Domain"
                         }
                     }
                 }
@@ -828,7 +825,8 @@
                 "data": {
                     "type": "object",
                     "properties": {
-                        "domain": {
+                        "public_key": {
+                            "description": "Base64 encoded",
                             "type": "string"
                         }
                     }
@@ -842,7 +840,7 @@
                     "type": "object",
                     "properties": {
                         "domain": {
-                            "type": "string"
+                            "$ref": "#/definitions/Domain"
                         }
                     }
                 }
@@ -1298,6 +1296,9 @@
                 },
                 "default_place_name": {
                     "type": "string"
+                },
+                "cloud_domain": {
+                    "type": "boolean"
                 }
             }
         }

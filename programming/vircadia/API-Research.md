@@ -48,6 +48,7 @@ It will be a learning experience.
         domain.label
     domain-server/resources/web/js/shared.js
         'getDomainFromAPI' references '/api/domains/{metaverse.id}' to get above data
+    libraries/networking/src/AddressManager.cpp
     domain-server/resources/web/js/shared.js
         GET 'domain': {'cloud_domain': boolean }    // returned by isCloudDomain()
     domain-server/src/DomainServer.cpp
@@ -61,7 +62,6 @@ It will be a learning experience.
                 'api_key':  suppliedIfTemporaryDomain
                 'heart_beat': numberOfUsers??
             }
-    libraries/networking/src/AddressManager.cpp
     domain-server/src/DomainMetadata.cpp
         PUT
             {
@@ -74,7 +74,6 @@ It will be a learning experience.
                       "hosts": [ String ], // capped list of usernames
                       "tags": [ String ], // capped list of tags
                     }
-
 /api/v1/domains/{metaverse.id}/public_key
     ice-server/src/IceServer.cpp
         adds 'FollowRedirectionsAttibute' to 'true'
@@ -83,6 +82,7 @@ It will be a learning experience.
             {
                 'public_key': fromBase64(dataObject[PUBLIC_KEY_KEY].toString().toUtf8())
             }
+
 
 METAVERSE_URL/api/v1/domains/temporary
     domain-server/resources/web/js/shared.js
