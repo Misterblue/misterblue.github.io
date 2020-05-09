@@ -30,7 +30,26 @@ This is not the most efficient way of doing this but
 it will be good for me to get into the code.
 It will be a learning experience.
 
+## Misc notes
+
+When AccountManager makes REST requests, it:
+
+  * sets FollowRedirectsAttribute to 'true'
+  * sets QNetworkRequest::UserAgentHeader to HIGH_FIDELITY_USER_AGENT = "Mozilla/5.0 (HighFidelityInterface)"
+  * sets METAVERSE_SESSION_ID_HEADER ("HFM-SessionID") to _sessionID (guid)
+  * if authentication is required, sets "Authentication:" header to 'accessToken'
+
+Some of the REST requests rely on QNetworkRequest attributes that are returned with
+the response. For instance, "ice-server/src/IceServer.cpp" sets the QNetworkRequest::User
+attriubute to the 'domainID' and then expects to extract the 'domainID' from the
+attributes in the response. The server must implement this by sub-classing QNetworkAccessManager.
+Need to understand the format of HTTP attributes in Qt.
+
 <pre>
+
+METAVERSE_URL/api/metaverse_info
+    domain-server/resources/web/js/shared.js
+        GET in function getMetaverseUrl() returns 'metaverse_url'
 
 /api/v1/domains/{metaverse.id}
 /api/domains/{metaverse.id}    (?? see note below)
@@ -109,10 +128,6 @@ api/v1/transactions
         GET expects 'transaction.id' (UUID), 'transaction.destination_wallet_id',
                     'transaction.amount'
         does one request for each "pending assignment credit"
-
-METAVERSE_URL/api/metaverse_info
-    domain-server/resources/web/js/shared.js
-        GET in function getMetaverseUrl() returns 'metaverse_url'
 
 /api/v1/user/places&limit=21
     script-archive/lobby.js
