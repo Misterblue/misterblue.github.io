@@ -5,4 +5,5 @@ title: "Project Apollo API Research"
 ---
 # Vircadia/Project Apollo API Research
 
-Contents moved to https://github.com/kasenvr/project-apollo/blob/master/api/wip/API-Research.md
+Contents moved to 
+[https://github.com/kasenvr/project-apollo/blob/master/api/wip/API-Research.md](https://github.com/kasenvr/project-apollo/blob/master/api/wip/API-Research.md)
