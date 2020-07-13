@@ -5,6 +5,7 @@ display-categories:
     - Robotics
     - ROS2
     - VR
+    - Vircadia
     - Basil
     - Meta
     - OpenSimulator
@@ -28,6 +29,9 @@ categories:
     VR:
       label: VR
       url: /categories/VR.html
+    Vircadia:
+      label: Vircadia
+      url: /categories/Vircadia.html
     Basil:
       label: Basil
       url: /categories/Basil.html
