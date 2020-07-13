@@ -44,7 +44,7 @@ the [Project Apollo] metaverse-server for the [Vircadia] project.
 The Internet is [awash in virtual world projects] -- both small and large.
 Because of this, I have been thinking lot about this project and why I would
 spend any time on Yet Another Virtual World.
-This captures some of where I thing [Vircadia] could go to be a
+This captures some of where I think [Vircadia] could go to be a
 growing and interesting addition to the sea of virtual world technologies.
 
 First, what is [Vircadia]?
@@ -62,7 +62,7 @@ I have spent years working on the [OpenSimulator] virtual world technology.
 and more recently on my
 [Herbal3d] and [Basil] viewer projects.
 These are all for virtual worlds and the communities they create.
-I have watch [OpenSimulator] putter along with hobbyists running their
+I have watched [OpenSimulator] putter along with hobbyists running their
 own virtual world grids and small communities enjoying the ability
 to socialize and hyper-grid/teleport among the many worlds.
 But, in general, [OpenSimulator] never grew beyond its [SecondLife]
@@ -83,7 +83,7 @@ to increase the number of people using the project.
 But I'm more of a tech person so I see some technologies to focus
 on in [Vircadia] development that would attach it to other
 technology focused communities and grow and enhance its application.
-The goal of these directions to to attach [Vircadia] to other
+The goal of these directions is to attach [Vircadia] to other
 like-minded technical, volunteer, and passionate communities.
 
 So, the two directions I'd like to help [Vircadia] go in are:
@@ -91,14 +91,14 @@ So, the two directions I'd like to help [Vircadia] go in are:
 - develop the technology for a decentralized virtual world community, and
 - generalize the virtual world viewer for new and different rendering engines.
 
-## Decentralized Virtual World Community
+### Decentralized Virtual World Community
 
 Let's talk _decentralization_. 
 
 One of the main motivators of the [Vircadia] project and many other
 hobbyist and open-source development projects is the idea of creating
 a non-centralized service/application/resource.
-And by "centralization" most think of the large ad-based concentrators
+And by "centralization" most think of the large, ad-based concentrators
 like Google or Facebook.
 
 So, by "decentralization", most projects want there to be no single
@@ -140,7 +140,8 @@ this architectural direction and has recently published several
 decentralized social communities.
 
 These are the standards [ActivityStreams] and [ActivityPub] which
-support social sharing services like [Mastodon] and [PeerTube].
+support social sharing services like [Mastodon], [PeerTube], and
+many others.
 
 The model presented by [ActivityPub] is of actors that have
 "streams" of "activities". Thus, a person can have a newsfeed,
@@ -186,7 +187,7 @@ of [ActivityPub] or maybe the virtual world version of [Mastodon].
 Check out [The-Federation] and [Fediverse.Party] for some of the other
 federation-based, decentralized communities.
 
-## Generalize the Viewer
+### Generalize the Viewer
 
 This was all about the socialization side of [Vircadia], but what about
 the viewer.
