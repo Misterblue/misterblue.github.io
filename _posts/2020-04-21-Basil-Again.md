@@ -71,6 +71,7 @@ The other task is getting all the web pages together.
 [OpenSimulator]: http://opensimulator.org/
 [Misterblue OAR Collection]: https://misterblue.com/oars/
 [BasilJS]: https://github.com/Herbal3d/basil
+[BasilTest]: https://github.com/Herbal3d/BasilTest
 [HerbalCommonEntitiesCS]: https://github.com/Herbal3d/HerbalCommonEntitiesCS
 [HerbalTransportCS]: https://github.com/Herbal3d/HerbalTransportCS
 [OSAuthModule]: https://github.com/Herbal3d/OSAuthModule
