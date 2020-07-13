@@ -175,7 +175,7 @@ have conversations that span grids, and other sharing.
 
 For wider usage, one could use existing [ActivityPub] based tools to share
 and communicate with users in the virtual worlds.
-For instance, use [Mastidon] to chat with or check the presence of people
+For instance, use [Mastodon] to chat with or check the presence of people
 in the virtual world.
 Or use one of the many gateway applications (like ActivityPub to Discord)
 to connect between social groups and virtual world groups.
@@ -232,7 +232,7 @@ Well, that's way too much typing. Back to coding.
 [High Fidelity]: https://en.wikipedia.org/wiki/High_Fidelity_(company)
 [SecondLife]: https://secondlife.com/
 [ActivityPub]: https://www.w3.org/TR/activitypub/
-[ActivityStreams]:
+[ActivityStreams]: https://www.w3.org/TR/activitystreams-core/
 [OpenSimulator]: http://opensimulator.org/wiki/Main_Page
 [Herbal3d]: https://herbal3d.github.io/
 [Basil]: https://github.com/Herbal3d/basil
