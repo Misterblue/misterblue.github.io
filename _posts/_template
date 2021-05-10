@@ -12,9 +12,10 @@ author:
 author_login: Misterblue
 author_email: misterblue-blog@misterblue.com
 author_url: http://misterblue.com
-date: 2016-07-23 11:22:20   # SET DATE
+date: 2021-04-01 11:22:20   # SET DATE
 # categories: OpenSimulator, Basil, Fun and Weird, Programming, LookingGlass, Travel
-#      Thoughts, Life, Meta, Family, Photography
+#      Thoughts, Life, Meta, Family, Photography,
+#      Vircadia, Robotics, ROS2, VR
 categories:
 - Basil
 # 'comments: true' is needed for Disqus. 'static-comments' is legacy, imbedded comments.
@@ -24,13 +25,13 @@ comments: true
 #   author: AUTHOR-HANDLE
 #   author_email: AUTHOR-EMAIL
 #   author_url:
-#   date: 2004-10-09 09:22:40  # SET DATE
+#   date: 2021-10-09 09:22:40  # SET DATE
 #   content: COMENT TEXT
 # - id: 101
 #   author: Misterblue
 #   author_email: misterblue-mt@misterblue.com
 #   author_url: http://www.misterblue.com
-#   date: 2004-10-10 07:23:13
+#   date: 2021-10-10 07:23:13
 #   content: >-
 #     COMMENT TEXT
 # http://www.emoji-cheat-sheet.com/
