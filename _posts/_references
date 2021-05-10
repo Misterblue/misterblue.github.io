@@ -13,6 +13,9 @@
 [PeerTube]: https://joinpeertube.org/ "Video sharing"
 [PixelFed]: https://pixelfed.org/ "Photo sharing"
 
+[Javascript]: https://www.javascript.com/
+[TypeScript]: https://www.typescriptlang.org/
+
 [HTTP Signatures]: https://tools.ietf.org/id/draft-cavage-http-signatures-01.html
 [HTTP Authentication]: https://tools.ietf.org/html/rfc7235
 

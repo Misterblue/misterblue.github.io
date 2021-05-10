@@ -46,7 +46,7 @@ When [High Fidelity] open-sourced the code for their virtual world, they
 kept the central coordination services private so a new service for
 accounts and discovery was needed.
 
-I created [Iamus] with [NodeJS], [ExpressJS], and [MondgoDB].
+I created [Iamus] with [NodeJS], [ExpressJS], and [MongoDB].
 
 For anyone picking up the project and making modifications,
 there is written documentation on the server's
@@ -72,7 +72,8 @@ This should give anyone modifying [Iamus] an good start.
 [High Fidelity]: https://en.wikipedia.org/wiki/High_Fidelity_(company) 
 [Vircadia]: https://vircadia.com
 [Iamus]: https://github.com/vircadia/Iamus
-[Tivoli]: https://tivolicloud.com/
 [MongoDB]: https://www.mongodb.com/
 [NodeJS]: https://nodejs.org/
 [ExpressJS]: https://expressjs.com/
+[Javascript]: https://www.javascript.com/
+[TypeScript]: https://www.typescriptlang.org/
