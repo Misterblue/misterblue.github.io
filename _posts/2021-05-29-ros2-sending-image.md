@@ -2,7 +2,7 @@
 layout: post
 # 'status' is the main flag of where the post will appear.
 # status is 'draft' or 'publish'
-status: draft
+status: publish
 title: ROS2 Sending Image
 author:
   display_name: Misterblue
@@ -39,22 +39,21 @@ comments: true
 ---
 I don't know why this is not documented better but...
 
-While I was porting my old ROS2 Python test application to the newest ROS2 Foxy
+While I was porting my
+[old ROS2 Python test application](https://github.com/Misterblue/ros2-looker)
+to the newest ROS2 Foxy
 on my Raspberry Pi's, I discovered that I needed to use OpenCV
-to capture images (
-[`picamera` does not work in 64 bit](https://github.com/waveform80/picamera/issues/540)
-)
-and that
-creating an ROS2 image message in Python is not simple.
+to capture images because
+`picamera` does not work in 64 bit](https://github.com/waveform80/picamera/issues/540)
+.
 
 What's not documented very well (and I spent several days figuring out)
-is that, after one has ported to OpenCV (since `picamera` doesn't work)
-converting an OpenCV image into a ROS2 message is not obvious
-and all the magic has been packaged into [CvBridge].
+is that, after one has ported to OpenCV,
+converting an OpenCV image into a ROS2 message is not obvious.
+After a bunch of Google'ing, one discovers that the ROS2 folks
+have packaged all the magic into a module called [CvBridge].
 
-Obvious, right?
-
-Despite the sarcasm, OpenCV keeps images in `cv:im` structures
+OpenCV keeps images in `cv:im` structures
 and converting that into a byte array that fits into the ROS2 message
 is tricky. Actually, what's expected in a ROS2 image message is not
 documented very well so what works is hard to figure out in the first
@@ -66,13 +65,21 @@ So, the code ends up looking like:
 
 
 ```python
+from sensor_msgs.msg import Image
+import cv2
 from cv_bridge import CvBridge
 ...
 self.bridge = CvBridge()
+self.camera = cv2.VideoCapture(0)
+self.frame_num = 0
+self.publisher = self.create_publisher(Image, "topic", 10)
 ...
 ret, frame = self.camera.read()
 if ret == True:
     msg = self.bridge.cv2_to_imgmsg(frame, 'bgr8')
+    msg.header.frame_id = str(self.frame_num)   # 'msg' is a ROS2 sensor_msgs/Image.msg
+    self.frame_num += 1
+    self.publisher.publish(msg)
 
 ```
 
