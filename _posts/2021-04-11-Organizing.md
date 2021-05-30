@@ -41,7 +41,7 @@ comments: true
 
 I've been generally offline for the last year.
 Doesn't have anything to do with the pandemic or anything going on in the  world.
-Just me no focusing on computers.
+Just me not focusing on computers.
 An odd thing after all these years.
 
 Some of the time has been spent thinking about what I want to be
@@ -141,8 +141,77 @@ feel like I'd need to keep up-to-date because people would see me.
 [Mastodon]: https://joinmastodon.org/
 [Herbal System]: http://herbal3d.org/
 [Basil]: https://github.com/Herbal3d/basil
+[Matrix]: https://matrix.org/
+[Matrix FAQ]: https://matrix.org/faq/
+[ActivityPub Implementations]: http://blog.misterblue.com/2020/2020-07-15-ActivityPub-Implementations
+[Vircadia Directions]: http://blog.misterblue.com/2020/2020-07-13-Vircadia-Directions 
+[Discord]: https://discord.com/
+[IRC]: https://en.wikipedia.org/wiki/Internet_Relay_Chat
+[ActivityPub]: https://www.w3.org/TR/activitypub/
+[ActivityStreams]: https://www.w3.org/TR/activitystreams-core/
+[Mastodon]: https://joinmastodon.org/
+[W3C]: https://w3c.org/
+[WebFinger]: https://tools.ietf.org/html/rfc7033 "WebFinger"
+[Twitter]: https://twitter.com/
+[PeerTube]: https://joinpeertube.org/ "Video sharing"
+[PixelFed]: https://pixelfed.org/ "Photo sharing"
+
+[Javascript]: https://www.javascript.com/
+[TypeScript]: https://www.typescriptlang.org/
+
+[HTTP Signatures]: https://tools.ietf.org/id/draft-cavage-http-signatures-01.html
+[HTTP Authentication]: https://tools.ietf.org/html/rfc7235
+
+[free Matrix homeservers]: https://www.anchel.nl/matrix-publiclist/
+[Synapse]: https://github.com/matrix-org/synapse/
+[Sydent]: https://github.com/matrix-org/sydent "Matrix identity server"
+
+
+[RFC6838]: https://tools.ietf.org/html/rfc6838 "Media Type Specifications and Registration Procedures"
+[Link relation type registry]: http://www.iana.org/assignments/link-relations/link-relations.xhtml
+[RFC8288]: https://tools.ietf.org/html/rfc8288 "Web Linking"
+[RFC7033]: https://tools.ietf.org/html/rfc7033 "WebFinger"
+[RFC7565]: https://tools.ietf.org/html/rfc7565 "The 'acct' URI Scheme"
+[URI scheme registration]: https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
+
+[TurtleBot3]: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/
+[Petoi Bittle]: https://www.indiegogo.com/projects/bittle-a-palm-sized-robot-dog-for-stem-and-fun/
+
+[RFC6415]: https://tools.ietf.org/html/rfc6415
+[Project Apollo]: https://github.com/kasenvr/project-apollo
+[Tivoli]: https://tivolicloud.com/
+[Vircadia]: https://vircadia.com
+[Iamus]: https://github.com/vircadia/Iamus
+[MongoDB]: https://www.mongodb.com/
+[NodeJS]: https://nodejs.org/
+[ExpressJS]: https://expressjs.com/
+[ActivityPub-Express]: https://github.com/wmurphyrd/activitypub-express
+[High Fidelity]: https://en.wikipedia.org/wiki/High_Fidelity_(company) 
+
+[entity/component model]: https://en.wikipedia.org/wiki/Entity_component_system
+[JWT]: https://jwt.io/
+[JWT RFC]: https://tools.ietf.org/html/rfc7519
+[RFC7519]: https://tools.ietf.org/html/rfc7519
+[RFC3339]: https://tools.ietf.org/html/rfc3339
+[OAuth2]: https://oauth.net/2/
+[WGS 1984]: http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html
+[OpenSimulator]: http://opensimulator.org/
+[View Service]: http://loc-loc.net/
+[Herbal System]: http://herbal3d.org/
+[Basil Viewer]: http://basilviewer.org/
+[Basil]: https://github.com/Herbal3d/basil
+[Pesto]: http://misterblue.github.io/pesto/
+[Ragu]: http://misterblue.github.io/ragu/
+[BSD License]: http://opensource.org/licenses/BSD-3-Clause
+[MIT License]: http://opensource.org/licenses/MIT
+[Apache License]: http://opensource.org/licenses/Apache-2.0
+[Creative Commons Attribution-NonCommercial 4.0 International]: http://creativecommons.org/licenses/by-nc/4.0/
+
+<!-- vim: ts=2 sw=2 et ai
+-->
 [Basil Viewer]: http://basilviewer.org/
 [OpenSimulator]: http://opensimulator.org/
 [Vircadia Directions]: http://blog.misterblue.com/2020/2020-07-13-Vircadia-Directions 
 [TurtleBot3]: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/
 [Petoi Bittle]: https://www.indiegogo.com/projects/bittle-a-palm-sized-robot-dog-for-stem-and-fun/
+[ROS2]: https://docs.ros.org/en/galactic/
