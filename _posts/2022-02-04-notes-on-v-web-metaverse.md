@@ -24,8 +24,6 @@ comments: true
 # http://www.emoji-cheat-sheet.com/
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
-## Notes on Adding Metaverse in Vircadia-Web
-
 There has been some discussion on adding metaverse selection to [Vircadia-Web] (here after "v-web") and this note talks about how the existing code could be modified.
 
 Currently (as of Feb 4, 2022), v-web has a default metaverse URL that is used to fetch the metaverse information and is used as the metaverse to log the user into.
