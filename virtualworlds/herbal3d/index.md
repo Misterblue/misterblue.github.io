@@ -5,7 +5,7 @@ title: "Herbal3D: Overview of End-to-End Virtual World Infrastructure"
 ---
 
 **WARNING TO ALL READING THIS:**
-As of August 2016, this is an in-progress draft and is growing over time.
+As of February 2022, this is an in-progress draft and is growing over time.
 Expected completion is in a month or two.
 Direct questions to [the author](mailto:herbal3d@misterblue.com).
 
@@ -75,7 +75,7 @@ needed infrastructure behind that viewer to
 store, convert, interact and simulate the virtual world.
 
 That is, how can I build a system where an [OpenSimulator] avatar can
-stand next to a [HighFidelity] avatar.
+stand next to a [Vircadia] avatar.
 
 Many virtual world implementations are oriented toward specific use cases.
 Whether making a multi-user game, or making a very precise real-time
@@ -209,7 +209,7 @@ views of a space. The user of the view could be a person or some program (or 'bo
 that wants an image.
 
 
-
+[Vircadia]: https://vircadia.com/
 [OpenSimulator]: http://opensimulator.org/
 [SecondLife]: http://secondlife.com/
 [YouTube]: http://youtube.com/

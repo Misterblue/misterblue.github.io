@@ -10,7 +10,7 @@ title: Other Virtual Worlds
 
 ## OpenSimulator
 
-## High Fidelity
+## Vircadia
 
 ## Unity
 
