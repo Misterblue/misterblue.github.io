@@ -20,7 +20,8 @@ baseurl: ''
 github: ''
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-63061357-1'
+# gaaccount: 'UA-63061357-1'
+gaaccount: '337322405'
 
 comments: true
 
