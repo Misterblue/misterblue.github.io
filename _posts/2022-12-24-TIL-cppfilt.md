@@ -37,7 +37,7 @@ comments: true
 # http://www.emoji-cheat-sheet.com/
 #  Faces: :smiley: :blush: :sleeping: :confounded: :innocent: :sunglasses: :sleepy:
 ---
-I've been working on this project[1] where I'm compiling different C++ libraries
+I've been working on this project[^1] where I'm compiling different C++ libraries
 and statically linking them together.
 I had problems with undefined symbols.
 And the undefined symbols were mangled C++ symbols.
@@ -53,14 +53,15 @@ and another library referenced
 What was different?
 
 Well, the above referenced article references the "well known" tool of `c++filt`.
+
 Of course!!
 
 ```
-user@ubuntu:~> c++filt _ZNK16btCollisionShape17getBoundingSphereER9btVector3Rd
+user@ubuntu ~> c++filt _ZNK16btCollisionShape17getBoundingSphereER9btVector3Rd
 btCollisionShape::getBoundingSphere(btVector3&, double&) const
-user@ubuntu:~> c++filt _ZNK16btCollisionShape17getBoundingSphereER9btVector3Rf
+user@ubuntu ~> c++filt _ZNK16btCollisionShape17getBoundingSphereER9btVector3Rf
 btCollisionShape::getBoundingSphere(btVector3&, float&) const
-user@ubuntu:~>
+user@ubuntu ~>
 ```
 
 Looks like I am building one library with double precision turned on
@@ -69,5 +70,5 @@ Now I know what to fix.
 
 There are just so many tools in Linux.
 
-[1]: BulletSim in [OpenSimulator](http://opensimulator.org)
+[^1]: BulletSim in [OpenSimulator](http://opensimulator.org)
 [How To Mangle And Demangle A C++ Method Name]: https://blog.oakbits.com/how-to-mangle-and-demangle-a-c-method-name.html
