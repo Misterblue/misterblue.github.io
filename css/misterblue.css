@@ -1,18 +1,73 @@
+:root {
+    --mb-base-bg: #0d045f;
+    --mb-base-color: #dee2e6;
+    --mb-sidebar-bg: #0f0661;
+    --mb-sidebar-color: #ee4444;
+    --mb-sidebar-a-color: #420bca;
+    --mb-sidebar-a-hover: #3071a9;
+    --mb-well-color: #ee4444;
+    --mb-author-color: #ee4444;
+    --mb-comment-bg: #e0e0e0;
+    --mb-comment-author: #fe5454;
+}
+
+body {
+    background-color: var(--mb-base-bg);
+    color: var(--mb-base-color);
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+.footer {
+    text-align: center;
+}
+
+.sidebar h1 {
+    color: var(--mb-sidebar-color);
+    font-size: 1.3em;
+}
+
+.sidebar a {
+    color: var(--mv-sidebar-a-color);
+}
+
+.sidebar li {
+    margin-top: .7em;
+    line-height: 1em;
+}
+
+.sidebar a:hover {
+    color: var(--mb-sidebar-a-hover);
+}
+
+
 .well {
     padding: 5px 10px 5px 10px;
 }
 
 .well h1 {
+    color: var(--mb-well-color);
     margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.author {
+    color: var(--mb-author-color);
+}
+
+.author a {
+    color: var(--mb-author-color);
 }
 
 .mb-oldcomment {
-    background-color: #e0e0e0;
+    background-color: var(--mb-comment-bg);
     margin-left: 15px;
     padding-bottom: 10px;
 }
 .mb-oldcommant author {
-    color: #fe5454;
+    color: var(--mb-comment-author);
     font-weight: heavy;
 }
 .mb-oldcommant date {
