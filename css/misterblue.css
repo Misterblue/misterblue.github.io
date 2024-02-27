@@ -5,7 +5,9 @@
     --mb-sidebar-color: #ee4444;
     --mb-sidebar-a-color: #420bca;
     --mb-sidebar-a-hover: #3071a9;
+    --mb-well-bg: #242279;
     --mb-well-color: #ee4444;
+    --mb-well-h1-color: #ee4444;
     --mb-author-color: #ee4444;
     --mb-comment-bg: #e0e0e0;
     --mb-comment-author: #fe5454;
@@ -45,12 +47,13 @@ body {
 
 .well {
     padding: 5px 10px 5px 10px;
+    background: var(--mb-well-bg);
+    color: var(--mb-well-color);
 }
 
 .well h1 {
-    color: var(--mb-well-color);
+    color: var(--mb-well-h1-color);
     margin-top: 5px;
-    font-size: 1.3em;
 }
 
 .author {
