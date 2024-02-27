@@ -46,7 +46,7 @@ body {
 
 
 .well {
-    margin: 5px;
+    margin: 10px 0px 5px 0px;
     padding: 5px 10px 5px 10px;
     background: var(--mb-well-bg);
     color: var(--mb-well-color);
@@ -78,7 +78,7 @@ body {
 }
 .mb-content-footer {
     font-size: smaller;
-    float: right;
+    text-align: right;
 }
 
 .mb-booknav {
