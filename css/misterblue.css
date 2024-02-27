@@ -6,7 +6,7 @@
     --mb-sidebar-a-color: #420bca;
     --mb-sidebar-a-hover: #3071a9;
     --mb-well-bg: #242279;
-    --mb-well-color: #ee4444;
+    --mb-well-color: var(--mb-base-color);
     --mb-well-h1-color: #ee4444;
     --mb-author-color: #ee4444;
     --mb-comment-bg: #e0e0e0;
@@ -46,6 +46,7 @@ body {
 
 
 .well {
+    margin: 5px;
     padding: 5px 10px 5px 10px;
     background: var(--mb-well-bg);
     color: var(--mb-well-color);
