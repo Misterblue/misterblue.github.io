@@ -33,6 +33,7 @@ body {
     padding: 5px 10px 5px 10px;
     background: var(--mb-well-bg);
     color: var(--mb-well-color);
+    border-radius: 5px;
 }
 
 .well h1 {
