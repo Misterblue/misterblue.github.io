@@ -9,6 +9,9 @@
     --mb-well-color: var(--mb-base-color);
     --mb-well-h1-bg: #1d146f;
     --mb-well-h1-color: #ee4444;
+    --mb-nav-bg: var(--mb-well-bg);
+    --mb-nav-color: var(--mb-base-color);
+    --mb-nav-button-color: var(--mb-well-h1-bg);
     --mb-author-color: #ee4444;
     --mb-comment-bg: #e0e0e0;
     --mb-comment-author: #fe5454;
@@ -17,6 +20,20 @@
 body {
     background-color: var(--mb-base-bg);
     color: var(--mb-base-color);
+}
+
+.navbar {
+    color: var(--mb-nav-color);
+    background: var(--mb-nav-bg);
+}
+
+.navbar-brand {
+    color: #0000ff;
+    font-size: 1.3em;
+}
+
+.nav-item {
+    background: var(--mb-nav-button-color);
 }
 
 .copyright {
