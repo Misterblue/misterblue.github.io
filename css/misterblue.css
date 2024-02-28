@@ -27,6 +27,23 @@ body {
     text-align: center;
 }
 
+/* WELL ================================== */
+.well {
+    margin: 10px 0px 5px 0px;
+    padding: 5px 10px 5px 10px;
+    background: var(--mb-well-bg);
+    color: var(--mb-well-color);
+}
+
+.well h1 {
+    color: var(--mb-well-h1-color);
+    background: var(--mb-well-h1-bg);
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* SIDEBAR ================================== */
 .sidebar h1 {
     color: var(--mb-sidebar-color);
     font-size: 1.3em;
@@ -45,20 +62,7 @@ body {
     color: var(--mb-sidebar-a-hover);
 }
 
-
-.well {
-    margin: 10px 0px 5px 0px;
-    padding: 5px 10px 5px 10px;
-    background: var(--mb-well-bg);
-    color: var(--mb-well-color);
-}
-
-.well h1 {
-    color: var(--mb-well-h1-color);
-    margin-top: 5px;
-    font-size: .8em;
-}
-
+/* AUTHOR ================================== */
 .author {
     color: var(--mb-author-color);
 }
@@ -67,6 +71,7 @@ body {
     color: var(--mb-author-color);
 }
 
+/* COMMENTS ================================== */
 .mb-oldcomment {
     background-color: var(--mb-comment-bg);
     margin-left: 15px;
@@ -83,6 +88,7 @@ body {
     text-align: right;
 }
 
+/* BOOKS ================================== */
 .mb-booknav {
     font-size: larger;
     font-weight: heavy;
@@ -114,6 +120,7 @@ td.mb-bookDescription {
 .mb-bookComment {
 }
 
+/* MISC ================================== */
 table.mb {
     border: 1px;
     border-color: black;
