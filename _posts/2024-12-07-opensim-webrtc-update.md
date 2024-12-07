@@ -58,16 +58,18 @@ There is still a lot of things to complete:
 
 If you want to help with the coding, join me at [os-webrtc-janus] and checkout
 the [issues] and the [project].
-Please test the feature and make some [issues] and this will eventually get
+Please test the features and make some [issues] and this will eventually get
 integrated into all [OpenSimulator] regions and grids.
 
 [OpenSimulator]: http://opensimulator.org
+[OSGrid]: https://osgrid.org
 [Janus]: https://janus.conf.meetecho.com
 [Docker]: https://www.docker.com   
 [os-webrtc-janus]: https://github.com/Misterblue/os-webrtc-janus
 [issues]: https://github.com/Misterblue/os-webrtc-janus/issues
 [project]: https://github.com/users/Misterblue/projects/7
 [os-webrtc-janus-docker]: https://github.com/Misterblue/os-webrtc-janus-docker
+[opensim-docker]: https://github.com/Misterblue/opensim-docker
 [audio bridge]: https://janus.conf.meetecho.com/docs/audiobridge.html
 [OSCC24]: https://conference.opensimulator.org/
 [WebRTC Voice for OpenSim]: https://docs.google.com/presentation/d/1WUULV5dwnAWooWtqinJGd-1h6-OT7Hvd_mlOdWc9DVU/edit?usp=sharing
