@@ -6,6 +6,7 @@ title: Robert's Christmas list -- 2024
 
 ## Misc
 
+* long handled shoe horn
 * 6ft C to C braided USB cable
 * Wireless charger stand for Google Pixel 6
 * One gold bar
